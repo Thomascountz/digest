@@ -1,0 +1,12 @@
+feeds:
+  - https://byroot.github.io/feed.xml
+  - https://ivoanjo.me/feed.xml
+  - https://joel.drapper.me/rss.xml
+  - https://kddnewton.com/feed.xml
+  - https://noelrappin.com/blog/index.xml
+  - https://railsatscale.com/feed.xml
+  - https://rubyweekly.com/rss
+  - https://world.hey.com/this.week.in.rails/feed.atom
+  - https://hnrss.org/newest?q=Ruby+OR+Rails&points=50
+  - https://github.com/rails/rails/commits.atom
+  - https://discuss.rubyonrails.org/latest.rss
