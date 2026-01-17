@@ -1,1 +1,1 @@
-digests/2026-01-16.md
+digests/2026-01-17.md
