@@ -26,10 +26,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add digests/ .last_run README.md
+          git add *.md .last_run
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
             git commit -m "Update digest for $(date +%Y-%m-%d)"
             git push
           fi
+
+      - name: Create and push tag
+        run: |
+          TAG="v$(date +%Y-%m-%d)"
+          git tag -f "$TAG"
+          git push origin "$TAG" --force

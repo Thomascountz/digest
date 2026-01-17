@@ -1,1 +1,53 @@
-digests/2026-01-17.md
+# Digest
+
+RSS/Atom feed aggregator that generates markdown digests.
+
+## Reading
+
+Each configured digest produces a `{name}.md` file in the repository root. These files are overwritten when new items are found.
+
+To get the latest digest, pull the repo or browse to `{name}.md` on GitHub. Daily tags (`v{YYYY-MM-DD}`) mark each update.
+
+## Generating
+
+```
+ruby digest.rb
+```
+
+Fetches all configured feeds concurrently and writes digests for any with new items since `.last_run`.
+
+To re-fetch the last 24 hours:
+
+```
+rm .last_run && ruby digest.rb
+```
+
+## Configuration
+
+Feed URLs are grouped under named digests in `config.yml`:
+
+```yaml
+digests:
+  ruby:
+    - https://rubyweekly.com/rss
+    - https://railsatscale.com/feed.xml
+  python:
+    - https://realpython.com/atom.xml
+```
+
+Each key creates a `{name}.md` file.
+
+## Files
+
+```
+config.yml    Named digest configurations
+digest.rb     Main script
+.last_run     ISO 8601 timestamp of last run
+{name}.md     Generated digests
+```
+
+## GitHub Action
+
+Runs daily at 8 AM UTC via `.github/workflows/digest.yml`. Can be triggered manually from Actions > Generate Daily Digest > Run workflow.
+
+Commits `*.md` and `.last_run`, then creates a `v{YYYY-MM-DD}` tag.

@@ -4,14 +4,12 @@
 require "yaml"
 require "rss"
 require "net/http"
-require "fileutils"
 require "date"
 require "time"
 require "uri"
 
 LAST_RUN_FILE = ".last_run"
 CONFIG_FILE = "config.yml"
-OUTPUT_DIR = "digests"
 
 Item = Data.define(:title, :link, :date)
 FeedResult = Data.define(:title, :link, :items)
@@ -22,10 +20,10 @@ def read_last_run
   Time.parse(File.read(LAST_RUN_FILE).strip)
 end
 
-def read_feeds
-  return [] unless File.exist?(CONFIG_FILE)
+def read_digests
+  return {} unless File.exist?(CONFIG_FILE)
 
-  YAML.load_file(CONFIG_FILE).fetch("feeds", [])
+  YAML.load_file(CONFIG_FILE).fetch("digests", {})
 end
 
 def fetch_feed(url, redirect_limit = 5)
@@ -103,8 +101,9 @@ def feed_link(feed, url)
   end
 end
 
-def generate_digest(feed_results)
-  lines = ["# Ruby Digest - #{Date.today}"]
+def generate_digest(name, feed_results)
+  title = name.capitalize
+  lines = ["# #{title} Digest - #{Date.today}"]
   lines << ""
 
   feed_results.each do |result|
@@ -119,22 +118,8 @@ def generate_digest(feed_results)
   lines.join("\n") + "\n"
 end
 
-def update_readme_symlink(digest_file)
-  readme = "README.md"
-  target = File.join(OUTPUT_DIR, File.basename(digest_file))
-
-  FileUtils.rm_f(readme)
-  FileUtils.ln_s(target, readme)
-end
-
-def generate
-  since = read_last_run
-  puts "Checking for items since: #{since.iso8601}"
-
-  feeds = read_feeds
-  puts "Found #{feeds.length} feeds in config"
-
-  threads = feeds.map do |url|
+def fetch_feeds(urls, since)
+  threads = urls.map do |url|
     Thread.new do
       content = fetch_feed(url)
       feed = RSS::Parser.parse(content, false)
@@ -150,20 +135,30 @@ def generate
     end
   end
 
-  feed_results = threads.map(&:join).map(&:value).compact
+  threads.map(&:join).map(&:value).compact
+end
 
-  if feed_results.any? { |r| r.items.any? }
-    FileUtils.mkdir_p(OUTPUT_DIR)
-    output_file = File.join(OUTPUT_DIR, "#{Date.today}.md")
-    digest_content = generate_digest(feed_results)
+def generate
+  since = read_last_run
+  puts "Checking for items since: #{since.iso8601}"
 
-    File.write(output_file, digest_content)
-    puts "Wrote digest to #{output_file}"
+  digests = read_digests
+  puts "Found #{digests.length} digest(s) in config"
 
-    update_readme_symlink(output_file)
-    puts "Updated README.md symlink"
-  else
-    puts "No new items, skipping digest"
+  digests.each do |name, feeds|
+    puts "Processing digest: #{name} (#{feeds.length} feeds)"
+
+    feed_results = fetch_feeds(feeds, since)
+
+    if feed_results.any? { |r| r.items.any? }
+      output_file = "#{name}.md"
+      digest_content = generate_digest(name, feed_results)
+
+      File.write(output_file, digest_content)
+      puts "Wrote digest to #{output_file}"
+    else
+      puts "No new items for #{name}, skipping"
+    end
   end
 
   File.write(LAST_RUN_FILE, Time.now.iso8601)
