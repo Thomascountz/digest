@@ -8,6 +8,20 @@ Each configured digest produces a `{name}.md` file in the repository root. These
 
 To get the latest digest, pull the repo or browse to `{name}.md` on GitHub. Daily tags (`v{YYYY-MM-DD}`) mark each update.
 
+### Terminal Browsing 
+
+Using `git` and `fzf`, you can browse digests by tag in the terminal:
+
+```shell
+$ git tag --sort=-creatordate | fzf --preview 'git show {}:<DIGEST_FILE>.md' --preview-window=right:80%:wrap
+```
+
+For markdown rendering, I recommend [`glow`](https://github.com/charmbracelet/glow):
+
+```shell
+$ git tag --sort=-creatordate | fzf --preview 'git show {}:<DIGEST_FILE>.md | glow -' --preview-window=right:80%:wrap
+```
+
 ## Generating
 
 ```
