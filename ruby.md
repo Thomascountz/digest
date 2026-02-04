@@ -1,14 +1,12 @@
-# Ruby Digest - 2026-02-03
+# Ruby Digest - 2026-02-04
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Fix typo ineficiently -> inefficiently [ci-skip]](https://github.com/rails/rails/commit/5daaeb456cd82e0af6e4aa17e9941f10547f62c8)
-  - [Merge pull request #56716 from coderhs/coderhs-patch-3](https://github.com/rails/rails/commit/04958faf6c9a9e52d1b69a6150e447af22ba9a0b)
-  - [Correct typo in ActiveRecord changelog](https://github.com/rails/rails/commit/04de31142b818ded0febd8d9f47e8314702c9b79)
-  - [Merge pull request #56683 from fatkodima/pass-sql-to-query-log-tags](https://github.com/rails/rails/commit/3a46e8e1f4d4bdd1a4404e0e07065706f0f8e8dd)
-  - [Pass sql query to query log tags](https://github.com/rails/rails/commit/2a0692717f4ec7bb91cfd6b4fe049f7ca1339cc9)
-  - [Merge pull request #56695 from ilianah/one-temp-pool-for-test-schema-…](https://github.com/rails/rails/commit/76fcc3a31daf57df1fa8b067a7823880605392e7)
-  - [Reuse connection pool when checking test schema](https://github.com/rails/rails/commit/7d739cbd75718b5b99fdc612a40f02d5a76a1b0c)
+  - [Merge pull request #56727 from matthewd/schema-cache-primary-keys](https://github.com/rails/rails/commit/45ee3bf84f20af55b8619b5dcc22a5e22a4ac0e7)
+  - [Use schema cache for primary key lookup during insert](https://github.com/rails/rails/commit/3677d34bf988f23207adc98e733b7dbf92e4a3d3)
+  - [Merge pull request #56725 from ykttdn/fix-broken-links-in-yjit-doc](https://github.com/rails/rails/commit/6e7e4a16ea3558d582a0bda1145c2484c94f978d)
+  - [Merge pull request #56705 from p8/activemodel/fix-read-attr-for-seria…](https://github.com/rails/rails/commit/0572be32d2fe2bccc1de7dca024b8ccea7fa5320)
+  - [Fix broken links to YJIT documentation](https://github.com/rails/rails/commit/9a908be929a499da0a249da6c515208aa35bc7c5)
+  - [Merge pull request #56724 from byroot/remove-useless-verify](https://github.com/rails/rails/commit/43b57a8e2c53b3f116ad41b5caa7c79c7827d5d6)
+  - [Remove useless connection verification when pinning connection](https://github.com/rails/rails/commit/980e1a38e5a16fb37d6747543da3e56aa8a7f67a)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [How to test SolidQueue job concurrency restrictions](https://discuss.rubyonrails.org/t/how-to-test-solidqueue-job-concurrency-restrictions/90131)
-  - [Rails i18n scoping by partial name limits usefulness of lazy lookups](https://discuss.rubyonrails.org/t/rails-i18n-scoping-by-partial-name-limits-usefulness-of-lazy-lookups/90130)
-  - [Throttling mail sending with SolidQueue not working](https://discuss.rubyonrails.org/t/throttling-mail-sending-with-solidqueue-not-working/90129)
+  - [Has anyone switched from Docker to devenv.sh (or anything else) for a development environment?](https://discuss.rubyonrails.org/t/has-anyone-switched-from-docker-to-devenv-sh-or-anything-else-for-a-development-environment/90132)
