@@ -1,12 +1,12 @@
-# Ruby Digest - 2026-02-04
+# Ruby Digest - 2026-02-05
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #56727 from matthewd/schema-cache-primary-keys](https://github.com/rails/rails/commit/45ee3bf84f20af55b8619b5dcc22a5e22a4ac0e7)
-  - [Use schema cache for primary key lookup during insert](https://github.com/rails/rails/commit/3677d34bf988f23207adc98e733b7dbf92e4a3d3)
-  - [Merge pull request #56725 from ykttdn/fix-broken-links-in-yjit-doc](https://github.com/rails/rails/commit/6e7e4a16ea3558d582a0bda1145c2484c94f978d)
-  - [Merge pull request #56705 from p8/activemodel/fix-read-attr-for-seria…](https://github.com/rails/rails/commit/0572be32d2fe2bccc1de7dca024b8ccea7fa5320)
-  - [Fix broken links to YJIT documentation](https://github.com/rails/rails/commit/9a908be929a499da0a249da6c515208aa35bc7c5)
-  - [Merge pull request #56724 from byroot/remove-useless-verify](https://github.com/rails/rails/commit/43b57a8e2c53b3f116ad41b5caa7c79c7827d5d6)
-  - [Remove useless connection verification when pinning connection](https://github.com/rails/rails/commit/980e1a38e5a16fb37d6747543da3e56aa8a7f67a)
+  - [Merge pull request #54982 from letsEstel/patch-1](https://github.com/rails/rails/commit/037e58f0728381367b18d3be85fb57e6c3d72cde)
+  - [Update Propshaft setup instructions in Getting Started guide [ci skip]](https://github.com/rails/rails/commit/1366da1f29058dd7250fb897dbcb2c87cc8a8d94)
+  - [Merge pull request #56734 from Shopify/hm-knsstxkworyzusqv](https://github.com/rails/rails/commit/cf83ddabb5d850e75625fc38a5c52e573e32d48f)
+  - [Merge pull request #56733 from eglitobias/improve-docs2](https://github.com/rails/rails/commit/ef9db7b004ef81401bd19fc5037eb45cf36a1ab9)
+  - [Make AM::AttributeSet::YAMLEncoder a Module](https://github.com/rails/rails/commit/b29f37486fe87752bd8f35d29b31aeb78f213935)
+  - [Docs: Update pgAdmin name; fix foreign key wording](https://github.com/rails/rails/commit/ac6d72702b371a1524ccc6672b88849be385dc9d)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [Has anyone switched from Docker to devenv.sh (or anything else) for a development environment?](https://discuss.rubyonrails.org/t/has-anyone-switched-from-docker-to-devenv-sh-or-anything-else-for-a-development-environment/90132)
+  - [Feature proposal: ActiveSupport::TimeWithZone#advance options validation](https://discuss.rubyonrails.org/t/feature-proposal-activesupport-timewithzone-advance-options-validation/90136)
+  - [How to correctly use serialize when column type is unknown](https://discuss.rubyonrails.org/t/how-to-correctly-use-serialize-when-column-type-is-unknown/90133)
