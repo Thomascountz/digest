@@ -1,7 +1,15 @@
-# Ruby Digest - 2026-02-13
+# Ruby Digest - 2026-02-14
 
+- [This Week in Rails](https://world.hey.com/this.week.in.rails)
+  - [This Week in Rails: February 13, 2026](https://world.hey.com/this.week.in.rails/this-week-in-rails-february-13-2026-f4188854)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #56787 from Shopify/fix_load_hook_leak](https://github.com/rails/rails/commit/58c94cbd8081ddefadf8e1824685051f52234791)
-  - [Add action mailer load hook in broken configuration test](https://github.com/rails/rails/commit/34a3c7e072af5450dfec49da26a55331e0051417)
-  - [Merge pull request #56777 from byroot/remove-multibyte-chars](https://github.com/rails/rails/commit/526420da0095046788c890abd8d532a323c865ed)
-  - [Remove the deprecated `ActiveSupport::Multibyte::Chars` class](https://github.com/rails/rails/commit/76f770fd050b498bdb6260acf60107f625fd1e75)
+  - [Merge pull request #56794 from Shopify/bheeshmar/rdoc-to-md-ralph](https://github.com/rails/rails/commit/b3b5ab923dc36f0baac3915e48d03272e9ef9760)
+  - [Merge pull request #49821 from gmcgibbon/integration_routes_method_mi…](https://github.com/rails/rails/commit/e5f5af5915f5976bd2886dde3e226f553ced090d)
+  - [Move route helper method_missing to ActionController::TestCase](https://github.com/rails/rails/commit/3f4977e68345a25f4f6d78688f210d244b4843f5)
+  - [Merge pull request #53417 from vinibispo/fix/skip_storage-changes-git…](https://github.com/rails/rails/commit/89e8edaaf7557b4853ed8f9afc1a3e295341e54a)
+  - [Merge pull request #56783 from kudoas/fix-activestorage-blob-content-…](https://github.com/rails/rails/commit/0ed8641d936baa398cf222f7e945ea1eba2f88cd)
+  - [Merge pull request #56772 from akhilgkrishnan/bump-action-cache](https://github.com/rails/rails/commit/c7ce376becaf0ab2f5ae76772a76dc52335d6b9f)
+  - [Fix ActiveStorage::Blob content type methods to handle nil](https://github.com/rails/rails/commit/62db8c6ed02a5482dc8a1e63dfe46862f440621c)
+  - [Merge pull request #56773 from akhilgkrishnan/bump-action-upload-arti…](https://github.com/rails/rails/commit/48d30a0414fcd7d96d20795e88c9db1d9742f7ed)
+  - [Merge pull request #56785 from drsharp/dan/fix-json-encoder-bug](https://github.com/rails/rails/commit/e2e5c15388bee89f0211eef814cb2a45b4b8a549)
+  - [Fix JSONGemCoderEncoder to call to_s on original hash key](https://github.com/rails/rails/commit/b619c8ffa3d2b62a2552c2da63dfb68d039181b9)
