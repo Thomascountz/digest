@@ -1,15 +1,9 @@
-# Ruby Digest - 2026-02-14
+# Ruby Digest - 2026-02-15
 
-- [This Week in Rails](https://world.hey.com/this.week.in.rails)
-  - [This Week in Rails: February 13, 2026](https://world.hey.com/this.week.in.rails/this-week-in-rails-february-13-2026-f4188854)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #56794 from Shopify/bheeshmar/rdoc-to-md-ralph](https://github.com/rails/rails/commit/b3b5ab923dc36f0baac3915e48d03272e9ef9760)
-  - [Merge pull request #49821 from gmcgibbon/integration_routes_method_mi…](https://github.com/rails/rails/commit/e5f5af5915f5976bd2886dde3e226f553ced090d)
-  - [Move route helper method_missing to ActionController::TestCase](https://github.com/rails/rails/commit/3f4977e68345a25f4f6d78688f210d244b4843f5)
-  - [Merge pull request #53417 from vinibispo/fix/skip_storage-changes-git…](https://github.com/rails/rails/commit/89e8edaaf7557b4853ed8f9afc1a3e295341e54a)
-  - [Merge pull request #56783 from kudoas/fix-activestorage-blob-content-…](https://github.com/rails/rails/commit/0ed8641d936baa398cf222f7e945ea1eba2f88cd)
-  - [Merge pull request #56772 from akhilgkrishnan/bump-action-cache](https://github.com/rails/rails/commit/c7ce376becaf0ab2f5ae76772a76dc52335d6b9f)
-  - [Fix ActiveStorage::Blob content type methods to handle nil](https://github.com/rails/rails/commit/62db8c6ed02a5482dc8a1e63dfe46862f440621c)
-  - [Merge pull request #56773 from akhilgkrishnan/bump-action-upload-arti…](https://github.com/rails/rails/commit/48d30a0414fcd7d96d20795e88c9db1d9742f7ed)
-  - [Merge pull request #56785 from drsharp/dan/fix-json-encoder-bug](https://github.com/rails/rails/commit/e2e5c15388bee89f0211eef814cb2a45b4b8a549)
-  - [Fix JSONGemCoderEncoder to call to_s on original hash key](https://github.com/rails/rails/commit/b619c8ffa3d2b62a2552c2da63dfb68d039181b9)
+  - [Fix & standardize comments for CombinedConfiguration (#56430)](https://github.com/rails/rails/commit/3faf056f240966b268dd6fa52c559e241a370d06)
+  - [Merge pull request #56801 from byroot/better-hash](https://github.com/rails/rails/commit/4a7396cb7297471e080b1863f7430ae45a292c7a)
+  - [Improve #hash methods](https://github.com/rails/rails/commit/bdc7adce51f99c89a3245ef5c6eda25b635f1baf)
+  - [Merge pull request #56797 from uberjay/fix-sqlite3-pg-column-deduplic…](https://github.com/rails/rails/commit/97cda8c49a2ffb5eea15a80ec99ada41c2b0df36)
+  - [Include virtual? in Column#== and Column#hash for SQLite3 and PostgreSQL](https://github.com/rails/rails/commit/1a4305dfd0ba24e8d7b2fe17dfc8b60818437468)
+  - [Merge pull request #56800 from coderhs/typo-in-railties-test](https://github.com/rails/rails/commit/3bdeeb5b9fd28575cd869fba7ac0ac2d97e63053)
