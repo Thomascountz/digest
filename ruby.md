@@ -1,7 +1,18 @@
-# Ruby Digest - 2026-02-16
+# Ruby Digest - 2026-02-17
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #56717 from sorah/skip-rollback-on-rollback-error](https://github.com/rails/rails/commit/5a2cfa3ea6d6153d4989a0c4942b7ce0b2535f33)
-  - [Merge pull request #56813 from chaadow/patch-7](https://github.com/rails/rails/commit/24af5a215326db09057bc81303803b5421de423e)
-  - [Fix small typo](https://github.com/rails/rails/commit/11f1efd9523cf72ab73cdb35547f512efe8921e9)
-  - [Merge pull request #56790 from yahonda/pg19-standard_conforming_strin…](https://github.com/rails/rails/commit/704aa9785156f3b52f825b8c4dae8460e669bc97)
+  - [Merge pull request #56823 from skipkayhil/hm-tuskttswovrlyolk](https://github.com/rails/rails/commit/12900149d812792f4b7fdf38f591fb6d8800db9f)
+  - [Merge pull request #56803 from daffo/fix-use-ranges-limit](https://github.com/rails/rails/commit/8fc1cc0451a8aa92783e9656bd9a29ba45218302)
+  - [Fix `in_batches(use_ranges: true)` with predefined limit](https://github.com/rails/rails/commit/c0b82ff5f53605b28d7a0b4307911abb1d8512bc)
+  - [Remove unused "open-uri" require from AppBase](https://github.com/rails/rails/commit/8115bbfcd3564beea3ecf38d820a3bc696c4051a)
+  - [Merge pull request #56750 from nicolasva/fix/UnknownHttpMethod](https://github.com/rails/rails/commit/e3ef3d50ebb440072d2ad9352ca5e22ebad81485)
+  - [Fix UnknownHttpMethod returning 500 instead of 405](https://github.com/rails/rails/commit/b455a7ca49a708db8894b8aa627232166aae809d)
+  - [Merge pull request #56806 from Shopify/add-deprecations-to-8.2-releas…](https://github.com/rails/rails/commit/7425dc25f8bbcd330d5511e04b089224e4181da7)
+  - [Merge pull request #56820 from ybiquitous/improve-apidoc-for-ActionDi…](https://github.com/rails/rails/commit/0c95d0a13343201f82ba5cf51ad9d0d719fa4bee)
+  - [Improve API documentation for ActionDispatch::Integration::Session#pr…](https://github.com/rails/rails/commit/6f7b94ef9d599edaade43af2cb1641185fc20df2)
+  - [Merge pull request #56760 from johnhailu/patch-1](https://github.com/rails/rails/commit/01c3d29ccec0cc2822799f282d980b289b50add6)
+  - [Fix Ruby code block syntax highlighting](https://github.com/rails/rails/commit/8f8d06837d9a1ca51f099e2d2c005af0613fdf1e)
+  - [Merge pull request #56792 from akhilgkrishnan/bump-mysql-image](https://github.com/rails/rails/commit/927f674d2a4d801fe8534ad393c927b4eea1476c)
+  - [Merge pull request #56816 from kamipo/fix-hash](https://github.com/rails/rails/commit/1a816042496052f62c449cb1fda46c107e5ae9ba)
+  - [Fix `Column#hash` to use the correct instance variable](https://github.com/rails/rails/commit/d79f65fa41f8929d70af24b2b4df980c4c3ef1b0)
+  - [Merge pull request #56802 from afurm/fix/sqlite3-rowid-column-equality](https://github.com/rails/rails/commit/a53b4a1f9fbe05d23b2573e93cd4169d4eff9f2f)
