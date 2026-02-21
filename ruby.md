@@ -1,4 +1,4 @@
-# Ruby Digest - 2026-02-20
+# Ruby Digest - 2026-02-21
 
-- [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Refactor exec_insert_all to take the insert manager](https://github.com/rails/rails/commit/f5255a4089cff69af0ce3b63fda751bdc6dd93cb)
+- [This Week in Rails](https://world.hey.com/this.week.in.rails)
+  - [New date time helpers, improved hash methods and more!](https://world.hey.com/this.week.in.rails/new-date-time-helpers-improved-hash-methods-and-more-ec749f14)
