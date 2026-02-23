@@ -1,4 +1,4 @@
-# Ruby Digest - 2026-02-21
+# Ruby Digest - 2026-02-23
 
-- [This Week in Rails](https://world.hey.com/this.week.in.rails)
-  - [New date time helpers, improved hash methods and more!](https://world.hey.com/this.week.in.rails/new-date-time-helpers-improved-hash-methods-and-more-ec749f14)
+- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
+  - [Proposal: Kamal gets ruby version build arg from ruby itself](https://discuss.rubyonrails.org/t/proposal-kamal-gets-ruby-version-build-arg-from-ruby-itself/90162)
