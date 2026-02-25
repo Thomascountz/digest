@@ -1,9 +1,15 @@
-# Ruby Digest - 2026-02-24
+# Ruby Digest - 2026-02-25
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #56828 from djezzzl/main](https://github.com/rails/rails/commit/7252663bf0aab16506801753877deed0e89949ff)
-  - [Merge pull request #56779 from flavorjones/faster-allocations-v3](https://github.com/rails/rails/commit/6ea6a1849a2744e42734be18df5694736fca33a2)
-  - [Merge pull request #56817 from afurm/fix/sqlite3-generated-column-equ…](https://github.com/rails/rails/commit/fe6a129c13f288016e8c39c709ae4bd4060783b6)
-  - [Optimize `ActiveRecord::Base.new` to conditionally remove STI checks](https://github.com/rails/rails/commit/3295ff950b6c4d9c779d942ac73d9d2d498af898)
-- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [[Proposal] Add start_day argument to this_week? for consistency with all_week and beginning_of_week](https://discuss.rubyonrails.org/t/proposal-add-start-day-argument-to-this-week-for-consistency-with-all-week-and-beginning-of-week/90168)
+  - [Merge pull request #56875 from byroot/editor-link-tests](https://github.com/rails/rails/commit/63cb9037938274358037e6bca13d22c0ccbf9fb8)
+  - [Cleanup RAILS_HOST_APP_PATH related tests](https://github.com/rails/rails/commit/aec0fb8319f55d266f02d5df395a114cf0a7660b)
+  - [Merge pull request #56867 from hammadxcm/fix-ruby4-delegator-inspect-…](https://github.com/rails/rails/commit/c9dc5eb68da02d153e3596b3a03d4762114a59f8)
+  - [Fix Ruby 4.0 delegator warning for inspect on DelegateClass subclasses](https://github.com/rails/rails/commit/2007ef46c66c110bdd79792c37cc3a95a3260243)
+  - [Fix to_markdown edge cases for code blocks, links, and URI safety (#5…](https://github.com/rails/rails/commit/e905b2e3cda49e17f20ee65ef2b851b035f813a2)
+  - [Merge pull request #56749 from skipkayhil/hm-nymvutosvmtpqvny](https://github.com/rails/rails/commit/442408e26a06823288d8c94ecb46e1f866819481)
+  - [Add `to_markdown` to Action Text, mirroring `to_plain_text` (#56858)](https://github.com/rails/rails/commit/e63f38458b93f13a92287c505845dbd8e782dcc1)
+  - [Merge pull request #56263 from elalemanyo/docker-editor-links-fix](https://github.com/rails/rails/commit/716877a0998ca02c80b3d7e7adb49e3aa05150cc)
+  - [Fix editor URL translation and add tests for path translation logic](https://github.com/rails/rails/commit/1858ded2ba91e1f1546e60a13f7737082d07a2d4)
+  - [Merge pull request #56865 from byroot/use-intance_variables_to_inspect-2](https://github.com/rails/rails/commit/508662256608a0efe9221d801c894e8bbe126145)
+  - [Refactor ActiveSupport::InspectBackport](https://github.com/rails/rails/commit/aef1689be8461fbaafa7230c2bf793e26eb86e05)
+  - [Use instance_variables_to_inspect instead of custom inspect methods …](https://github.com/rails/rails/commit/4c0776608a2e8048093c80de192de4f446c4d1fa)
