@@ -1,7 +1,8 @@
-# Ruby Digest - 2026-03-11
+# Ruby Digest - 2026-03-12
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #56956 from larouxn/notification_assertions_action…](https://github.com/rails/rails/commit/aa6f191713e1823003e88c64d958e6f3ac81e51e)
-  - [Simplify applicable actionpack tests with NotificationAssertions helpers](https://github.com/rails/rails/commit/34c81096e550956322e40dc52940d4ece8174d99)
+  - [Merge pull request #56963 from rosa/restore-previous-instrumenter-asy…](https://github.com/rails/rails/commit/1268f490992bd2c77734b3e64aafdeb7ea2a546c)
+  - [Restore previous instrumenter after execute_or_skip](https://github.com/rails/rails/commit/6e740b1837f2c902c31dce86c04a88037201b8d1)
+  - [Merge pull request #56958 from ssjr/authentication-skip-mailer](https://github.com/rails/rails/commit/5233d7365d1491e37df77289c83b0c2e5314c809)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [Best Dating App Development Companies in 2026](https://discuss.rubyonrails.org/t/best-dating-app-development-companies-in-2026/90226)
+  - [Best IT Staff Augmentation Companies in 2026](https://discuss.rubyonrails.org/t/best-it-staff-augmentation-companies-in-2026/90233)
