@@ -1,12 +1,14 @@
-# Ruby Digest - 2026-03-13
+# Ruby Digest - 2026-03-14
 
+- [This Week in Rails](https://world.hey.com/this.week.in.rails)
+  - [Validate URI scheme in Action Text and more](https://world.hey.com/this.week.in.rails/validate-uri-scheme-in-action-text-and-more-2bcff0fe)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #56977 from hschne/26-03-fix-ignore-virtual-tables](https://github.com/rails/rails/commit/209d99e66b7c79dc004c760d048848ef4a351e75)
-  - [Fix SQLite virtual tables not ignored by ignore_tables](https://github.com/rails/rails/commit/a893e9aaa9ed4d700920d9b4c2ce546878dd6f2b)
-  - [Validate URI scheme in Action Text markdown link conversion (#56909)](https://github.com/rails/rails/commit/367f7df55d1d66ac3df7e116d50ec029debba598)
-  - [Merge pull request #56970 from nicolasva/fix_spatia_lite](https://github.com/rails/rails/commit/a14687046ab2011719fb2321a3562da88bc3463e)
-  - [SQLite virtual tables without parenthesis produces broken schema.rb #…](https://github.com/rails/rails/commit/85228b006e203e983b573008b4a613cc944b481b)
+  - [Merge pull request #56945 from frodsan/reset-on-readonly-queries](https://github.com/rails/rails/commit/0cad68c9f872fe1a000a0145c8e42789d23d42d6)
+  - [Support RESET on readonly queries](https://github.com/rails/rails/commit/037b5e8f6ad69c442ac06a6a764a5a8aaed56ee6)
+  - [Merge pull request #56972 from dominikdarnel/add-mysql-lock-option-mi…](https://github.com/rails/rails/commit/7abbc6b1b377b557f1eb6cef8065b172a131e807)
+  - [Add MySQL lock option and algorithm support for DDL operations](https://github.com/rails/rails/commit/71b9168213d719a7f8109bec07f0bf0dced48fda)
+  - [Merge pull request #56967 from damln/optimize-dockerfile-build-perfor…](https://github.com/rails/rails/commit/f4aa567c6063ffa83cde5eee2c7201d77d022797)
+  - [Merge pull request #56975 from larouxn/notification_assertions_active…](https://github.com/rails/rails/commit/4be67ddb7ccad57c66ba9d4b58dc09f796dc4535)
+  - [Merge pull request #56974 from larouxn/notification_assertions_active…](https://github.com/rails/rails/commit/957d85b2b8103288a0eab0e7050e304c796dfc63)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [[Feature Proposal]: Introduce UI for running one-off scripts and data migrations found in the /script folder](https://discuss.rubyonrails.org/t/feature-proposal-introduce-ui-for-running-one-off-scripts-and-data-migrations-found-in-the-script-folder/90251)
-  - [MySQL migrations can't do zero-downtime column changes without raw SQL](https://discuss.rubyonrails.org/t/mysql-migrations-cant-do-zero-downtime-column-changes-without-raw-sql/90249)
-  - [Has_one :through always queries the database even when intermediate and target associations are already loaded](https://discuss.rubyonrails.org/t/has-one-through-always-queries-the-database-even-when-intermediate-and-target-associations-are-already-loaded/90244)
+  - [Normalize attribute before type cast](https://discuss.rubyonrails.org/t/normalize-attribute-before-type-cast/90252)
