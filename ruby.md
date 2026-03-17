@@ -1,18 +1,5 @@
-# Ruby Digest - 2026-03-16
+# Ruby Digest - 2026-03-17
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [ActionText: support block children in editor elements alongside value…](https://github.com/rails/rails/commit/642fc047dea9acf9e009e736cb0c770c2742b30e)
-  - [Merge pull request #56980 from larouxn/bump_bundler_4.0.6_to_4.0.8](https://github.com/rails/rails/commit/26c5b1428e4e83423aa6a9eef40a7f08a0a282ae)
-  - [Merge pull request #56990 from j01nb0k/fix-guides-command-is-not-copying](https://github.com/rails/rails/commit/3fbb12fadf148af5318daa3b076f038d5b3d0858)
-  - [Merge pull request #56987 from nicolasva/fix_human_name_active_model](https://github.com/rails/rails/commit/355b3eea4976034686d48cd54debca64995b300d)
-  - [Add tests for ActiveModel::Name#human `count` argument](https://github.com/rails/rails/commit/b597e2893047bc2f9f6953a068cad1edcb40a0e1)
-  - [Merge pull request #56989 from Saidbek/simplify-more-ar-notification-…](https://github.com/rails/rails/commit/52efc30651bb94f3befcc573365426cdc9d4ccd4)
-  - [Rewrite `unless` with a positive condition](https://github.com/rails/rails/commit/07cbbb412b596f8725deacd6b4086913cb44c9a0)
-  - [Merge pull request #56992 from rails/deprecate-require_dependency](https://github.com/rails/rails/commit/fe37aa5d1c961f4900425434ddaf4af6159f87aa)
-  - [Deprecate require_dependency](https://github.com/rails/rails/commit/57a5577169cb20c778ddf3e8e63635756fc3cb92)
-  - [fix(guides): bin/jobs start was not copying](https://github.com/rails/rails/commit/2517bb7214359bff34a41a8a93ae0559dd5b6437)
-  - [Simplify more `activerecord` tests with `NotificationAssertions` helpers](https://github.com/rails/rails/commit/95e8524c8d524fc721fda89f10adccf6e9b8710e)
-  - [Merge pull request #56986 from byroot/eliminate-more-cattr](https://github.com/rails/rails/commit/f7eb3e05851efaeb7f83a40465c534188cc3c354)
-  - [Further reduce internal usage of cattr_accessor and mattr_accessor](https://github.com/rails/rails/commit/c562b54c090999bddcdf1db351faa12d6950c72c)
-- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [10 Best Websites for Cute Planner Stickers and Printables in 2026](https://discuss.rubyonrails.org/t/10-best-websites-for-cute-planner-stickers-and-printables-in-2026/90258)
+  - [Merge pull request #56994 from yahonda/remove-mail-gem-workaround](https://github.com/rails/rails/commit/c629bb2f525b9de884df99de956e5ac46c79096e)
+  - [Drop workaround for mail gem version < 2.8](https://github.com/rails/rails/commit/1245a48b7b4c26f46d441ad15a47de4cd8ac6b77)
