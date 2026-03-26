@@ -4,6 +4,7 @@
 require "yaml"
 require "net/smtp"
 require "date"
+require "securerandom"
 require "optparse"
 
 CONFIG_FILE = "config.yml"
@@ -31,6 +32,9 @@ class Mailer
     headers = [
       "From: #{@username}",
       "To: #{to}",
+      "Date: #{Time.now.strftime('%a, %d %b %Y %H:%M:%S %z')}",
+      "Message-ID: <#{SecureRandom.uuid}@#{@host}>",
+      "MIME-Version: 1.0",
       "Subject: #{subject}",
       "Content-Type: text/plain; charset=UTF-8"
     ]
