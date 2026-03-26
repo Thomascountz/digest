@@ -49,21 +49,29 @@ rm .last_run && ruby digest.rb
 Feed URLs are grouped under named digests in `config.yml`:
 
 ```yaml
+mail:
+  host: MAIL_HOST
+  username: MAIL_USERNAME
+  password: MAIL_PASSWORD
+
 digests:
   ruby:
-    - https://rubyweekly.com/rss
-    - https://railsatscale.com/feed.xml
-  python:
-    - https://realpython.com/atom.xml
+    feeds:
+      - https://rubyweekly.com/rss
+      - https://railsatscale.com/feed.xml
+    mail:
+      to:
+        - RUBY_DIGEST_RECIPIENT
 ```
 
-Each key creates a `{name}.md` file.
+Each digest key creates a `{name}.md` file. The top-level `mail` key maps SMTP settings to environment variable names. Per-digest `mail.to` lists environment variable names containing recipient addresses.
 
 ## Files
 
 ```
 config.yml    Named digest configurations
 digest.rb     Main script
+mail.rb       Email delivery script
 .last_run     ISO 8601 timestamp of last run
 {name}.md     Generated digests
 ```
@@ -72,4 +80,4 @@ digest.rb     Main script
 
 Runs daily at 8 AM UTC via `.github/workflows/digest.yml`. Can be triggered manually from Actions > Generate Daily Digest > Run workflow.
 
-Commits `*.md` and `.last_run`, then creates a `v{YYYY-MM-DD}` tag.
+Commits `*.md` and `.last_run`, then creates a `v{YYYY-MM-DD}` tag. Emails digests that have `mail.to` configured (continues on error so mail failures don't block the commit).

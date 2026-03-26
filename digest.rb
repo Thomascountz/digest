@@ -201,7 +201,8 @@ if __FILE__ == $0
     opts.on("-n", "--dry-run", "Print to stdout instead of writing files") { dry_run = true }
   end.parse!
 
-  digests.each do |name, feeds|
+  digests.each do |name, config|
+    feeds = config.fetch("feeds")
     DigestGenerator.new(name, feeds, since).generate(dry_run:)
   end
 

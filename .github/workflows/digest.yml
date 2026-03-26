@@ -39,3 +39,12 @@ jobs:
           TAG="v$(date +%Y-%m-%d)"
           git tag -f "$TAG"
           git push origin "$TAG" --force
+
+      - name: Email digests
+        continue-on-error: true
+        env:
+          MAIL_HOST: ${{ secrets.MAIL_HOST }}
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          RUBY_DIGEST_RECIPIENT: ${{ secrets.RUBY_DIGEST_RECIPIENT }}
+        run: ruby mail.rb
