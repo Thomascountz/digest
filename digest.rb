@@ -123,9 +123,10 @@ class FeedFetcher
 end
 
 class DigestGenerator
-  def initialize(name, feeds, since)
+  def initialize(name, config, since)
     @name = name
-    @feeds = feeds
+    @feeds = config.fetch("feeds")
+    @config = config
     @since = since
   end
 
@@ -139,25 +140,42 @@ class DigestGenerator
       return
     end
 
-    content = build_content(feed_results)
+    formats.each do |format|
+      content = build_content(feed_results, format)
+      filename = "#{@name}.#{format}"
 
-    if !dry_run
-      write_file(content)
-      return
+      if dry_run
+        puts "=== #{filename} ==="
+        puts content
+        puts "=== End of #{filename} ==="
+      else
+        File.write(filename, content)
+        puts "Wrote digest to #{filename}"
+      end
     end
-
-    puts "=== #{output_filename} ==="
-    puts content
-    puts "=== End of #{output_filename} ==="
   end
 
   private
 
-  def output_filename
-    "#{@name}.md"
+  def formats
+    explicit = @config.fetch("format", ["md"])
+    mail_config = @config["mail"]
+    if mail_config
+      mail_fmt = mail_config.fetch("format", "html")
+      explicit |= [mail_fmt]
+    end
+    explicit
   end
 
-  def build_content(feed_results)
+  def build_content(feed_results, format)
+    case format
+    when "md"   then build_content_md(feed_results)
+    when "html" then build_content_html(feed_results)
+    when "txt"  then build_content_txt(feed_results)
+    end
+  end
+
+  def build_content_md(feed_results)
     title = @name.capitalize
     lines = ["# #{title} Digest - #{Date.today}"]
     lines << ""
@@ -174,9 +192,50 @@ class DigestGenerator
     lines.join("\n") + "\n"
   end
 
-  def write_file(content)
-    File.write(output_filename, content)
-    puts "Wrote digest to #{output_filename}"
+  def build_content_html(feed_results)
+    title = @name.capitalize
+    lines = ["<!DOCTYPE html>"]
+    lines << "<html><head><meta charset=\"UTF-8\"><title>#{title} Digest</title></head>"
+    lines << "<body>"
+    lines << "<h1>#{title} Digest - #{Date.today}</h1>"
+    lines << "<ul>"
+
+    feed_results.each do |result|
+      next if result.items.empty?
+
+      lines << "  <li><a href=\"#{result.link}\">#{escape_html(result.title)}</a>"
+      lines << "    <ul>"
+      result.items.each do |item|
+        lines << "      <li><a href=\"#{item.link}\">#{escape_html(item.title)}</a></li>"
+      end
+      lines << "    </ul>"
+      lines << "  </li>"
+    end
+
+    lines << "</ul>"
+    lines << "</body></html>"
+    lines.join("\n") + "\n"
+  end
+
+  def build_content_txt(feed_results)
+    title = @name.capitalize
+    lines = ["#{title} Digest - #{Date.today}"]
+    lines << ""
+
+    feed_results.each do |result|
+      next if result.items.empty?
+
+      lines << "#{result.title} (#{result.link})"
+      result.items.each do |item|
+        lines << "  #{item.title} (#{item.link})"
+      end
+    end
+
+    lines.join("\n") + "\n"
+  end
+
+  def escape_html(text)
+    text.gsub("&", "&amp;").gsub("<", "&lt;").gsub(">", "&gt;").gsub('"', "&quot;")
   end
 end
 
@@ -201,9 +260,8 @@ if __FILE__ == $0
     opts.on("-n", "--dry-run", "Print to stdout instead of writing files") { dry_run = true }
   end.parse!
 
-  digests.each do |name, config|
-    feeds = config.fetch("feeds")
-    DigestGenerator.new(name, feeds, since).generate(dry_run:)
+  digests.each do |name, digest_config|
+    DigestGenerator.new(name, digest_config, since).generate(dry_run:)
   end
 
   if !dry_run

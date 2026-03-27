@@ -18,17 +18,17 @@ class Mailer
     @password = password
   end
 
-  def deliver(to:, subject:, body:)
+  def deliver(to:, subject:, body:, content_type: "text/plain")
     smtp = Net::SMTP.new(@host, @port)
     smtp.enable_starttls
     smtp.start("localhost", @username, @password, :login) do |s|
-      s.send_message(compose(to:, subject:, body:), @username, to)
+      s.send_message(compose(to:, subject:, body:, content_type:), @username, to)
     end
   end
 
   private
 
-  def compose(to:, subject:, body:)
+  def compose(to:, subject:, body:, content_type: "text/plain")
     headers = [
       "From: #{@username}",
       "To: #{to}",
@@ -36,7 +36,7 @@ class Mailer
       "Message-ID: <#{SecureRandom.uuid}@#{@host}>",
       "MIME-Version: 1.0",
       "Subject: #{subject}",
-      "Content-Type: text/plain; charset=UTF-8"
+      "Content-Type: #{content_type}; charset=UTF-8"
     ]
 
     headers.join("\n") + "\n\n" + body
@@ -74,7 +74,11 @@ if __FILE__ == $0
   end
 
   mail_digests.each do |name, digest_config|
-    file = "#{name}.md"
+    mail_config = digest_config.fetch("mail")
+    format = mail_config.fetch("format", "html")
+    file = "#{name}.#{format}"
+    content_type = format == "html" ? "text/html" : "text/plain"
+
     unless File.exist?(file)
       puts "#{file} not found, skipping"
       next
@@ -82,7 +86,6 @@ if __FILE__ == $0
 
     body = File.read(file)
     subject = "#{name.capitalize} Digest - #{Date.today}"
-    mail_config = digest_config.fetch("mail")
 
     mail_config.fetch("to").each do |env_name|
       recipient = dry_run ? ENV.fetch(env_name, env_name) : ENV.fetch(env_name)
@@ -90,12 +93,13 @@ if __FILE__ == $0
       if dry_run
         puts "To: #{recipient}"
         puts "Subject: #{subject}"
+        puts "Content-Type: #{content_type}"
         puts "---"
         puts body
         puts
       else
         begin
-          mailer.deliver(to: recipient, subject:, body:)
+          mailer.deliver(to: recipient, subject:, body:, content_type:)
           puts "Sent #{file} to #{recipient}"
         rescue => e
           puts "Error sending #{file} to #{recipient}: #{e.message}"
