@@ -1,16 +1,8 @@
-# Ruby Digest - 2026-03-28
+# Ruby Digest - 2026-03-29
 
-- [This Week in Rails](https://world.hey.com/this.week.in.rails)
-  - [This Week in Rails: March 27, 2026](https://world.hey.com/this.week.in.rails/this-week-in-rails-march-27-2026-cc279c73)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #57029 from p8/actiontext/document-with-rich-text](https://github.com/rails/rails/commit/0866790f41220362c34e94f53d1b4dc8dabfe417)
-  - [Merge pull request #57082 from cgunther/doc-validate-if-unless-array](https://github.com/rails/rails/commit/36bf938103be3d7037b21ce2af0a6863b2341762)
-  - [Document that `:if` and `:unless` options on validations accept arrays](https://github.com/rails/rails/commit/3bf8eae26150885df8c5b768e07ba5f5c2b8813a)
-  - [Merge pull request #57080 from rails/deprecate-pg-schema-order](https://github.com/rails/rails/commit/b2ae96f7a1ca32b18a02cc2556c76c5217156737)
-  - [Deprecate `schema_order` option in PostgreSQL database configurations](https://github.com/rails/rails/commit/504a89103bcca84ad21de4bcaabce72008591efd)
-  - [Merge pull request #57077 from rails/deprecate-mysql-strict-mode](https://github.com/rails/rails/commit/c8e3f85eddac1ff201ec35c4a200c72797493ef5)
-  - [Deprecate the `strict` option in MySQL database configurations](https://github.com/rails/rails/commit/38c2945d6b94fd21d3010a6b92912bca8d7b0ce6)
-  - [Merge pull request #57070 from rails/refactor-pg-configure-connection](https://github.com/rails/rails/commit/b1b2df434f863306a8c60889fe3740537143cf0a)
-  - [Consolidate configure_connection and allow skipping individual settings](https://github.com/rails/rails/commit/18c4e7b203a51e5c5f677601cc45b93b35e34635)
+  - [Merge pull request #57013 from matthewd/pg-static-oids](https://github.com/rails/rails/commit/ca86130159d7ba8ea83b38318dd560e8552ea17e)
+  - [Separate well-known Postgres OIDs by server version](https://github.com/rails/rails/commit/ad1342e8bd2ce4fb64b7b9e9bc17a88e3cd77e13)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [(#$GUIDE$⟶#$HELP)How to Speak Directly to Delta Airlines Help Center [Step-By-Step -GUIDE]](https://discuss.rubyonrails.org/t/guide-help-how-to-speak-directly-to-delta-airlines-help-center-step-by-step-guide/90949)
+  - [[Feature proposal] belongs_to :record, counter_cache: { touch: true }](https://discuss.rubyonrails.org/t/feature-proposal-belongs-to-record-counter-cache-touch-true/90973)
+  - [Recommend a good outcall service in Tokyo and Osaka](https://discuss.rubyonrails.org/t/recommend-a-good-outcall-service-in-tokyo-and-osaka/90967)
