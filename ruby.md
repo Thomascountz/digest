@@ -1,6 +1,9 @@
-# Ruby Digest - 2026-04-02
+# Ruby Digest - 2026-04-03
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #57115 from federico-carrocera/prepend-subscribers](https://github.com/rails/rails/commit/8041099b68f0a44fe9051a35fc15b91882273404)
-  - [Merge pull request #57108 from byroot/cache-str-key-fastpath](https://github.com/rails/rails/commit/77307406fe136d1ba240a2947ca38e41120524d4)
-  - [Allow to prepend AS::Notification subscribers](https://github.com/rails/rails/commit/ce478aaa902196216503af0c1ff4df12380ed11b)
+  - [Merge pull request #57133 from rails/docs-fix](https://github.com/rails/rails/commit/a4d1d2d8d9c8aedd22737eb2cf9a765cec0fc81c)
+  - [Fix docs of Rails.{error,event}_reporter](https://github.com/rails/rails/commit/d9f006d53414e0557745e49cad7b7704b51959bf)
+  - [Merge pull request #57126 from adityapandit17/dead-ruby-3-2-workaroun…](https://github.com/rails/rails/commit/af37013f126c529d3ee27ede1fcb13d8c42e2d88)
+- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
+  - [Best practices for handling time calculations in Rails](https://discuss.rubyonrails.org/t/best-practices-for-handling-time-calculations-in-rails/90993)
+  - [[Feature Proposal] Atomic Update and Select](https://discuss.rubyonrails.org/t/feature-proposal-atomic-update-and-select/90992)
