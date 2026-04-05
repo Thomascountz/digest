@@ -1,5 +1,4 @@
-# Ruby Digest - 2026-04-04
+# Ruby Digest - 2026-04-05
 
-- [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #57130 from felix-d/fix-composite-fk-belongs-to-va…](https://github.com/rails/rails/commit/3ee5e2dcf836224605e1cc2bbdfc4afa741dcd0e)
-  - [Fix belongs_to validation for composite foreign keys](https://github.com/rails/rails/commit/4e7e754cde2c782ad89d4ec358320d3e136d42bc)
+- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
+  - [How to accept application/csp-report for a content security policy violation report. Or where did my params go?](https://discuss.rubyonrails.org/t/how-to-accept-application-csp-report-for-a-content-security-policy-violation-report-or-where-did-my-params-go/90996)
