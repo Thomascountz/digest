@@ -1,6 +1,5 @@
-# Ruby Digest - 2026-04-06
+# Ruby Digest - 2026-04-07
 
-- [This Week in Rails](https://world.hey.com/this.week.in.rails)
-  - [Speedup ActiveRecord::LogSubscriber#sql_color and more!](https://world.hey.com/this.week.in.rails/speedup-activerecord-logsubscriber-sql_color-and-more-3963163b)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #57111 from adityapandit17/devcontainer-ruby-4.0.2…](https://github.com/rails/rails/commit/a0da6b991a1c2cb1df2560a74ae3a86bc988f231)
+  - [Merge pull request #57124 from thehale/http-request-safety-queries](https://github.com/rails/rails/commit/c02e1149a518c78c3cc1328ae8c8e72b32bc6b80)
+  - [Add request.safe_method? and request.unsafe_method?](https://github.com/rails/rails/commit/59942bdb61cb32a925d007d461b076844eef0bd8)
