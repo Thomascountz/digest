@@ -17,6 +17,7 @@ digests:
       - https://hnrss.org/newest?q=Ruby+OR+Rails&points=50
       - https://github.com/rails/rails/commits.atom
       - https://discuss.rubyonrails.org/latest.rss
+      - https://us11.campaign-archive.com/feed?u=1aa0f43522f6d9ef96d1c5d6f&id=840412962b
     format:
       - md
     mail:
