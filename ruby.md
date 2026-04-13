@@ -1,4 +1,4 @@
-# Ruby Digest - 2026-04-12
+# Ruby Digest - 2026-04-13
 
-- [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Make the warning about active storage redirect and proxy mode stronge…](https://github.com/rails/rails/commit/27fb2a9192b2492791528fc7c3afb53736696bc5)
+- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
+  - [Ruby on Rails 8 Guides](https://discuss.rubyonrails.org/t/ruby-on-rails-8-guides/91021)
