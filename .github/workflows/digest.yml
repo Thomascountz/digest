@@ -23,6 +23,7 @@ jobs:
         run: ruby digest.rb
 
       - name: Commit and push changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -31,6 +32,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
+            if ! git diff --staged --quiet -- *.md *.html *.txt; then
+              echo "digest_changed=true" >> "$GITHUB_OUTPUT"
+            fi
             git commit -m "Update digest for $(date +%Y-%m-%d)"
             git push
           fi
@@ -42,6 +46,7 @@ jobs:
           git push origin "$TAG" --force
 
       - name: Email digests
+        if: steps.commit.outputs.digest_changed == 'true'
         continue-on-error: true
         env:
           MAIL_HOST: ${{ secrets.MAIL_HOST }}
