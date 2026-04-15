@@ -10,7 +10,7 @@ digests:
       - https://ivoanjo.me/feed.xml
       - https://joel.drapper.me/rss.xml
       - https://kddnewton.com/feed.xml
-      - https://noelrappin.com/blog/index.xml
+      - https://noelrappin.com/rss.xml
       - https://railsatscale.com/feed.xml
       - https://rubyweekly.com/rss
       - https://world.hey.com/this.week.in.rails/feed.atom
