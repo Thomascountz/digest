@@ -8,9 +8,11 @@ require "date"
 require "time"
 require "uri"
 require "optparse"
+require "logger"
 
 LAST_RUN_FILE = ".last_run"
 CONFIG_FILE = "config.yml"
+LOGGER = Logger.new($stdout, level: Logger::INFO)
 
 class FeedFetcher
   Item = Data.define(:title, :link, :date)
@@ -24,11 +26,11 @@ class FeedFetcher
   end
 
   def fetch_all
-    threads = @urls.map do |url|
-      Thread.new { fetch_one(url) }
-    end
+    threads = @urls.map { |url| Thread.new { fetch_one(url) } }
 
     threads.map(&:join).map(&:value).compact
+  ensure
+    threads.select(&:alive?).each(&:kill)
   end
 
   private
@@ -42,18 +44,20 @@ class FeedFetcher
       items: extract_items(feed)
     )
   rescue => e
-    puts "Error fetching #{url}: #{e.message}"
+    LOGGER.error("Error fetching #{url}: #{e.message}")
     nil
   end
 
-  def fetch_content(url, redirect_limit = 5)
+  def fetch_content(url, redirect_limit = 5, retry_limit = 3)
     raise "Too many redirects" if redirect_limit == 0
+    raise "Too many retries" if retry_limit == 0
 
     uri = URI.parse(url)
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = uri.scheme == "https"
     http.open_timeout = 10
     http.read_timeout = 10
+    http.max_retries = 3 # Retries network errors (e.g. timeouts)
 
     request = Net::HTTP::Get.new(uri.request_uri)
     response = http.request(request)
@@ -62,9 +66,15 @@ class FeedFetcher
     when Net::HTTPSuccess
       response.body
     when Net::HTTPRedirection
-      fetch_content(response["location"], redirect_limit - 1)
+      LOGGER.info("Redirect #{response.code} for #{url} to #{response['location']}, following...")
+      fetch_content(response["location"], redirect_limit - 1, retry_limit)
+    when Net::HTTPServerError
+      LOGGER.warn("Server error #{response.code} for #{url}, retrying...")
+      fetch_content(url, redirect_limit, retry_limit - 1)
+    when Net::HTTPClientError
+      raise "ClientError #{response.code}: #{response.message}"
     else
-      raise "HTTP #{response.code}: #{response.message}"
+      raise "UnknownError #{response.code}: #{response.message}"
     end
   end
 
@@ -131,12 +141,12 @@ class DigestGenerator
   end
 
   def generate(dry_run: false)
-    puts "Processing digest: #{@name} (#{@feeds.length} feeds)"
+    LOGGER.info("Processing digest: #{@name} (#{@feeds.length} feeds)")
 
     feed_results = FeedFetcher.new(@feeds, @since).fetch_all
 
     if feed_results.all?(&:empty?)
-      puts "No new items for #{@name}, skipping"
+      LOGGER.info("No new items for #{@name}, skipping")
       return
     end
 
@@ -145,12 +155,10 @@ class DigestGenerator
       filename = "#{@name}.#{format}"
 
       if dry_run
-        puts "=== #{filename} ==="
-        puts content
-        puts "=== End of #{filename} ==="
+        puts "\n=== #{filename} ===\n#{content}=== End of #{filename} ==="
       else
         File.write(filename, content)
-        puts "Wrote digest to #{filename}"
+        LOGGER.info("Wrote digest to #{filename}")
       end
     end
   end
@@ -213,7 +221,8 @@ class DigestGenerator
     end
 
     lines << "</ul>"
-    lines << "</body></html>"
+    lines << "</body>"
+    lines << "</html>"
     lines.join("\n") + "\n"
   end
 
@@ -247,14 +256,14 @@ if __FILE__ == $0
   else
     Time.now - (24 * 60 * 60)
   end
-  puts "Checking for items since: #{since.iso8601}"
+  LOGGER.info("Checking for items since: #{since.iso8601}")
 
   digests = if File.exist?(CONFIG_FILE)
     YAML.load_file(CONFIG_FILE).fetch("digests", {})
   else
     {}
   end
-  puts "Found #{digests.length} digest(s) in config"
+  LOGGER.info("Found #{digests.length} digest(s) in config")
 
   OptionParser.new do |opts|
     opts.on("-n", "--dry-run", "Print to stdout instead of writing files") { dry_run = true }
@@ -266,6 +275,6 @@ if __FILE__ == $0
 
   if !dry_run
     File.write(LAST_RUN_FILE, Time.now.iso8601)
-    puts "Updated #{LAST_RUN_FILE}"
+    LOGGER.info("Updated #{LAST_RUN_FILE}")
   end
 end
