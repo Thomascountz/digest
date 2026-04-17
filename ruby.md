@@ -1,13 +1,11 @@
-# Ruby Digest - 2026-04-16
+# Ruby Digest - 2026-04-17
 
+- [This Week in Rails](https://world.hey.com/this.week.in.rails)
+  - [Query command for database queries and more](https://world.hey.com/this.week.in.rails/query-command-for-database-queries-and-more-0bee7868)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #57190 from joaoGabriel55/fix-IO-copy-stream-raise…](https://github.com/rails/rails/commit/3bde9554a1ed59c82470ecc7f0782cec97e0e39b)
-  - [patch(actionpack): Return bytesize from Response#write and Live#write](https://github.com/rails/rails/commit/ae80746d19e183a13613e32044f810024c45d720)
-  - [Merge pull request #57195 from Saidbek/chore/remove-stale-rails-ujs-l…](https://github.com/rails/rails/commit/c6e58906fc45d4b56767a3cbe062bfcc02be482a)
-  - [Remove stale rails-ujs labeler rule](https://github.com/rails/rails/commit/bd199f8c8f7f7d5ab3d0905f53c41df314d1f9c6)
-  - [Merge pull request #57156 from basecamp/query-command](https://github.com/rails/rails/commit/450e18fe3e7da7fe9ab0162d910f93cb68f486ab)
-  - [Merge pull request #57188 from flavorjones/fix-css-content-type](https://github.com/rails/rails/commit/dc6c3a54e15749a2c1b79fbee2e5caca700673f4)
+  - [Merge pull request #57187 from fatkodima/fix-increment_counters-strin…](https://github.com/rails/rails/commit/f61b57f3018fe30ce874883a9a8db18b2146b737)
+  - [Add offline fallback page to the PWA scaffold (#57184)](https://github.com/rails/rails/commit/5cc560f370dbc86c7a902b099f5de6a7e9d2be92)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [Which Yoga is Best for Glowing Skin? (2026 Guide)](https://discuss.rubyonrails.org/t/which-yoga-is-best-for-glowing-skin-2026-guide/91024)
-  - [Stimulus loosely connected Controllers best practice](https://discuss.rubyonrails.org/t/stimulus-loosely-connected-controllers-best-practice/91022)
-  - [Ruby on Rails 8 Guides](https://discuss.rubyonrails.org/t/ruby-on-rails-8-guides/91021)
+  - [[Stimulus] Get original element of `data-action`](https://discuss.rubyonrails.org/t/stimulus-get-original-element-of-data-action/91025)
+- [Ruby Performance Newsletter Archive Feed](https://us11.campaign-archive.com/feed?u=1aa0f43522f6d9ef96d1c5d6f&id=840412962b)
+  - [Four Line Fridays: Bryan Helmkamp's new factory, jemalloc gets a release, Intercom 3x's their dev velocity, and Incus for agents](https://mailchi.mp/4748299170e3/four-line-fridays-bryan-helmkamps-new-factory-jemalloc-gets-a-release-intercom-3xs-their-dev-velocity-and-incus-for-agents)
