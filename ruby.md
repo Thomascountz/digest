@@ -1,8 +1,6 @@
-# Ruby Digest - 2026-04-22
+# Ruby Digest - 2026-04-24
 
-- [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Guides: remove outdated link to Action Cable examples (#57220)](https://github.com/rails/rails/commit/ff34428f313091cd579d7790b13cd7206c2efab9)
-  - [Merge pull request #57212 from mgriffin/action-mailbox-typo](https://github.com/rails/rails/commit/c8e860dfafbbbe364cf8493b3db4e5e4a25810de)
-  - [Merge pull request #55282 from yahonda/bump_required_postgresql_to_10](https://github.com/rails/rails/commit/1003e71f3d2ea3f846e201b9ba5f1bee152e4e07)
-  - [Bump required PostgreSQL version to 10.0](https://github.com/rails/rails/commit/3a1e64e64b961fb3bc3829e7c03e740d2c3b04b5)
-  - [Guides: remove outdated link to Action Cable examples](https://github.com/rails/rails/commit/06b815252503a24d68282836950566a4fa0f7e8e)
+- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
+  - [Top 10 Multi-Style Yoga Schools in Rishikesh: Hatha, Ashtanga & Vinyasa Comparison (2026 Editio](https://discuss.rubyonrails.org/t/top-10-multi-style-yoga-schools-in-rishikesh-hatha-ashtanga-vinyasa-comparison-2026-editio/91038)
+- [Ruby Performance Newsletter Archive Feed](https://us11.campaign-archive.com/feed?u=1aa0f43522f6d9ef96d1c5d6f&id=840412962b)
+  - [Four Line Fridays: RubyKaigi SPECIAL edition!](https://mailchi.mp/90ad199086ab/four-line-fridays-rubykaigi-special-edition)
