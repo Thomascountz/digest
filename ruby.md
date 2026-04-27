@@ -1,7 +1,11 @@
-# Ruby Digest - 2026-04-26
+# Ruby Digest - 2026-04-27
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #57227 from njakobsen/fix-alias-attribute-dedupe](https://github.com/rails/rails/commit/a9c083078a2e72029fdedafa24232850dcc3de0b)
-  - [Fix duplicate entries accumulating in `aliases_by_attribute_name`](https://github.com/rails/rails/commit/7cf7897a7f4221e2aba957fbe2156d03bd6ccf95)
-  - [Merge pull request #57245 from 55728/fix-find-signed-composite-primar…](https://github.com/rails/rails/commit/20970df26c4ef8913809cee4effad04036a9b553)
-  - [Fix `find_signed` for models with a composite primary key](https://github.com/rails/rails/commit/5070fbb89fd7ea589995e37ac3f8ffbd2c557393)
+  - [Merge pull request #56718 from petrenkorf/fix/merge-route-constraints](https://github.com/rails/rails/commit/3d7458fecf4943a92cbf8c33e83bb959109a103f)
+  - [Merging scoped constraints and mount constraints](https://github.com/rails/rails/commit/23e9096d62596f512da45f60f3a50146200c0110)
+  - [Merge pull request #57238 from rikki3/main](https://github.com/rails/rails/commit/7f6a8c68b5798b63ca7c0060fe67790f4d33c860)
+  - [Merge pull request #57246 from bogdan/optimize-extending](https://github.com/rails/rails/commit/ddc09255721731724e9c7c44b79092a86749f6ab)
+  - [Merge pull request #54829 from fatkodima/allow-aliases-for-unions-in-…](https://github.com/rails/rails/commit/5a475f0dd23b91881a4135f3da6a6629ef4f6363)
+  - [Allow using aliases for unions in `from` clause](https://github.com/rails/rails/commit/725c5b36a9f0dfa50d7aac459d587e2668b9e39c)
+- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
+  - [Planned breaking changes in ImageProcessing 2.x concerning Active Storage](https://discuss.rubyonrails.org/t/planned-breaking-changes-in-imageprocessing-2-x-concerning-active-storage/91049)
