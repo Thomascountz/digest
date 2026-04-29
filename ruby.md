@@ -1,7 +1,7 @@
-# Ruby Digest - 2026-04-28
+# Ruby Digest - 2026-04-29
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Add regression tests for `mount` with hash constraints](https://github.com/rails/rails/commit/238111c4ded06c75db9bc497e65850337ddf8a19)
-  - [Revert "Merge pull request #56718 from petrenkorf/fix/merge-route-con…](https://github.com/rails/rails/commit/c775325e67d70cc775523142fbebfb3bd637734e)
-  - [Fix typo in changelog](https://github.com/rails/rails/commit/32f16d0b22f9df95ab3236888afa8a35bcd03238)
-  - [Merge pull request #57252 from byroot/frozen-string-literal-by-default](https://github.com/rails/rails/commit/304cf93155134a031a57758f7b9ad300fb32f120)
+  - [Bump bootsnap version in default Gemfile](https://github.com/rails/rails/commit/83423052fc899315fad91c20b5197a186fc8f0fd)
+- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
+  - [Looking for Ruby on Rails Jobs](https://discuss.rubyonrails.org/t/looking-for-ruby-on-rails-jobs/91052)
+  - [Proposal: ActiveJob::Attributes to persist data between steps](https://discuss.rubyonrails.org/t/proposal-activejob-attributes-to-persist-data-between-steps/91051)
