@@ -1,7 +1,5 @@
-# Ruby Digest - 2026-04-29
+# Ruby Digest - 2026-04-30
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Bump bootsnap version in default Gemfile](https://github.com/rails/rails/commit/83423052fc899315fad91c20b5197a186fc8f0fd)
-- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [Looking for Ruby on Rails Jobs](https://discuss.rubyonrails.org/t/looking-for-ruby-on-rails-jobs/91052)
-  - [Proposal: ActiveJob::Attributes to persist data between steps](https://discuss.rubyonrails.org/t/proposal-activejob-attributes-to-persist-data-between-steps/91051)
+  - [Merge pull request #57176 from genezys/fix_becomes](https://github.com/rails/rails/commit/0e53474dd25bb06cc87c07a75ffec49d3490152c)
+  - [Fix `becomes` to preserve `marked_for_destruction?`](https://github.com/rails/rails/commit/679249c2e5cbc23f21fda6950d9ea7d814a39cfb)
