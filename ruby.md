@@ -1,6 +1,10 @@
-# Ruby Digest - 2026-05-01
+# Ruby Digest - 2026-05-02
 
+- [This Week in Rails](https://world.hey.com/this.week.in.rails)
+  - [This Week in Rails: May 1, 2026](https://world.hey.com/this.week.in.rails/this-week-in-rails-may-1-2026-be77dc55)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Add devcontainer lock](https://github.com/rails/rails/commit/c0eeb1fafbb3beb374c1bc17e75a8352e56abbb0)
-- [Ruby Performance Newsletter Archive Feed](https://us11.campaign-archive.com/feed?u=1aa0f43522f6d9ef96d1c5d6f&id=840412962b)
-  - [Four Line Fridays: AoT-compiled Ruby is ~5x faster on Regex, scrubbing credentials on your system, my standard dev env, build-your-own-review-bot](https://mailchi.mp/73d10ce6125e/four-line-fridays-aot-compiled-ruby-is-5x-faster-on-regex-scrubbing-credentials-on-your-system-my-standard-dev-env-build-your-own-review-bot)
+  - [Fix a typo in changelog](https://github.com/rails/rails/commit/1f4a1d6e139d720705503ee17741426657423436)
+  - [Merge pull request #57269 from Korri/view-reloader-skip-empty-watcher](https://github.com/rails/rails/commit/9551fc16f0341ba390431846132df845895aa7bd)
+  - [Skip ViewReloader watcher build when no view paths are registered](https://github.com/rails/rails/commit/bcb575d52316031761dce46db5013def40698964)
+  - [Merge pull request #57283 from mugitti9/fix/unknown-format-returns-nu…](https://github.com/rails/rails/commit/5c25073a7838f390f1fcdc564e788f44c75bc156)
+  - [Avoid assert_nil when testing objects that override nil?](https://github.com/rails/rails/commit/ed56fd73fa0c7d19d5d028db50b731586aad0fdb)
