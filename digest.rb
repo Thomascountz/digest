@@ -85,7 +85,7 @@ class FeedFetcher
     when RSS::Atom::Feed
       feed.entries.each do |entry|
         pub_date = entry.updated&.content || entry.published&.content
-        next unless pub_date && pub_date > @since
+        next unless pub_date && pub_date >= @since
 
         items << Item.new(
           title: (entry.title&.content || "Untitled").gsub(/\s+/, " ").strip,
@@ -96,7 +96,7 @@ class FeedFetcher
     when RSS::Rss
       feed.items.each do |item|
         pub_date = item.pubDate || item.date
-        next unless pub_date && pub_date > @since
+        next unless pub_date && pub_date >= @since
 
         items << Item.new(
           title: (item.title || "Untitled").gsub(/\s+/, " ").strip,
@@ -256,6 +256,7 @@ if __FILE__ == $0
   else
     Time.now - (24 * 60 * 60)
   end
+  since = Time.new(since.year, since.month, since.day, 0, 0, 0, since.utc_offset)
   LOGGER.info("Checking for items since: #{since.iso8601}")
 
   digests = if File.exist?(CONFIG_FILE)
