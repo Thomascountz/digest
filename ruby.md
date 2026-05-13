@@ -1,6 +1,9 @@
 # Ruby Digest - 2026-05-13
 
+- [Rails at Scale](https://railsatscale.com/)
+  - [One engine, many tools — Introducing Rubydex](https://railsatscale.com/2026-05-12-one-engine-many-tools/)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
+  - [Merge pull request #57351 from p8/activestorage/document-metadata](https://github.com/rails/rails/commit/afa4b7c534fb440dc94f7a0962c90fb725d3e43c)
   - [Style: avoid unless assignment](https://github.com/rails/rails/commit/0f1617eb24c1b1f83450b1179be281c060ef837d)
   - [Merge pull request #57355 from drjayvee/fix-action_controller-docs](https://github.com/rails/rails/commit/18e6289bbe2b715473ea4479a61b075fa5935ceb)
   - [Merge pull request #57349 from seanpdoyle/active-model-conversion-ren…](https://github.com/rails/rails/commit/54660efea05c2bdc6df01a194081d7bfe2518c51)
@@ -11,7 +14,10 @@
   - [Merge pull request #56872 from 55728/add-start-day-to-this-week](https://github.com/rails/rails/commit/0602c5c21050924d66c307eecd23959483ab95a9)
   - [Fix ActionText::Editor::Tag#render_in to accept kwargs](https://github.com/rails/rails/commit/8e28d14084b95aea89e1ee30255cde0f3bf2e241)
   - [Fix documentation formatting for ActionController::Live](https://github.com/rails/rails/commit/94f9960bdb351f2ff360449c70705b3547169915)
+  - [Document ActiveStorage::Blob#content_type and ActiveStorage::Blob#met…](https://github.com/rails/rails/commit/62f0d98940364e099ce037178eda9b9cb8092608)
   - [Merge pull request #57352 from byroot/transactional-test-cache](https://github.com/rails/rails/commit/c69ec7ad963315b25f35c7156ecc4d0a68590189)
   - [Properly reset fixtures cache after non-transactional tests](https://github.com/rails/rails/commit/17cb852d72a501ce3eefd7f9d647bebf73a1f550)
+  - [Add test cases for disable frozen on SQLite3 adapter](https://github.com/rails/rails/commit/4c494183771ede5ff832cb3e8f8421f945162ad6)
+  - [Add default `#render_in` implementation to `ActiveModel::Conversion`](https://github.com/rails/rails/commit/241f2a0b98aa85573335faf503d29e81f41df3dc)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
   - [[Feature Proposal] Recover ActiveRecord::Enum macro when backing column is missing from schema cache](https://discuss.rubyonrails.org/t/feature-proposal-recover-activerecord-enum-macro-when-backing-column-is-missing-from-schema-cache/91077)
