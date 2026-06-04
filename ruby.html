@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-06-03</h1>
+<h1>Ruby Digest - 2026-06-04</h1>
 <ul>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/9aa590394ca91ae416aeefeac746c137f549148e">Merge pull request #57562 from hammadxcm/test-string-filter-edge-cases</a></li>
+      <li><a href="https://github.com/rails/rails/commit/49c99ff0c955b7418ec07f1895a7e1e5f84fadf6">Merge pull request #57571 from yahonda/surface-rediscachestore-timeou…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/692f5b99ab3b32ecbbfa685051f4f22ab1d8c3e0">Merge pull request #57549 from hammadxcm/test-boolean-serialize</a></li>
+      <li><a href="https://github.com/rails/rails/commit/577d73f965805af11c91354a7c6c0a4a23cb4476">Re-raise suppressed RedisClient errors in RedisCacheStore behavior tests</a></li>
+      <li><a href="https://github.com/rails/rails/commit/2fde0a29f17f17026010c234fe53827f164af70b">Merge pull request #57563 from 55728/fix-pg-reset-column-sequences-qu…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/48c80c1d6c71505ce33c714583d2b285a326bffa">Fix `reset_column_sequences!` for tables in quoted schemas</a></li>
+      <li><a href="https://github.com/rails/rails/commit/8959b63707960e75807a9fd6b5361e39d07f1d90">Merge pull request #57560 from 55728/fix-nested-attributes-limit-sing…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/9f4650dd4304252fecd82e0e53c884eb72eea0dd">Fix `accepts_nested_attributes_for` `:limit` miscounting a single-rec…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/dfd6a8f5fc4a0281218d1aa1cd155ebdac3c66ff">Merge pull request #57550 from Shopify/ractor-shims-only-ruby-4</a></li>
+      <li><a href="https://github.com/rails/rails/commit/fe052035ff181aac8cfc7e293dbadc819fd400a2">Merge pull request #57567 from matthewd/mysql2-eager-affected</a></li>
+      <li><a href="https://github.com/rails/rails/commit/e4d1cc35ab0a96353cdf698a6255af81bcbe3194">Merge pull request #57565 from 55728/fix-rename-index-drops-where-order</a></li>
+      <li><a href="https://github.com/rails/rails/commit/302f49baa61109f6a2186372bdbd087a3e8710c4">Fix `rename_index` to preserve a partial index's `WHERE` for SQLite a…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/5b5ea81a7c81974e3b199ae1f9e221b94997fb0e">Read mysql2 affected_rows during perform_query</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ab086fe2fd15ab3e4673cf2bf597d5ce027535b1">Test using an unusual row count to reduce false negatives</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4dbd366dda360b2fb878b9d1f46752799531bf8c">Correct test runner examples</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a5972fb0f982b00ed53910ee2fbd1944e32d7ea3">Merge pull request #57561 from 55728/fix-pg-foreign-keys-quoted-schema</a></li>
+      <li><a href="https://github.com/rails/rails/commit/9906b99317de80ce6b859c0cfbff2a9fa4db06bc">Fix PostgreSQL foreign_keys for a target table in a quoted schema</a></li>
+      <li><a href="https://github.com/rails/rails/commit/00811172418712a929e6803b9dab6e3c883761d8">Add test coverage for String filter boundary inputs</a></li>
       <li><a href="https://github.com/rails/rails/commit/bf7e7b120a04141923091bf0e25cd3ff2af57183">Merge pull request #57547 from hammadxcm/test-mime-type-matchers</a></li>
       <li><a href="https://github.com/rails/rails/commit/597dac1eab39529ae482c4ee84506c57abe5be42">Merge pull request #57556 from hammadxcm/test-parameter-filter-empty-dup</a></li>
-      <li><a href="https://github.com/rails/rails/commit/68dcf1da903e1e1b7938b0e3ca73535c062b778c">Merge pull request #57554 from hammadxcm/test-object-with-block-return</a></li>
-      <li><a href="https://github.com/rails/rails/commit/4adf85f8b17cb540688f1fdd0f0f09503663efad">Merge pull request #57553 from hammadxcm/fix-in-order-of-filter-false…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/30d0cdf6767d050cb7cfd2b5df6038d3eea29059">Fix in_order_of dropping nil elements when filter: false</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d079d5edd6a703fefee573e888af3eaf73fde711">Merge pull request #57548 from hammadxcm/test-range-sole-endless</a></li>
-      <li><a href="https://github.com/rails/rails/commit/be30f33d0032a21c98cda6b034410968bc74b01d">Test ParameterFilter#filter with empty filters returns a dup</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d0c53aeb4d73f7f641739718858f3b8fdba89928">Test Object#with returns the block's result</a></li>
-      <li><a href="https://github.com/rails/rails/commit/6c2d309d3574534e2597f7fbc2ce216ef9de806f">Merge pull request #57539 from 55728/fix-reverse-order-default-order</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a992819ce6eb06109203243ef6c1da33902f92ab">Reverse default_order in reverse_order instead of discarding it</a></li>
-      <li><a href="https://github.com/rails/rails/commit/db78030c58db1e250879202e991e2d025c35c6df">Test Range#sole with an endless range</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d351b22935ea15cb0d56e1b65b37c0ce4db816c2">Test Mime::Type#=== and nil matching</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a575a3e5df2211f9e605b3b1571baaceb0d17b8d">Merge pull request #57546 from hammadxcm/test-content-disposition-format</a></li>
-      <li><a href="https://github.com/rails/rails/commit/52ed768856b72989475fd3a393038224f3db59dd">Merge pull request #57544 from hammadxcm/test-validation-error-model-…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/382d9e7b8cfff117fcbec7e3ae583f885cf435b5">Merge pull request #57543 from hammadxcm/test-array-inquirer-any-no-args</a></li>
-      <li><a href="https://github.com/rails/rails/commit/7d71398e593491bcfc3727fc7eea3d676bcc5440">Merge pull request #57545 from hammadxcm/test-big-integer-serialize-s…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/97765e94cd0f7f6942e206bc2a2e0b67fa473744">Merge pull request #57541 from hammadxcm/test-truncate-omission-longer</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ba6f33c0c364d3fab2caffafeff2baffee2a01be">Merge pull request #57540 from hammadxcm/test-array-out-of-bounds-acc…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/6d57544ecbf18d5a44eb820ff3be7f38f4743d54">Merge pull request #57532 from 55728/fix-cpk-group-belongs-to-count</a></li>
-      <li><a href="https://github.com/rails/rails/commit/de7017536e0df5d8af8139e6a31cfdce7acfe683">Merge pull request #57542 from hammadxcm/test-mime-type-html-predicate</a></li>
     </ul>
   </li>
   <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
     <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/which-is-the-best-crm-development-company-in-2026/91145">Which Is the Best CRM Development Company in 2026?</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/usa-best-fitness-app-development-firms-in-2026/91156">USA Best Fitness App Development Firms in 2026</a></li>
     </ul>
   </li>
   <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
