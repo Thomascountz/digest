@@ -1,40 +1,35 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-06-09</h1>
+<h1>Ruby Digest - 2026-06-10</h1>
 <ul>
-  <li><a href="https://railsatscale.com/">Rails at Scale</a>
-    <ul>
-      <li><a href="https://railsatscale.com/2026-06-08-how-i-think-about-tests-skips/">How I Think About Tests: Skips</a></li>
-    </ul>
-  </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/71671aded0c2fff1c0c784f88c3b042ec0f212fa">Merge pull request #57639 from yaroslav/fix/normalization-fix-reruns</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f80dd26e277b72c7a2e35f295df101a8c19fe254">Merge pull request #57630 from yahonda/remove-flaky-baseline-test-def…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/1742210184d8afc7eadaee671590fc2ec0dc1b7d">Re-run `normalizes` only when the value changed in place</a></li>
+      <li><a href="https://github.com/rails/rails/commit/d35894637ae4dc08cab6ec3c23c4cf420d822a48">Merge pull request #57636 from 55728/fix-number-to-currency-precision…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c0f28c2a82181e93bbc1c2d873c19afa7689c624">Merge pull request #57635 from 55728/fix-timezone-strptime-fractional…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/dbd66d3fb8ae95aeb64d965051d79f8b1a720def">Merge pull request #57634 from 55728/fix-delegate-class-block-forwarding</a></li>
+      <li><a href="https://github.com/rails/rails/commit/70a6b013857ae0eee44f4f9599ce81f0b4d486f8">Forward blocks to DelegateClass methods that yield implicitly</a></li>
+      <li><a href="https://github.com/rails/rails/commit/58d58facdec7e45f20eac607ecd7244f4cce7669">Merge pull request #57632 from 55728/fix-default-order-association-sc…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/21c60f81a3c72635ba9b0fdb863608952d4766a8">Fix number_to_currency crashing on a negative number with precision: nil</a></li>
+      <li><a href="https://github.com/rails/rails/commit/1afef56f78c9350061ca42a774726396b2d2024f">Preserve sub-second fraction in TimeZone#strptime with %s</a></li>
+      <li><a href="https://github.com/rails/rails/commit/09570d2c8975b4de5677cb453a0e888c7d6306a0">Merge pull request #57633 from 55728/fix-hwia-falsy-default</a></li>
+      <li><a href="https://github.com/rails/rails/commit/919fa3dfc72eaaf6cbf7d6aed6aa919404a9250d">Preserve falsy default value when building HashWithIndifferentAccess</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3b1c2a8b5f8465702b30000aa4fc40e31905117e">Carry `has_many` `default_order:` into the cached association SQL</a></li>
       <li><a href="https://github.com/rails/rails/commit/25897f8e4b0251a3aa01c4786014e6feaf74a346">Merge pull request #57614 from 55728/fix-insert-bang-unique-by</a></li>
       <li><a href="https://github.com/rails/rails/commit/07b0d2c11a618cda876c4165a750c20bffd17bb0">Allow `insert!` to accept the `:unique_by` option</a></li>
+      <li><a href="https://github.com/rails/rails/commit/45145c74659efa83d8ca2d3da6cbe8ea587b1ef1">Remove unordered baseline assertions from test_default_order</a></li>
       <li><a href="https://github.com/rails/rails/commit/1d5fcf07a63d20880929c473086187135b60d011">Merge pull request #57581 from excid3/action-mailer-callback-only-exc…</a></li>
       <li><a href="https://github.com/rails/rails/commit/a8a8afad2969cf8288e64095bef9668f81057429">Merge pull request #57595 from maksim-romanov/fix-mirror-service-meta…</a></li>
       <li><a href="https://github.com/rails/rails/commit/415d226f0edeeff7ddfcd845e393bc8a403a1bca">Add Action Mailer raise_on_missing_callback_actions support</a></li>
       <li><a href="https://github.com/rails/rails/commit/a499546b71fcc60e84106130b33e364b023c68f4">Merge pull request #57622 from 55728/fix-range-include-exclusive-non-…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/678a75f195a0ca2bf83e1b094e6b245a91f2ebd2">Merge pull request #53161 from viktorianer/improvement/installing-bun…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/e5884b9f8ea45431f64f4dcbf1a64ad616e860f1">Merge pull request #57574 from Shopify/default-backtrace-procs-shareable</a></li>
-      <li><a href="https://github.com/rails/rails/commit/15f8a9dcd12323525ef9f17819d715681b07b9e8">Support `only:` and `except:` on `_deliver` callbacks in ActionMailer</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ef6fc2c8fec27e27f19e3c233f90270888216955">Add bundler-cache feature in dev container.</a></li>
-      <li><a href="https://github.com/rails/rails/commit/7e76e0d084670e4eae3c313926d7877ee51710a8">Merge pull request #57600 from 55728/fix-store-accessor-read-mutates-…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/bdc8350a03f80f407947341222cdfaf598a340d7">Forward blob metadata to MirrorService mirrors</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1c7c7b5fc2d37f91235e4d9aa25a32c5036f1dfc">Merge pull request #57593 from Edilbek/add-activestorage-variation-tests</a></li>
-      <li><a href="https://github.com/rails/rails/commit/3864d6b3ce73d5eb3004b7cf24c7eb0fcbf25290">Make the backtrace cleaner ractor shareable by default</a></li>
-      <li><a href="https://github.com/rails/rails/commit/06fa7fef9e6d2e1d6836e7b4a2bec2553846ab40">Merge pull request #57060 from shouichi/sync-metadata-in-background</a></li>
-      <li><a href="https://github.com/rails/rails/commit/644b22a6eb4e154b67536dc355c35a028130b885">Fix store_accessor read mutating a NULL structured column</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ae49010d581da02441fa600c36114a21ce581a50">Merge pull request #57617 from 55728/fix-nested-attributes-destroy-doc</a></li>
-      <li><a href="https://github.com/rails/rails/commit/929d6de9221b3e4a0c847ee94ea0d116763be286">Merge pull request #57606 from 55728/fix-update-all-aliased-locking-c…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ddf8c2f393e43178a0f523413c3ad681d264ee0d">Merge pull request #57624 from VladNegara/migrations-associations-url</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d78141292e8e384505639edc284da6257efa306f">Merge pull request #57620 from 55728/fix-number-to-delimited-negative</a></li>
     </ul>
   </li>
-  <li><a href="https://us11.campaign-archive.com/feed?u=1aa0f43522f6d9ef96d1c5d6f&id=840412962b">Ruby Performance Newsletter Archive Feed</a>
+  <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
     <ul>
-      <li><a href="https://mailchi.mp/af95320e54e5/four-line-fridays-paranoid-installation-of-js-packages-bundlers-minimum-release-age-support-nuclear-launch-keys-and-test-parallelization-4909692">Four Line Fridays: paranoid installation of js packages, Bundler's minimum release age support, nuclear launch keys, and test parallelization</a></li>
+      <li><a href="https://blog.rubygems.org/2026/06/10/4.0.14-released.html">4.0.14 Released</a></li>
     </ul>
   </li>
 </ul>
