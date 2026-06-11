@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-06-10</h1>
+<h1>Ruby Digest - 2026-06-11</h1>
 <ul>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
-      <li><a href="https://github.com/rails/rails/commit/71671aded0c2fff1c0c784f88c3b042ec0f212fa">Merge pull request #57639 from yaroslav/fix/normalization-fix-reruns</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f80dd26e277b72c7a2e35f295df101a8c19fe254">Merge pull request #57630 from yahonda/remove-flaky-baseline-test-def…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1742210184d8afc7eadaee671590fc2ec0dc1b7d">Re-run `normalizes` only when the value changed in place</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d35894637ae4dc08cab6ec3c23c4cf420d822a48">Merge pull request #57636 from 55728/fix-number-to-currency-precision…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c0f28c2a82181e93bbc1c2d873c19afa7689c624">Merge pull request #57635 from 55728/fix-timezone-strptime-fractional…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/dbd66d3fb8ae95aeb64d965051d79f8b1a720def">Merge pull request #57634 from 55728/fix-delegate-class-block-forwarding</a></li>
-      <li><a href="https://github.com/rails/rails/commit/70a6b013857ae0eee44f4f9599ce81f0b4d486f8">Forward blocks to DelegateClass methods that yield implicitly</a></li>
-      <li><a href="https://github.com/rails/rails/commit/58d58facdec7e45f20eac607ecd7244f4cce7669">Merge pull request #57632 from 55728/fix-default-order-association-sc…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/21c60f81a3c72635ba9b0fdb863608952d4766a8">Fix number_to_currency crashing on a negative number with precision: nil</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1afef56f78c9350061ca42a774726396b2d2024f">Preserve sub-second fraction in TimeZone#strptime with %s</a></li>
-      <li><a href="https://github.com/rails/rails/commit/09570d2c8975b4de5677cb453a0e888c7d6306a0">Merge pull request #57633 from 55728/fix-hwia-falsy-default</a></li>
-      <li><a href="https://github.com/rails/rails/commit/919fa3dfc72eaaf6cbf7d6aed6aa919404a9250d">Preserve falsy default value when building HashWithIndifferentAccess</a></li>
-      <li><a href="https://github.com/rails/rails/commit/3b1c2a8b5f8465702b30000aa4fc40e31905117e">Carry `has_many` `default_order:` into the cached association SQL</a></li>
-      <li><a href="https://github.com/rails/rails/commit/25897f8e4b0251a3aa01c4786014e6feaf74a346">Merge pull request #57614 from 55728/fix-insert-bang-unique-by</a></li>
-      <li><a href="https://github.com/rails/rails/commit/07b0d2c11a618cda876c4165a750c20bffd17bb0">Allow `insert!` to accept the `:unique_by` option</a></li>
-      <li><a href="https://github.com/rails/rails/commit/45145c74659efa83d8ca2d3da6cbe8ea587b1ef1">Remove unordered baseline assertions from test_default_order</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1d5fcf07a63d20880929c473086187135b60d011">Merge pull request #57581 from excid3/action-mailer-callback-only-exc…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a8a8afad2969cf8288e64095bef9668f81057429">Merge pull request #57595 from maksim-romanov/fix-mirror-service-meta…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/415d226f0edeeff7ddfcd845e393bc8a403a1bca">Add Action Mailer raise_on_missing_callback_actions support</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a499546b71fcc60e84106130b33e364b023c68f4">Merge pull request #57622 from 55728/fix-range-include-exclusive-non-…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6472bab7c48446a472a45e8bb4e02b1a396ad1f8">Merge pull request #57660 from chaadow/fix_normalize_onjsonb_default_…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f6c8492d09dae24a8c65c770f767a0e80eb8b42d">Merge pull request #57658 from hammadxcm/test-duration-branch-coverage</a></li>
+      <li><a href="https://github.com/rails/rails/commit/dd638903abd641892dab8729f06b279a3749af2d">Merge pull request #57666 from Shopify/freeze-constants-on-request-path</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6566363ce455b0239191a997efd3e0ae7bfdc9ad">Make some more constants ractor safe.</a></li>
+      <li><a href="https://github.com/rails/rails/commit/324b65c2dffe17ee03522b39b516f482087f244f">Merge pull request #57663 from Shopify/clean-up-cookies-test</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6436b1a0735af64cf721b94da83e044e4bfb4edb">Extract some shared methods to make cookies_test.rb a bit more readable</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3e8a7824e2ec53db44f5a1a1e2d63f64086fbbf8">Merge pull request #57594 from Shopify/fix-accidentally-applied-scope…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6c104382b043c694c5eb5e8ea54ea70c5ae8282c">Fix bug where reload leaks ordinary scopes into all_queries lookups.</a></li>
+      <li><a href="https://github.com/rails/rails/commit/fdc289027c6c5d40dfd0bb2136e29c7dd335f83b">Merge pull request #57657 from 55728/fix-cpk-delete-single-id</a></li>
+      <li><a href="https://github.com/rails/rails/commit/befc09ac9c11a3785a407825a6667d86f48227a5">Support a single composite primary key id in `delete`</a></li>
+      <li><a href="https://github.com/rails/rails/commit/20cd5a7a1d999bcfd0ec7a72dd4333159bd4dfb2">Merge pull request #57653 from 55728/fix-cpk-attributes-builder-parti…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4cdc6312dd561765a214d20c66f28f9b6d8be9dc">Keep composite primary key columns in the default attribute set</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f0dfbbee032a7cab49f88b0d64f8ec87100db18c">Fix `normalizes` casting raw database values on in-place change detec…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/cabdcc5c53f0a363b5a97c20c9c62179f26f1a2f">Merge pull request #57649 from 55728/fix-cpk-find-empty-array</a></li>
+      <li><a href="https://github.com/rails/rails/commit/913f54057e2d432ddafb98e7caaefcb9a199cae9">Return an empty array from `find([])` on a composite primary key</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3dab67a99356bd5e6882afbcd77c9fd904fabe21">Add test coverage for ActiveSupport::Duration edge cases</a></li>
+      <li><a href="https://github.com/rails/rails/commit/eb60db1149254c65bfe223bf6ff133835486056f">Merge pull request #57637 from Shopify/logger-thread-safe-level-copy</a></li>
+      <li><a href="https://github.com/rails/rails/commit/39c28dc7bfcd061570ba5be400b2ffdfe3079d8f">Merge pull request #57643 from hammadxcm/test-type-date-cast-branches</a></li>
+      <li><a href="https://github.com/rails/rails/commit/b573d287d971b9c0fe6a0038a1f7c5de9bb1b2dd">Merge pull request #57644 from Shopify/memoize-ivar-when-freezing-act…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/9ae8d50d948189ae9c05bed0649d20043d6e4c64">Merge pull request #57646 from yashika279/fix-grammar</a></li>
+    </ul>
+  </li>
+  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
+    <ul>
+      <li><a href="https://discuss.rubyonrails.org/t/i-am-the-new-onehttps-stashpatricck-cc/91204">I am the new onehttps://stashpatricck.cc</a></li>
     </ul>
   </li>
   <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
