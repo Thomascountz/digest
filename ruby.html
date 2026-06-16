@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-06-15</h1>
+<h1>Ruby Digest - 2026-06-16</h1>
 <ul>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/3e5f9e1a1aababa2464414309966ee85332f4afc">Merge pull request #57744 from matthewd/fix-async-maintenance-leak-check</a></li>
+      <li><a href="https://github.com/rails/rails/commit/b3fe75cfe7aadbe703ba23ac077bc72478b4e12f">Wait for any asynchronous connection maintenance work before leak check</a></li>
+      <li><a href="https://github.com/rails/rails/commit/1e3c0b4182a55834f843fe81a69b0f994796cb6a">Merge pull request #57738 from 55728/fix-word-wrap-nil</a></li>
+      <li><a href="https://github.com/rails/rails/commit/457d7fad0c093845942a85ceaa38ad7f45fec9da">Merge pull request #57737 from 55728/fix-assert-enqueued-email-doc</a></li>
+      <li><a href="https://github.com/rails/rails/commit/e0d28ada45cf32f4ecbda924969cf5e7efa58604">Merge pull request #57739 from 55728/fix-scope-deprecated-except-hash</a></li>
+      <li><a href="https://github.com/rails/rails/commit/00bfbe2b449f256f242ac05c49aa9ce79a10e899">Merge pull request #57740 from 55728/fix-namespace-deprecated-hash-op…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/5e38eb92b333241868325a0f48888dc11e059357">Honor the deprecated `namespace` hash path options</a></li>
+      <li><a href="https://github.com/rails/rails/commit/184eb2105a431cd53eed663b4ae0065ef97a7a08">Apply the deprecated `scope` hash `:except` option to except, not only</a></li>
+      <li><a href="https://github.com/rails/rails/commit/66e59ee07579a8e1e9f8eca6daf8060a8c1406eb">Return an empty string from word_wrap when the text is nil</a></li>
+      <li><a href="https://github.com/rails/rails/commit/dea86d109574d6893d00053829dc18a6faabffb6">Stop documenting the removed `args:` Hash form of assert_enqueued_ema…</a></li>
       <li><a href="https://github.com/rails/rails/commit/626f1b0547e746a699220d3898a14f33e3266d2d">Merge pull request #57721 from 55728/fix-parameters-select-reject-enu…</a></li>
       <li><a href="https://github.com/rails/rails/commit/af9828e1dfc36daa4f5a2b2a3cc7ad4fea65ba0c">Return an Enumerator from Parameters#select / #reject when no block i…</a></li>
       <li><a href="https://github.com/rails/rails/commit/b0640708c5b8ca5ab103ee90375826611f609b8d">Merge pull request #57734 from tylerlwsmith/tylerlwsmith-remove-orpha…</a></li>
       <li><a href="https://github.com/rails/rails/commit/24bee0d5ec26cfa68ced0d34b151018aac299a4a">[RF Docs] Rails Internationalization (#57381)</a></li>
       <li><a href="https://github.com/rails/rails/commit/640c5cbdc2fac8af2041bd8b26639c1b73b8eef1">Remove orphaned backtick from routing docs</a></li>
-      <li><a href="https://github.com/rails/rails/commit/12579dc6928fe294285cb8ab5c5e2ceef9fecfaf">Merge pull request #57725 from 55728/fix-aj-perform-start-missing-ada…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/29850b0a0230caf05a108722dbc90c4990bbe2b5">Merge pull request #57728 from 55728/fix-aj-reset-enqueue-error-on-re…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/6b99afca72df3a62db9a49a86c3e68395200fd73">Merge pull request #57729 from 55728/fix-aj-continuable-resume-except…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/6fbdee256cd33a8ff218699716c02215575708f9">Merge pull request #57730 from 55728/fix-aj-advance-cursor-rescue-narrow</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f1e889789e945b723a539f6357ba05e784567ce1">Don't mask errors raised inside a cursor's succ in Step#advance!</a></li>
-      <li><a href="https://github.com/rails/rails/commit/40a09d368d56528e08ad00f6f489c4325df350d2">Merge pull request #57726 from 55728/fix-aj-resume-limit-error-doc</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b30ee78bc794a111b1c0778147f50f27805fd176">Merge pull request #57688 from matthewd/aca-web-test-runner</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b168b2ee7a8f56434a9d122d0deb8417122b0ddf">Clear enqueue_error when re-enqueuing a job</a></li>
-      <li><a href="https://github.com/rails/rails/commit/aa159a7ea059225dfb12adb4c68bd38d25003ffc">Pass the exception positionally when resuming a continuation after an…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f61218c7cd2c3eda92cc4f1d3938500942884fc7">Fix max_resumptions attribute name in ResumeLimitError docs [ci skip]</a></li>
-      <li><a href="https://github.com/rails/rails/commit/484d824a02aa145070fdaab6a1621a2ceeadb485">Include adapter in Active Job perform_start event payload</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ac7b9645e30eecf25f553ad2d1148ce15abfae49">Use a custom Sauce Labs launcher for separated error reporting</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c63a55ff4d7284c6ca5971e99b331ca356d0a842">Merge pull request #57687 from matthewd/test-fixes</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a8af925c658254303987fd6c9ef222a324f7dc63">Continue pool disconnect after cleanup failures</a></li>
-      <li><a href="https://github.com/rails/rails/commit/e62393fae8c71939b50752c974065684518813b6">Merge pull request #57723 from 55728/fix-retry-on-wait-lambda-optiona…</a></li>
+    </ul>
+  </li>
+  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
+    <ul>
+      <li><a href="https://discuss.rubyonrails.org/t/looking-for-ruby-on-rails-developer-irock/91236">Looking for Ruby on Rails developer iRock</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/enum-enhancement-proposal-handle-sole-options/91233">[Enum enhancement proposal]: handle &quot;sole&quot; options</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/any-need-for-libpq-dev-still/91230">Any need for libpq-dev still?</a></li>
     </ul>
   </li>
 </ul>
