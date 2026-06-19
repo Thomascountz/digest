@@ -1,12 +1,14 @@
-# Ruby Digest - 2026-06-18
+# Ruby Digest - 2026-06-19
 
+- [Ruby Weekly](https://rubyweekly.com/)
+  - [41M requests/hour on Rails](https://rubyweekly.com/issues/805)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
+  - [Merge pull request #57641 from Shopify/hm-uqysokvzmvnsyvts](https://github.com/rails/rails/commit/3dc4e99a4c2b755437ee33a0186c6df58034a474)
+  - [Enable per-pool query log tags prepend config](https://github.com/rails/rails/commit/690b76b1a15267d56100a72bc1a3334814831f98)
+  - [Merge pull request #57765 from 55728/fix-retry-on-wait-type-validation](https://github.com/rails/rails/commit/3798cc11829fa7e84851d2ce3e4a04b7a864e559)
+  - [Merge pull request #57774 from ilianah/refactor-primary-key](https://github.com/rails/rails/commit/78e86fd2ee7b2b044943e68fac7ec8e29f45bbde)
+  - [Remove primary_key class ivar](https://github.com/rails/rails/commit/0d5abebd714fdc9399c7c50b89e836a67522fd16)
+  - [Merge pull request #57768 from matthewd/main-ar-test-fixes](https://github.com/rails/rails/commit/7a5951bd2aa321d9cc7c69358a9007797c97ccf1)
+  - [Isolate pool maintenance leak checks](https://github.com/rails/rails/commit/d45965ab789baf8918faa7361eef9db6f9a0c6cb)
+  - [Use a Concurrent::Map to avoid insertions colliding with iteration](https://github.com/rails/rails/commit/0c997c7ef87f8428f54a30e13803e09fadbc4322)
   - [Merge pull request #57756 from Shopify/helper-methods-ractor-safe](https://github.com/rails/rails/commit/d2301ce07b82beb8aba7c010bd3098ff06be2671)
-  - [Merge pull request #57760 from skipkayhil/hm-tsmpupvqmmzmvorx](https://github.com/rails/rails/commit/43a1f3b574cceafcd78d288a1339e37711cf79c7)
-  - [Merge pull request #57758 from viralpraxis/fix-in-order-of-raising-on…](https://github.com/rails/rails/commit/d5afe4f6811c60dc1400c90624a1bbf77c572da6)
-  - [Fix `in_order_of` raising on CTEs](https://github.com/rails/rails/commit/4632e89ca819ddcb1dd5b2a5b177256a45e5d355)
-  - [Simplify PRE_CONTENT_STRING hash](https://github.com/rails/rails/commit/90c233473678645c626541b000f78254455a86a7)
-  - [Merge pull request #57610 from skipkayhil/hm-rmvqvwztpposnunk](https://github.com/rails/rails/commit/43876ee3ebc9475da03681d49bd312a220708680)
-  - [Merge pull request #57748 from 55728/fix-routing-deprecated-hash-form…](https://github.com/rails/rails/commit/9cf797846fdda3ae6731602ef72b664b412f9f18)
-  - [Merge pull request #57749 from 55728/fix-instance-variable-names-doc-…](https://github.com/rails/rails/commit/196cdd70f534594176823aa724d4adef1061fffc)
-  - [Merge pull request #57759 from yahonda/fix-flaky-assign-ids-with-cpk-…](https://github.com/rails/rails/commit/85a8b58638c2f43e1fc3b451b4c76c30d9101a8a)
