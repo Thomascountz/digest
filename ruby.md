@@ -1,8 +1,11 @@
-# Ruby Digest - 2026-06-21
+# Ruby Digest - 2026-06-22
 
-- [This Week in Rails](https://world.hey.com/this.week.in.rails)
-  - [This Week in Rails: June 19, 2026](https://world.hey.com/this.week.in.rails/this-week-in-rails-june-19-2026-f059032a)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
+  - [Merge pull request #57810 from byroot/fix-foreign-key-class-attribute](https://github.com/rails/rails/commit/11b1d3543eed44635b2c87d86ffc9ae0d950c26b)
+  - [Fix use of `class_attribute` for `primary_key_definition`](https://github.com/rails/rails/commit/983f98b05b50f81271ac23a17e5ac527f4bbab80)
+  - [Merge pull request #57795 from kamipo/polymorphic_belongs_to_inverse_…](https://github.com/rails/rails/commit/1ea9863e191ae6bbfcd1f59ed540c27d942ba22d)
+  - [Merge pull request #57806 from 55728/fix-guides-broken-anchors](https://github.com/rails/rails/commit/464d8ce7d38c9adb8a180ebbfcf9fd9a468a47b9)
+  - [Fix broken anchor links in guides [ci skip]](https://github.com/rails/rails/commit/f57a93db929e2a48b882bea5aaac56082133fdfa)
   - [Merge pull request #57711 from 55728/fix-create-or-find-by-scope-leak…](https://github.com/rails/rails/commit/dcd34492cdc0023a04bf5052d00def9ffb28d4ca)
   - [Merge pull request #57782 from 55728/fix-add-params-non-destructive](https://github.com/rails/rails/commit/7ca733446397cccfd21254082b317e4c8fb94646)
   - [Merge pull request #57720 from 55728/fix-actionable-error-shared-acti…](https://github.com/rails/rails/commit/5df69d6067ea1936cce29615851d74e411245f38)
@@ -16,10 +19,3 @@
   - [Fix grammar in guides [ci skip]](https://github.com/rails/rails/commit/db4eb27a52ced96b62f47f9c29e762aa493320ea)
   - [Fix indefinite article in error messages](https://github.com/rails/rails/commit/552d7b167d4cd40292070ed37713bdd54324ba29)
   - [Fix :singleton-method: directive typo for protected_environments](https://github.com/rails/rails/commit/6e0e24d8ecb657b7b2c868c2338ee7b85c4033fd)
-  - [Merge pull request #57796 from rails/fxn/eager-load](https://github.com/rails/rails/commit/725c0a5812a61f84b44e352d2c9fc5c833471938)
-  - [Make config.rake_eager_load more explicit](https://github.com/rails/rails/commit/ddba247a01365d4ab16d12bc63d8b45d0b8c758f)
-  - [Merge pull request #57793 from 55728/fix-rails-on-rack-guide-typos](https://github.com/rails/rails/commit/6ed59e8a8596ccfa0f92c068e5e748e8330a0ed3)
-  - [Merge pull request #57794 from 55728/fix-inspect-schema-information-typo](https://github.com/rails/rails/commit/de3aec56432d60c5d27b6dddded2cf53b54316ef)
-  - [Fix grammar in Model.inspect schema-not-loaded message](https://github.com/rails/rails/commit/b32135e5d33c2d9fe9aa2ec840b8695624d2682b)
-  - [[ci skip] Fix typos in Rails on Rack guide](https://github.com/rails/rails/commit/1af20c93afc7eea92fa3dd278c68ae3ab7f5f723)
-  - [Merge pull request #57791 from 55728/fix-comment-typos](https://github.com/rails/rails/commit/8a0e500995a947909ddd9e3939e45111affa3ad1)
