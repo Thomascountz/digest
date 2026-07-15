@@ -1,15 +1,11 @@
-# Ruby Digest - 2026-07-14
+# Ruby Digest - 2026-07-15
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Fix the broken #with reference](https://github.com/rails/rails/commit/49c044bf2213c100f39399d47de4e6476005b64c)
-  - [Remove unneeded parenthesis [ci-skip]](https://github.com/rails/rails/commit/ddf2e01505e13f4243ce6d72ae2b829279c953b1)
-  - [Change the order of Views and Controllers in the guides](https://github.com/rails/rails/commit/4aafd831a6e4c2979e43a4069f1415860d6ffc1e)
-  - [Comment ellipsis in guides examples](https://github.com/rails/rails/commit/f08380b65f3fa0d7cd6299ff46960dca7a4cb754)
-  - [Fix settings navigation test in authentication guide](https://github.com/rails/rails/commit/ca0627edfbbb11b2836be411ae88a913e051c784)
-  - [Merge pull request #58101 from meganemura/fix-asset-pipeline-guide-ca…](https://github.com/rails/rails/commit/b9e0c77e6609c895de2c97924ed09c7d6fad6798)
-  - [Downcase Cache-Control key in asset pipeline guide example](https://github.com/rails/rails/commit/bebc20b72971b8913d60f6b7e6e7cf3b64eb71c0)
-- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [I've been facing some extra works while building my apps](https://discuss.rubyonrails.org/t/ive-been-facing-some-extra-works-while-building-my-apps/91344)
-  - [Improving LLM discoverability by introducing llms.txt, sitemap, MD routes, content negotiation](https://discuss.rubyonrails.org/t/improving-llm-discoverability-by-introducing-llms-txt-sitemap-md-routes-content-negotiation/91340)
+  - [Merge pull request #55410 from seanpdoyle/action-view-navigation-helper](https://github.com/rails/rails/commit/c2dbb2104247e1ea5e9832d256c26c798156df20)
+  - [Introduce `ActionView::Helpers::NavigationHelper`](https://github.com/rails/rails/commit/07f4b45e294e016675ec500a800f359cde839aa4)
+  - [Update my last name in changelogs](https://github.com/rails/rails/commit/b62a092e3f8a0f24ac9aa5fbb183cdee763c22f4)
+  - [Merge pull request #58117 from rails/raise-for-empty-shards-on-connec…](https://github.com/rails/rails/commit/97748791052e12d241e912864881f850839c12ac)
+  - [Raise for empty shards on `connected_to_all_shards`](https://github.com/rails/rails/commit/697fc4c0b94da6d4e6e82fd70a8ccc31bc7ff027)
+  - [Merge pull request #58055 from yahonda/check-all-foreign-keys-valid-e…](https://github.com/rails/rails/commit/f956777962d286cc5c9aa8a3ae25ee7eaadaf43a)
 - [Ruby News](https://www.ruby-lang.org/en/feeds/news.rss)
   - [Ruby 4.0.6 Released](https://www.ruby-lang.org/en/news/2026/07/14/ruby-4-0-6-released/)
