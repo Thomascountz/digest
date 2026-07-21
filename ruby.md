@@ -1,7 +1,7 @@
-# Ruby Digest - 2026-07-20
+# Ruby Digest - 2026-07-21
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
-  - [Merge pull request #58158 from Yuhi-Sato/fix-continuous-integration-r…](https://github.com/rails/rails/commit/160577bb9acc2f6d17e66b2d4aeb1392fcd690cf)
-  - [Fix RDoc markup in ContinuousIntegration docs [ci skip]](https://github.com/rails/rails/commit/a3233905d67354f31f2df386f07551242e916e18)
-- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [Created activerecord-turso, looking for support](https://discuss.rubyonrails.org/t/created-activerecord-turso-looking-for-support/91377)
+  - [Merge pull request #58163 from hachi8833/fix_active_job_guide](https://github.com/rails/rails/commit/ee7a9866854a00bc259f9e4d7e2dbc7a4d045039)
+  - [Merge pull request #58166 from rails/fxn/change-default](https://github.com/rails/rails/commit/3ac4702080445968f7308f9877a474a446a462ab)
+  - [Let dump_schema_migrations_sort_by be :reverse by default](https://github.com/rails/rails/commit/3527e4c4786285b6a77fbcfab0d691fb589bd905)
+  - [[ci-skip][doc] Fix broken links](https://github.com/rails/rails/commit/efcce3cca4c388b4baffdcb73c0827cbcd98cad6)
