@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-07-30</h1>
+<h1>Ruby Digest - 2026-07-31</h1>
 <ul>
+  <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
+    <ul>
+      <li><a href="https://rubyweekly.com/issues/811">You need to upgrade Rails 7.x and 8.x now</a></li>
+    </ul>
+  </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/96afb7e44a030940e4868de65dcc48739b1d2f20">Merge pull request #58297 from kamipo/deprecate_insert_positional_args</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6669725a14a802ce6558dfaaa4ac97265ff90326">Deprecate positional `pk`, `id_value`, and `sequence_name` for `#insert`</a></li>
+      <li><a href="https://github.com/rails/rails/commit/9cf4124d25a6431faf68e4bc0b079ab0ff03e63d">Merge pull request #58274 from bschrag620/allow-prepared-statements-w…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/85072baba36042263312736e1045f58e8a8e924e">Allow prepared statements with query log tags</a></li>
+      <li><a href="https://github.com/rails/rails/commit/1e9f15ebf256a198fcc5e233b643826e1b363980">Merge pull request #58322 from rails/fxn/polish-migrations-dump</a></li>
+      <li><a href="https://github.com/rails/rails/commit/51665ffadb7ff2bfd434df6f67f39f44077e892d">Remove migrations filter from the schema dump</a></li>
+      <li><a href="https://github.com/rails/rails/commit/af37420cdac15ef01538d37796d7231c7b856921">Merge pull request #57948 from Shopify/actionview-dependency-tracker-…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/689b3358ef9923d85f4a22d903ba15765c6b1bda">Merge pull request #58312 from kamipo/improve_render_bind_for_casted_…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/37fa57ac5f2b2b3808e6567632fc8710def028be">Show parameter marker for casted binds in SQL logs and EXPLAIN</a></li>
+      <li><a href="https://github.com/rails/rails/commit/bcce5106f8b3d074a91d6efaa4a34b7e4a087f3c">ExecutionContext isn't public API</a></li>
+      <li><a href="https://github.com/rails/rails/commit/73bdeced4fca26bff321d989db6f5ab72dd870b1">Make the Action View dependency tracker registry Ractor-shareable</a></li>
+      <li><a href="https://github.com/rails/rails/commit/e83109864e42f538ef1e4772d51d849df37cd7da">Merge pull request #58311 from kamipo/fix_explain_with_arel_input</a></li>
+      <li><a href="https://github.com/rails/rails/commit/17a1651712e5876bb663abe62195edf0e2f951e6">Fix `connection.explain(arel)` for Arel input with AST binds</a></li>
+      <li><a href="https://github.com/rails/rails/commit/d82d391e5a2a88fe561bde3ea21249db14368d12">Merge pull request #58310 from kamipo/deprecate_to_sql_binds_arg</a></li>
+      <li><a href="https://github.com/rails/rails/commit/31e8e9e9da1e45549c54952a6778de2ca3287ad0">Deprecate passing `binds` to `to_sql`</a></li>
       <li><a href="https://github.com/rails/rails/commit/0f36bbf72cc8b814bf1ad05c896c9c427b18217f">Merge pull request #58309 from kamipo/rename_arel_to_arel_or_sql</a></li>
       <li><a href="https://github.com/rails/rails/commit/527449a20699a96e70e5c8370fd87ed8261912ad">Rename `arel` to `arel_or_sql`</a></li>
       <li><a href="https://github.com/rails/rails/commit/9b63a64daa9482111f583c37d1cdb39b0b37bb4a">Merge pull request #58296 from kamipo/refactor/apply_returning_to_intent</a></li>
       <li><a href="https://github.com/rails/rails/commit/8ad0bd8a9878a6b8cce6f947eb8dc89c7a54bf11">Merge pull request #58299 from kamipo/remove_dead_binds_handling_in_l…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a0b1a75590689ccde8024a3db88b269b49416359">Merge pull request #58298 from Shopify/ec-model_name-ractor</a></li>
-      <li><a href="https://github.com/rails/rails/commit/9bf09d3656ccf0c3304d0b70b837f14915b46e2b">Merge pull request #58304 from skipkayhil/hm-mtoolzumurkxluow</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c3dce83c8493833192675e367976267e27ec5099">Fix releaser test assuming GITHUB_ACTIONS is false</a></li>
-      <li><a href="https://github.com/rails/rails/commit/2a240f0e26f3fa33500932b1eddbc9b33aa3b421">Fix rubocop</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b61258e7d880e118a01da574373e4e1c36b295ea">Merge pull request #58226 from 55728/follow-up-unused-ar-internals</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c4dcf552cfc15268a1b448ec6c2f2a2f89d8be52">Make `ActiveModel#model_name` accessible from a Ractor:</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1fe8dc1cbbffcaf8284a7a0e0f0e4a85d39e87c9">Merge pull request #58295 from 55728/fix-time-minus-datetime-return-type</a></li>
-      <li><a href="https://github.com/rails/rails/commit/183cf1ecb2584297a2c324d39707b7c3d23835c5">Expose the SHA-256 checksum of each gem as a notice annotation in Git…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/912718618990508e212eed8f6f3bd9139fedb25b">Remove dead binds handling in AR log subscribers</a></li>
-      <li><a href="https://github.com/rails/rails/commit/cba7dd1c264a8a53a043153f6593190ffd66b5f3">Merge pull request #58067 from Shopify/ec-zone-default-ractor-safe</a></li>
-      <li><a href="https://github.com/rails/rails/commit/3210b8fe9276ec5ca79e70bb309938bb1f70130e">Merge pull request #58291 from kamipo/expand_insert_returning_depreca…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1a2797a90f68c8414ec8acbf84a7c184896fe4ce">Refactor insert `returning:` handling to take `QueryIntent` directly</a></li>
-      <li><a href="https://github.com/rails/rails/commit/3a22bfaea9581c77215aa9942a625d8b667a365e">Merge pull request #58290 from kamipo/single_value_returning_for_insert</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c1c8c91b9b7b3628777e33b2317ab53ad60fe436">Add information how to rotate secret_key_base without invalidating ex…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ef79c57ec52d8800394c030360ee681d2e1bab21">Merge branch 'block-untrusted-vips-loaders'</a></li>
-      <li><a href="https://github.com/rails/rails/commit/2af7c43e7e52ef921b7fe62b8ae045123b440c67">Merge pull request #58294 from Shopify/ec-am-frozen-string</a></li>
     </ul>
   </li>
   <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
     <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/cve-2026-66066-possible-arbitrary-file-read-and-remote-code-execution-in-active-storage-variant-processing/91432">[CVE-2026-66066] Possible arbitrary file read and remote code execution in Active Storage variant processing</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/allow-enum-instance-methods-to-disable-predicate-or-bang-methods-individually/91430">Allow enum instance_methods: to disable predicate (?) or bang (!) methods individually</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/which-company-is-best-on-ruby-on-rails-development-in-usa/91429">Which Company is Best on Ruby on Rails Development in USA?</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/webhook-for-rails-guides-site-is-not-working/91443">Webhook for Rails Guides site is not working</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/cve-2026-66066-attack-details-and-tools-to-perform-a-forensic-investigation/91441">[CVE-2026-66066] Attack details, and tools to perform a forensic investigation</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/allow-setting-content-encoding-when-uploading-a-file-with-active-storage/91439">Allow setting Content-Encoding when uploading a file with Active Storage</a></li>
     </ul>
   </li>
 </ul>
