@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-08-03</h1>
+<h1>Ruby Digest - 2026-08-04</h1>
 <ul>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/be96a01be47eeab57954c5a34cde5895a16185f4">Merge pull request #58364 from kamipo/composite_pk_association_fixes</a></li>
+      <li><a href="https://github.com/rails/rails/commit/94d106955bdf07be74dcdcabe9ece26d2ba570aa">Honor composite FKs in belongs_to counter cache, autosave, and has_ma…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f5ae04bef6d47a2ccbbd15a9075622ce6e84116a">Merge pull request #58354 from 55728/fix-belongs-to-aliased-foreign-k…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4d95127de01767f10528c76bb3208edb2df15d33">Cache alias-resolved foreign key/type on BelongsToAssociation</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6fe06defa444971fb76266310bd8864b6e86235a">Merge pull request #58356 from duffuniverse/docs/fix-table-name-in-wi…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/83451a6428338149f66370c5df370b317f9edb89">Merge pull request #58353 from 55728/fix-sti-changes-doc-example</a></li>
+      <li><a href="https://github.com/rails/rails/commit/65efc5e8eac301075e737db1a8e25be2d27ad8b5">Fix table name in wishlists guide</a></li>
+      <li><a href="https://github.com/rails/rails/commit/482cd35f6656b906b7068b846e4e52dfc228d5fb">Resolve attribute aliases in belongs_to change tracking</a></li>
+      <li><a href="https://github.com/rails/rails/commit/b40514fe9e7199eeca54ad2396b81ffe9b012d78">Fix Single Table Inheritance doc example for the type column change</a></li>
       <li><a href="https://github.com/rails/rails/commit/469fb6e643f721d392cf254095a27af54e5515f6">Merge pull request #58348 from kamipo/support_attribute_aliases_in_as…</a></li>
       <li><a href="https://github.com/rails/rails/commit/465a1a32bf6ee15fc114892d2633d33737ec0a01">Prefer `read_attribute` / `write_attribute` over `Base#[]` / `Base#[]…</a></li>
       <li><a href="https://github.com/rails/rails/commit/47638820a71e909d1f254f54473ed2162a194bd5">Restore `alias_attribute` support in associations</a></li>
       <li><a href="https://github.com/rails/rails/commit/513e9a5cf6db3d10f1ffcf88bf1fd5128eb4000b">Merge pull request #58347 from kamipo/deprecate_write_attribute_id_re…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ade2675e7ab055a43b01d6ec5beaab7dba7d0f55">Fix test class name collision in Active Storage railties tests (#58349)</a></li>
-      <li><a href="https://github.com/rails/rails/commit/aea7861375d584b4e3f6036940d009986d8cc757">RDoc to Markdown in a handful of core extensions</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1a90632bbe62dae2626de7a058bc18c29f77aea6">Deprecate `write_attribute(:id, value)` writing to the primary key</a></li>
-      <li><a href="https://github.com/rails/rails/commit/07688245e23b438286869869da60bd23ea803a41">Merge pull request #58254 from kamipo/make-command-recorder-internals…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/560645a8c270d583b516031506081834583ae339">Make `CommandRecorder#record` and `#inverse_of` private</a></li>
-      <li><a href="https://github.com/rails/rails/commit/355903611c7d9d5ac6ca7047ab45794b8d5f6ebe">Merge pull request #58265 from rails/fix-mysql-algorithm-lock-duplica…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ae4a79a7a1eaa4741310b713b77060a5d1204cda">Consolidate FK drop into `ALTER TABLE` with `remove_column` on MySQL</a></li>
-      <li><a href="https://github.com/rails/rails/commit/00c4fef3490a89c84edab752b0abcf002e9f52ba">Merge pull request #58340 from 55728/remove-unused-deep-transform-key…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/232106005e13cdc17151ab39f63415e2117757f8">Consolidate MySQL `ALGORITHM` / `LOCK` into `MySQL::AlterTable` state</a></li>
-      <li><a href="https://github.com/rails/rails/commit/20665be96a8cc226e8c8a286d041b37b4a45da28">Merge pull request #58264 from rails/refactor-alter-table</a></li>
-      <li><a href="https://github.com/rails/rails/commit/200d7d1e6c1b224f46d9fecb79523cb92588804b">Transform keys in place in `Parameters#deep_transform_keys!`</a></li>
-      <li><a href="https://github.com/rails/rails/commit/050eefdabe24dd24490a63c9180296df98c5b4a9">RDoc to Markdown in a handful of core extensions</a></li>
-      <li><a href="https://github.com/rails/rails/commit/82e663561b7ad5009c4ae08c6954ce721e201cb0">Merge pull request #58341 from 55728/fix-deprecation-proxy-doc-examples</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f45727848fc87959a02f909af03fb0ccc8db8769">Align default `deprecation_horizon` with the rest of the codebase</a></li>
-      <li><a href="https://github.com/rails/rails/commit/041f703237f216e726b2d64d8fa313145f392d7d">Fix deprecation proxy doc examples that raise ArgumentError</a></li>
-    </ul>
-  </li>
-  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
-    <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/named-cache-stores-for-rails-using-rails-cache-name/91462">Named cache stores for Rails using Rails.cache(&lt;:name&gt;)</a></li>
     </ul>
   </li>
 </ul>
