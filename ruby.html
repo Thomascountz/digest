@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-08-04</h1>
+<h1>Ruby Digest - 2026-08-05</h1>
 <ul>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/d0e506f131fa0e8abead37b6c31505ce4ad8d93e">Merge pull request #58372 from djmb/fix-relation-ids-on-loaded-collec…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a8c7c6c120d5b4549290b4b64e81b2fa1e29e319">RDoc to Markdown in some core extensions</a></li>
+      <li><a href="https://github.com/rails/rails/commit/cdbac993d533fd540b6a19cad9f87416b29f62da">Pluck from the target when the owner is a new record</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4056124a2a17fb18f98b3a45fdcde01ed7766ce8">Merge pull request #58374 from Shopify/ec-pk-ractor</a></li>
+      <li><a href="https://github.com/rails/rails/commit/817fc2a147c249180ee9b271c0e8d82d43457a3a">Merge pull request #58363 from Shopify/actionview-proc-layouts-shareable</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f184b3cc0611d03022b316c0b3a42f35d547fd79">Merge pull request #58362 from Shopify/ec-freeze-action-view-escaping</a></li>
+      <li><a href="https://github.com/rails/rails/commit/7db9c275ced19f2e376bab044bdb5b4c5af1264a">Merge pull request #58368 from kamipo/use_activerecord_key_in_belongs_to</a></li>
+      <li><a href="https://github.com/rails/rails/commit/14f29e9f542739ae3d61497ffdd880b33c00592d">Merge pull request #57994 from Shopify/actionview-template-types-ract…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/741334f12d8abc5b245f4259da64c3bb67f11dd9">Ractor safe Active Record primary key:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ec6024f0af1091fb0802f314e30c0d730c0131e5">Merge pull request #58375 from rosa/activestorage-filename-null-bytes</a></li>
+      <li><a href="https://github.com/rails/rails/commit/35950bd1e96b24c6d07ecbf0726ca2b58e47c04c">Make Proc layouts shareable</a></li>
+      <li><a href="https://github.com/rails/rails/commit/df4bb49eeed65ca7d6ee197a3d8c35d35df7d383">Merge pull request #58326 from Shopify/actionview-field-type-ractor</a></li>
+      <li><a href="https://github.com/rails/rails/commit/87b0809140081ba77ea9e0e3e8fc9f1ae5e2dac7">Merge pull request #58357 from Shopify/actionview-datetime-selector-r…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/d00911805181c409d00f9d8641898459ac3ce0ee">Merge pull request #58352 from Shopify/ec-attribute-type-fix</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ca9be7083fa3bcc2b43aca27df4c33ff927b8964">Add NUL (\0) to the list of unsafe characters for storage</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0b0e226772bf5806c080a35dd98bc09ce5af413d">Use `ActiveRecord::Key` to unify single / composite FK handling in `B…</a></li>
       <li><a href="https://github.com/rails/rails/commit/be96a01be47eeab57954c5a34cde5895a16185f4">Merge pull request #58364 from kamipo/composite_pk_association_fixes</a></li>
-      <li><a href="https://github.com/rails/rails/commit/94d106955bdf07be74dcdcabe9ece26d2ba570aa">Honor composite FKs in belongs_to counter cache, autosave, and has_ma…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f5ae04bef6d47a2ccbbd15a9075622ce6e84116a">Merge pull request #58354 from 55728/fix-belongs-to-aliased-foreign-k…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/4d95127de01767f10528c76bb3208edb2df15d33">Cache alias-resolved foreign key/type on BelongsToAssociation</a></li>
-      <li><a href="https://github.com/rails/rails/commit/6fe06defa444971fb76266310bd8864b6e86235a">Merge pull request #58356 from duffuniverse/docs/fix-table-name-in-wi…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/83451a6428338149f66370c5df370b317f9edb89">Merge pull request #58353 from 55728/fix-sti-changes-doc-example</a></li>
-      <li><a href="https://github.com/rails/rails/commit/65efc5e8eac301075e737db1a8e25be2d27ad8b5">Fix table name in wishlists guide</a></li>
-      <li><a href="https://github.com/rails/rails/commit/482cd35f6656b906b7068b846e4e52dfc228d5fb">Resolve attribute aliases in belongs_to change tracking</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b40514fe9e7199eeca54ad2396b81ffe9b012d78">Fix Single Table Inheritance doc example for the type column change</a></li>
-      <li><a href="https://github.com/rails/rails/commit/469fb6e643f721d392cf254095a27af54e5515f6">Merge pull request #58348 from kamipo/support_attribute_aliases_in_as…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/465a1a32bf6ee15fc114892d2633d33737ec0a01">Prefer `read_attribute` / `write_attribute` over `Base#[]` / `Base#[]…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/47638820a71e909d1f254f54473ed2162a194bd5">Restore `alias_attribute` support in associations</a></li>
-      <li><a href="https://github.com/rails/rails/commit/513e9a5cf6db3d10f1ffcf88bf1fd5128eb4000b">Merge pull request #58347 from kamipo/deprecate_write_attribute_id_re…</a></li>
+    </ul>
+  </li>
+  <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
+    <ul>
+      <li><a href="https://blog.rubygems.org/2026/08/05/4.0.18-released.html">4.0.18 Released</a></li>
     </ul>
   </li>
 </ul>
