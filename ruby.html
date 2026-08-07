@@ -1,51 +1,40 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-08-06</h1>
+<h1>Ruby Digest - 2026-08-07</h1>
 <ul>
-  <li><a href="https://byroot.github.io/">byroot’s blog</a>
+  <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
     <ul>
-      <li><a href="https://byroot.github.io/ruby/performance/2026/08/05/shrinking-ruby-hashes.html">Shrinking Ruby Hashes</a></li>
+      <li><a href="https://rubyweekly.com/issues/812">RuboCop goes project-wide with Rubydex</a></li>
     </ul>
   </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/cdde25ffdc86abdce1bf96e651b1495d72028493">Merge pull request #58400 from seuros/dedup-local-cache-read-multi</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a2c461d27fbf792c10049106c5eac4b47afb856d">Merge pull request #58401 from seuros/dedup-assert-job-matching</a></li>
+      <li><a href="https://github.com/rails/rails/commit/eb0994fce3750277cd8caf6572a4850982f87cb5">Merge pull request #58397 from seuros/dedup-arel-update-self-join</a></li>
+      <li><a href="https://github.com/rails/rails/commit/cab7b0f261b22c7b7a1b79c1325206943238ee61">Extract duplicated job matching logic in ActiveJob::TestHelper</a></li>
+      <li><a href="https://github.com/rails/rails/commit/03565b0a7d4dc1ddc708e7c379f8bc3d3ceb1ad8">Extract duplicated local cache multi-read resolution in Strategy::Loc…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/039486b6d5a1e0454415a7b59608f2e14ca1fa1f">Extract duplicated UPDATE self-join preparation into Arel::Visitors::…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/af95ef17f41fb2ec84904e99b9ac441359868ca5">Merge pull request #58395 from seuros/dedup-bound-sql-literal-cast</a></li>
+      <li><a href="https://github.com/rails/rails/commit/db28eed358578583fbaae7c136789177c7bd22fe">Merge pull request #58382 from Shopify/actionpack-collector-remove-un…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c1273e01366368dc8e6398913adb671da4bc7a16">Merge pull request #58391 from Shopify/actionview-view-context-contai…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0a26de288f4620bec607d0fb4561f24fa93dd40a">Merge pull request #58390 from Shopify/actionview-digestor-mutex-ractor</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c263999d79d32ebcd17253a0d78a7d854cc5156c">Extract duplicated bind value coercion in QueryMethods</a></li>
+      <li><a href="https://github.com/rails/rails/commit/62a799ea8dc39c377031589014b96a9d767cd9f6">Inspect nested attribute `id` in `RecordNotFound` message (#58187)</a></li>
+      <li><a href="https://github.com/rails/rails/commit/47fed4008b9fc4b1e4ac3377da389ded323b8a84">Flatten block content inside links in Action Text markdown conversion…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/7a39d0a6bced9481438542e0d8c1b16af113b4ed">Merge pull request #58392 from seuros/dedup-mysql-execute-batch</a></li>
+      <li><a href="https://github.com/rails/rails/commit/acdc570d448eeb839e95fdd0b8391f201af3625c">Merge pull request #58206 from 55728/fix-ci-template-conditional-blan…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/afdb20d7987b08eb007818518af675ed8734875b">Move duplicated execute_batch up to MySQL::DatabaseStatements</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c652246e15c479b28ed935fdb8cb33ddf3f2815e">Define shareable compiled_method_container readers</a></li>
+      <li><a href="https://github.com/rails/rails/commit/911b897b9788a57545d0249f529d52f540188b6d">Move the Digestor mutex to Ractor-local storage</a></li>
+      <li><a href="https://github.com/rails/rails/commit/57187b9d3a21e38976e187d0b5728c2c736d45d4">Make LookupContext.default_procs values Ractor-shareable</a></li>
       <li><a href="https://github.com/rails/rails/commit/0c940bdce0a7de71b9bdae05b3fc583a9e8ab853">Merge pull request #58270 from nuclearspike/asset-path-single-scan</a></li>
-      <li><a href="https://github.com/rails/rails/commit/7c01a434fee3b529f05851c82c0d634cbd45041c">Merge pull request #58386 from Shopify/hm-mqrkorymymwotzyz</a></li>
-      <li><a href="https://github.com/rails/rails/commit/5da5e3b1a0151fbaf2e6bfd24754179cefd4c88e">Merge pull request #58387 from Shopify/hm-nkymvynpmxoskzyp</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b7a4b11e195952f35842417115955a04b721e682">Reduce allocations during attribute definition</a></li>
-      <li><a href="https://github.com/rails/rails/commit/6bfcbc31159629304c91f4ee847dfd20825ea4a2">Make Relation::FromClause.empty Ractor safe</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f72c9321c7afb634893e33c9c47d29551fb0cc20">Add query predicate hooks for Active Record types (#58135)</a></li>
-      <li><a href="https://github.com/rails/rails/commit/435f27e491c519873c3a77c98e27aaf5e5490eb2">Merge pull request #58383 from Shopify/autosave-cpk-author-test-leak</a></li>
-      <li><a href="https://github.com/rails/rails/commit/62f1e8041477c11bf22ad32f42a64e8adeeab42a">Merge pull request #58281 from Shopify/actionview-template-lookup-ractor</a></li>
-      <li><a href="https://github.com/rails/rails/commit/52924d3ab891970d1b2357255b39a7fd26666760">Delete leaked Cpk::Author in the autosave teardown</a></li>
-      <li><a href="https://github.com/rails/rails/commit/21c85726a09d45c74959d20b60b14431ba3d941b">Merge pull request #58373 from camallen/disable-prepared-statements-fix</a></li>
-      <li><a href="https://github.com/rails/rails/commit/25abc83303f1615e93a24fdd8eafd89ce06b4bc1">Fixes #58371</a></li>
-      <li><a href="https://github.com/rails/rails/commit/17ceda1d93605de5a0f96b7dc199a3d02d9bd451">Merge pull request #58360 from voxik/local-fixtures</a></li>
-      <li><a href="https://github.com/rails/rails/commit/2e501091d5afd7195ba1edae2c5712a99ff9d296">Use local fixtures</a></li>
-      <li><a href="https://github.com/rails/rails/commit/444c16102dc17197ee5e758b018e2428cc925e27">Add ActiveSupport::Ractors.store_if_absent</a></li>
-      <li><a href="https://github.com/rails/rails/commit/bf6b888a7badaa3ae1307df9db853426a1fcd25a">Move the LookupContext::DetailsKey caches to Ractor-local storage</a></li>
-      <li><a href="https://github.com/rails/rails/commit/32a2f9094bc2e9e071fdb68dd5549c2f48e4db7d">Merge pull request #58045 from 55728/fix-continuation-cursor-serialize</a></li>
-      <li><a href="https://github.com/rails/rails/commit/45bdf5da24e2435ace55e470869421162913a4b2">Serialize continuation step cursors through Active Job arguments</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d0e506f131fa0e8abead37b6c31505ce4ad8d93e">Merge pull request #58372 from djmb/fix-relation-ids-on-loaded-collec…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a8c7c6c120d5b4549290b4b64e81b2fa1e29e319">RDoc to Markdown in some core extensions</a></li>
-      <li><a href="https://github.com/rails/rails/commit/cdbac993d533fd540b6a19cad9f87416b29f62da">Pluck from the target when the owner is a new record</a></li>
-    </ul>
-  </li>
-  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
-    <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/show-a-startup-banner-in-bin-rails-console/91469">Show a startup banner in `bin/rails console`</a></li>
     </ul>
   </li>
   <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
     <ul>
       <li><a href="https://blog.rubygems.org/2026/08/06/making-rubygems-guides-ai-friendly.html">Making RubyGems Guides friendly to humans and AI</a></li>
-      <li><a href="https://blog.rubygems.org/2026/08/05/4.0.18-released.html">4.0.18 Released</a></li>
-    </ul>
-  </li>
-  <li><a href="https://mensfeld.pl/">Closer to Code</a>
-    <ul>
-      <li><a href="https://mensfeld.pl/2026/08/karafka-2-6-and-web-ui-1-0-laying-the-groundwork-for-kafka-queues/">Karafka 2.6 and Web UI 1.0: Laying the Groundwork for Kafka Queues</a></li>
     </ul>
   </li>
 </ul>
