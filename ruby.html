@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-08-07</h1>
+<h1>Ruby Digest - 2026-08-08</h1>
 <ul>
-  <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
+  <li><a href="https://world.hey.com/this.week.in.rails">This Week in Rails</a>
     <ul>
-      <li><a href="https://rubyweekly.com/issues/812">RuboCop goes project-wide with Rubydex</a></li>
+      <li><a href="https://world.hey.com/this.week.in.rails/alias_attribute-is-back-pluck-on-unsaved-records-and-more-f3d54191">`alias_attribute` is back, pluck on unsaved records, and more!</a></li>
     </ul>
   </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/e9827aad94a9d53eba6c39e391ce3d003e62755b">RDoc to Markdown in String core extensions</a></li>
+      <li><a href="https://github.com/rails/rails/commit/5ea765e5b00085a22f5cbe863c0d2ac765428242">Allow `config.active_storage.variant_processor` to be set to a class …</a></li>
+      <li><a href="https://github.com/rails/rails/commit/8abb729e18f6c89e6275adf6b218f81e71b5b03e">Merge pull request #58404 from 55728/fix-request-media-type-doc-example</a></li>
+      <li><a href="https://github.com/rails/rails/commit/cf03cd4182d47261bee8919fa90234ffe58ff916">Merge pull request #58399 from Shopify/ar_ractorize_5</a></li>
+      <li><a href="https://github.com/rails/rails/commit/2b28e7d86f1e05aafe1d3565a871f68bd653f599">Make ActiveRecord::ModelSchema.table_name ractor safe</a></li>
+      <li><a href="https://github.com/rails/rails/commit/09783bcb7b74269f44d99464be38d371c807861c">Make ActiveRecord::ModelSchema @symbol_column_to_string_name_hash rac…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c64ab952dd64265165bcc462346da4afedea02b5">Make ActiveRecord::ModelSchema._returning_columns_for_insert ractor safe</a></li>
+      <li><a href="https://github.com/rails/rails/commit/9b6ec3b27e868c0ffa33ae5f4c3e0ae101467751">Make ActiveRecord::Persistence.query_constraints_list ractor safe</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0e8569c84cb78238d00284101f2b01f9c5546c14">Merge pull request #58359 from Shopify/ec-doc-for-erb</a></li>
+      <li><a href="https://github.com/rails/rails/commit/e929223df2692ec7df326e71a7a2f5425a9fe5ca">Merge pull request #58060 from Shopify/ec-notifications-wip</a></li>
+      <li><a href="https://github.com/rails/rails/commit/d0743addea8d13187ae5f043c1d2fa1d879508f3">Use `Ractor#make_shareable` instead of freeze:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/444665776523a939c1c099821760ced3b728cfc8">Allow to configure ERB options through `ActionView::Base`:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/73c73663748ad90f515d9442294eb0c39082a41d">Merge pull request #58405 from rails/rmf-loaded-routes-reloader</a></li>
+      <li><a href="https://github.com/rails/rails/commit/cdbd1b2d850685aa62e1f28439e7709e157b04aa">Avoid reaching for internal state of RoutesReloader in order to write…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/115f92b4d8877846f4b0d711f18526d530f5c6e7">Add back `loaded` to RoutesReloader</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a6b2abf05e36ee1831c8ec6977f0dd89c95ffc59">Ractor compatible Active Support Notifications:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/57710e95e86677e0e53748bf7b728fede3195f81">Fix the `Request#media_type` documentation example [ci skip]</a></li>
       <li><a href="https://github.com/rails/rails/commit/cdde25ffdc86abdce1bf96e651b1495d72028493">Merge pull request #58400 from seuros/dedup-local-cache-read-multi</a></li>
       <li><a href="https://github.com/rails/rails/commit/a2c461d27fbf792c10049106c5eac4b47afb856d">Merge pull request #58401 from seuros/dedup-assert-job-matching</a></li>
       <li><a href="https://github.com/rails/rails/commit/eb0994fce3750277cd8caf6572a4850982f87cb5">Merge pull request #58397 from seuros/dedup-arel-update-self-join</a></li>
-      <li><a href="https://github.com/rails/rails/commit/cab7b0f261b22c7b7a1b79c1325206943238ee61">Extract duplicated job matching logic in ActiveJob::TestHelper</a></li>
-      <li><a href="https://github.com/rails/rails/commit/03565b0a7d4dc1ddc708e7c379f8bc3d3ceb1ad8">Extract duplicated local cache multi-read resolution in Strategy::Loc…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/039486b6d5a1e0454415a7b59608f2e14ca1fa1f">Extract duplicated UPDATE self-join preparation into Arel::Visitors::…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/af95ef17f41fb2ec84904e99b9ac441359868ca5">Merge pull request #58395 from seuros/dedup-bound-sql-literal-cast</a></li>
-      <li><a href="https://github.com/rails/rails/commit/db28eed358578583fbaae7c136789177c7bd22fe">Merge pull request #58382 from Shopify/actionpack-collector-remove-un…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c1273e01366368dc8e6398913adb671da4bc7a16">Merge pull request #58391 from Shopify/actionview-view-context-contai…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/0a26de288f4620bec607d0fb4561f24fa93dd40a">Merge pull request #58390 from Shopify/actionview-digestor-mutex-ractor</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c263999d79d32ebcd17253a0d78a7d854cc5156c">Extract duplicated bind value coercion in QueryMethods</a></li>
-      <li><a href="https://github.com/rails/rails/commit/62a799ea8dc39c377031589014b96a9d767cd9f6">Inspect nested attribute `id` in `RecordNotFound` message (#58187)</a></li>
-      <li><a href="https://github.com/rails/rails/commit/47fed4008b9fc4b1e4ac3377da389ded323b8a84">Flatten block content inside links in Action Text markdown conversion…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/7a39d0a6bced9481438542e0d8c1b16af113b4ed">Merge pull request #58392 from seuros/dedup-mysql-execute-batch</a></li>
-      <li><a href="https://github.com/rails/rails/commit/acdc570d448eeb839e95fdd0b8391f201af3625c">Merge pull request #58206 from 55728/fix-ci-template-conditional-blan…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/afdb20d7987b08eb007818518af675ed8734875b">Move duplicated execute_batch up to MySQL::DatabaseStatements</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c652246e15c479b28ed935fdb8cb33ddf3f2815e">Define shareable compiled_method_container readers</a></li>
-      <li><a href="https://github.com/rails/rails/commit/911b897b9788a57545d0249f529d52f540188b6d">Move the Digestor mutex to Ractor-local storage</a></li>
-      <li><a href="https://github.com/rails/rails/commit/57187b9d3a21e38976e187d0b5728c2c736d45d4">Make LookupContext.default_procs values Ractor-shareable</a></li>
-      <li><a href="https://github.com/rails/rails/commit/0c940bdce0a7de71b9bdae05b3fc583a9e8ab853">Merge pull request #58270 from nuclearspike/asset-path-single-scan</a></li>
     </ul>
   </li>
-  <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
+  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
     <ul>
-      <li><a href="https://blog.rubygems.org/2026/08/06/making-rubygems-guides-ai-friendly.html">Making RubyGems Guides friendly to humans and AI</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/sending-user-notifications-in-activerecord-callbacks/91477">Sending user notifications in ActiveRecord callbacks?</a></li>
+    </ul>
+  </li>
+  <li><a href="https://us11.campaign-archive.com/feed?u=1aa0f43522f6d9ef96d1c5d6f&id=840412962b">Ruby Performance Newsletter Archive Feed</a>
+    <ul>
+      <li><a href="https://mailchi.mp/edb395a34fea/four-line-fridays-tiling-window-managers-software-factories-a-new-mise-feature-and-the-best-ai-detector-yet">Four Line Fridays: tiling window managers, software factories, a new mise feature, and the best AI detector yet</a></li>
     </ul>
   </li>
 </ul>
