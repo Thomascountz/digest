@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-08-13</h1>
+<h1>Ruby Digest - 2026-08-14</h1>
 <ul>
+  <li><a href="https://byroot.github.io/">byroot’s blog</a>
+    <ul>
+      <li><a href="https://byroot.github.io/ruby/performance/2026/08/13/speeding-up-ruby-hashes.html">Speeding Up (small) Ruby Hashes</a></li>
+    </ul>
+  </li>
+  <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
+    <ul>
+      <li><a href="https://rubyweekly.com/issues/813">A new attempt to fork Rails</a></li>
+    </ul>
+  </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/42274c880590c8f05ee553709701ef97dfaa0860">Merge pull request #58421 from ngan/np-faster-schema-dump</a></li>
+      <li><a href="https://github.com/rails/rails/commit/431ba5cf46bdb9833c1f0f1dd7929a8103ffe49d">Let the schema readers answer for many tables at once</a></li>
+      <li><a href="https://github.com/rails/rails/commit/e5d90d252272e45104c93c9134626b080f633ae5">Add support for the HTTP QUERY method (#57973)</a></li>
+      <li><a href="https://github.com/rails/rails/commit/586900a532673945ea782ff849e21aba1544392c">Merge pull request #58469 from Shopify/hm-swlpnkrrvrnnyqrq</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ce95deb79b0402a21cf2fe854f47179427af98c7">Merge pull request #57629 from Shopify/as_callbacks_ractorize</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4d2b531e8faa70cf6f6adbb6bc48b52726b8d860">Remove &quot;missing&quot; workarounds from Active Record</a></li>
+      <li><a href="https://github.com/rails/rails/commit/d743cf0524536bd57894bb47edff95346074ea3a">Merge pull request #57226 from hammadxcm/fix-method-missing-name-erro…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/1c03ccc2db36484a18aa3808f4fa52c859277260">Configure tests to set Ractors to :warn instead of :raise:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4b2edb1e799c0a36d18cdd508ca80f4150f97ef4">Reduce the size of the patch:</a></li>
       <li><a href="https://github.com/rails/rails/commit/ef8d9606d9a0ac715a481b83aa70fd6b2fcb504a">Merge pull request #58467 from Shopify/log_subscriber_ractorize</a></li>
+      <li><a href="https://github.com/rails/rails/commit/56f67b9e4290115fe9222ff530d057fddbcc8fba">Fix method_missing performance regression for virtual SELECT alias at…</a></li>
       <li><a href="https://github.com/rails/rails/commit/649326ed96fc86d1170b34c992fd2f75c2208466">Merge pull request #58468 from skipkayhil/hm-putnqoylqpkqoyzt</a></li>
       <li><a href="https://github.com/rails/rails/commit/ce050c0e2fd0fc1262694f947a362cfbfb5c8d85">Reduce Pattern#method_name allocations during boot</a></li>
       <li><a href="https://github.com/rails/rails/commit/2f5d6dd1bb5b06fdf8ef81789eff12f83d4795eb">Make ActiveSupport::LogSubscriber ractor safe</a></li>
-      <li><a href="https://github.com/rails/rails/commit/adb231cb63dff773a66a77717ccf8a7cd96f672f">Merge pull request #58466 from Shopify/hm-kuskqntvpkpktmuq</a></li>
-      <li><a href="https://github.com/rails/rails/commit/4f73179eae59889cecdd63941c5543688b6fec11">Restore performance for dynamic attribute read</a></li>
-      <li><a href="https://github.com/rails/rails/commit/187356a1bd0b3255470c5ff5cdce80332afd40c3">Merge pull request #58462 from Shopify/hm-msmnskoklqrryunv</a></li>
-      <li><a href="https://github.com/rails/rails/commit/dd980d492e82315200247c5a80a65254d2f118e5">Merge pull request #58321 from Saidbek/fix/as-timezone-canada-pacific…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/7b911de2d16f4af982c67e07c4b964a9c25b6f7e">Allow ffmpeg and ffprobe input arguments to be configured (#58461)</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1a59302e642b98e78e88464edf0f3b7741359a92">Remove attribute_method_patterns_cache</a></li>
-      <li><a href="https://github.com/rails/rails/commit/33567b7aea504189e5fcf52269c31a0fd143535e">Merge pull request #58460 from kamipo/active_support_notifications_sn…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/7622bcee09e7a3fcd64febf1cb5aaf17f3930d72">Merge pull request #58446 from cgunther/fix-query-by-tuple-table-refe…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ab9c16236c92ee32d35f02426e61f1e642fcd641">Rename Alberta Time zone mapping to Alberta</a></li>
-      <li><a href="https://github.com/rails/rails/commit/bd9ea455eb74ad8589eb48be3791b0be831f619a">Introduce `to_ractor_snapshot` / `load_ractor_snapshot` protocol for …</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b9a00c405b9f3c25c2c3049eb853191f61060bc4">Merge pull request #58445 from Shopify/actionview-frozen-non-strict-t…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c2488b7cffb2e72f40316c7195410f13746d4adf">Merge pull request #58403 from seuros/dedup-conditional-executor</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f8b7d1ff2e57d3a995879b26a2f728bc216bd888">Merge pull request #57846 from joaoGabriel55/fix_normalizes_on_an_enu…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1793a181f4cc8b7f51fd3f3a009482139ba6a726">Apply normalization before the underlying type validates a value</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a7a907e93e7bd13c0d2a99750d65519e8e638e9c">Merge pull request #58455 from byroot/Gimbardo-console</a></li>
-      <li><a href="https://github.com/rails/rails/commit/8ca4e0bc229d37526ebf3eef49a5fc844ffa4f18">show bin/console startup banner based on IRB</a></li>
     </ul>
   </li>
   <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
     <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/a-modern-presentation-layer-for-rails/91494">A modern presentation layer for Rails</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/changing-auth-generators-default-route/91490">Changing auth generator's default route</a></li>
-    </ul>
-  </li>
-  <li><a href="https://mensfeld.pl/">Closer to Code</a>
-    <ul>
-      <li><a href="https://mensfeld.pl/2026/08/ruby-rails-performance-roundup-backlog/">Ruby and Rails Performance Roundup: The Backlog Edition</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/torque-postgresql-v4-1-release/91500">Torque PostgreSQL v4.1 release</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/trying-to-create-a-result-set-of-joined-tables-inside-rails-controller/91497">Trying to create a result set of joined tables inside rails controller</a></li>
     </ul>
   </li>
 </ul>
