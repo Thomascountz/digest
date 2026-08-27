@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-08-26</h1>
+<h1>Ruby Digest - 2026-08-27</h1>
 <ul>
+  <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
+    <ul>
+      <li><a href="https://rubyweekly.com/issues/814">Bringing Rails into the Ractor age</a></li>
+    </ul>
+  </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
-      <li><a href="https://github.com/rails/rails/commit/e1f496d774049d0125b6128525d1bd3bff10e8f8">Merge pull request #58570 from luizkowalski/fix-redis-cache-call</a></li>
-      <li><a href="https://github.com/rails/rails/commit/84437f5bf8e9ce7332182cdc336d886ebc4bd9cf">Fix RedisCacheStore clear and stats with redis-client</a></li>
-      <li><a href="https://github.com/rails/rails/commit/5ad5ac2287abf3167890d5c23d628a57c4848360">Merge pull request #58563 from jakemcallister/codex/fix-multiline-exc…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1cfd355b09a88dd5246578f80afb6aa40d7ef0d4">Fix PostgreSQL multiline exclusion constraints</a></li>
-      <li><a href="https://github.com/rails/rails/commit/60eb5cb72dbf06ef9de39c6786df2f20e838884f">Merge pull request #58552 from marcoroth/herb-engine</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ca3204da0d8fcfc8a246ee96766c11cd336d8e1a">Merge pull request #58562 from Shopify/ractorize_i18n_en</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a0659645ded7f8bd448d4a393c87da9639c39c0e">Make en.rb translation load path contents ractor safe</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1110e56f959a1289da2c9b864eddd674dca850dc">Add Herb as an HTML-aware ERB implementation</a></li>
-      <li><a href="https://github.com/rails/rails/commit/8d07fafa447e4979da96389a3f58cace92964ef2">Restore RDoc files with code examples in lists</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1f0c247be3da6c40332df94a4d1d2efdaaf7260c">Escape attachment captions in `Attachment#to_markdown` (#58553)</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ac1a25371cdb30e0a8a8801e62de1a2cb373b530">Merge pull request #58593 from kamipo/worktree-marshal-format-version…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ccafb8c1def1f48ae4cec8ea6fa91744e5af3f53">Remove no-op `Marshalling.format_version` handling from tests</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6c4eba9b48dc581961c92a786190437092cfc187">Merge pull request #58592 from byroot/url-for-hash-dup-2</a></li>
+      <li><a href="https://github.com/rails/rails/commit/04d571b431099a82ab50b491d1a6124aeefc32d5">url_for: avoid allocating `inner_option` hash when not needed</a></li>
+      <li><a href="https://github.com/rails/rails/commit/d5d33e29518cc1a8e34c7c0cb25c405f997b4a45">url_for: avoid deleting Hash keys just to add them back</a></li>
+      <li><a href="https://github.com/rails/rails/commit/68c03f91afe068f3329fc6bf8f70234b3f5aace2">url_for: Use `Hash#except` instead of `#dup` + `#delete`</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0e1f60dfac1fe869a0d83e07d3913dcb6d625ad0">Merge pull request #58590 from gmcgibbon/fix-connection-pool-flaky-tests</a></li>
+      <li><a href="https://github.com/rails/rails/commit/82b0058c478b5d3df89d185c513fab731ae3071a">Fix flaky connection pool disconnect tests</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0ffca96a3ce5c2c30784c84072983a50506cb418">Merge pull request #58584 from MrChoclate/optimize-schema-cache-dump-…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/852aa3b0699dd555c01effd5dcd49ddc973a8a18">Optimize loading of .dump schema cache files</a></li>
+      <li><a href="https://github.com/rails/rails/commit/991ab7c87911e59d8033c2ed1fa9893334908139">Merge pull request #58576 from gmcgibbon/actionpack_ractorize</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c0929abb6617b8b227becbab35b2b194e0151b41">Merge pull request #58577 from gmcgibbon/pk_assign_ractor_safe</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a781400460529b3e09ca8a82271fc3905eb9ac99">Merge pull request #58569 from aryrabelo/remove-unreachable-kwarg-def…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/03360b8ab017058805d3651b9f381d7ed01b96c6">Merge pull request #58567 from aryrabelo/remove-unused-route-set-test…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/2db2e81f029b246d30052e960bab6a8e7114a755">Merge pull request #58568 from aryrabelo/remove-unused-active-record-…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/dd6e5f0cb1e45dee135bca554665b70536a5dfb7">Remove unreachable branch from HomogeneousIn#fetch_attribute</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f327018ac9e5e5bd9acc154b047ddd89c8e84065">Remove unused `columns_hash` from the Arel fake record</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4cadc4e77262ac9dd2701d9aaf5ddb2ad5299963">Merge pull request #58580 from byroot/remove-dead-clear</a></li>
+      <li><a href="https://github.com/rails/rails/commit/22a02ee12e4159bb07f0b9dca0c3e5897a0d4ea7">Get rid of `QueryCacheRegistry#clear`</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c8dcd11075225c094a1f2c7f9e58842a848da380">Merge pull request #58574 from Saidbek/fix/as-redis-cache-store-hashr…</a></li>
     </ul>
   </li>
   <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
     <ul>
+      <li><a href="https://discuss.rubyonrails.org/t/my-rails-website-intermittently-returns-empty-json-responses-from-an-api-endpoint-in-production/91550">My Rails Website Intermittently Returns Empty JSON Responses From an API Endpoint in Production</a></li>
+      <li><a href="https://discuss.rubyonrails.org/t/the-active-module-gem-modules-or-classes-as-first-class-ar-objects-and-object-based-enums/91549">The active_module gem: Modules (or classes) as first class AR objects and object based enums</a></li>
       <li><a href="https://discuss.rubyonrails.org/t/four-things-that-cost-me-hours-streaming-llm-tokens-from-actioncontroller-live/91547">Four things that cost me hours streaming LLM tokens from ActionController::Live</a></li>
+    </ul>
+  </li>
+  <li><a href="https://www.ruby-lang.org/en/feeds/news.rss">Ruby News</a>
+    <ul>
+      <li><a href="https://www.ruby-lang.org/en/news/2026/08/27/multiple-vulnerabilities-in-resolv/">Security advisories: CVE-2026-80212 and CVE-2026-80213</a></li>
     </ul>
   </li>
 </ul>
