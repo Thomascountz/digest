@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-09-02</h1>
+<h1>Ruby Digest - 2026-09-03</h1>
 <ul>
-  <li><a href="https://railsatscale.com/">Rails at Scale</a>
-    <ul>
-      <li><a href="https://railsatscale.com/2026-09-01-zjit-gc-fastpath/">ZJIT 🤝 GC: Inlining GC Fastpath in ZJIT</a></li>
-    </ul>
-  </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/2164c6c6f7fb91cc1caff5ee4b05931445de42ea">Merge pull request #58635 from lukasedw/pg-enable-trigger-all-ensure</a></li>
+      <li><a href="https://github.com/rails/rails/commit/edf3c4aae712b9fbc927e4e7fa036313908ea897">Re-enable PostgreSQL triggers when `disable_referential_integrity` ra…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ac15cd1cbbfa7556dd5bd3192a615e23e1b85171">Merge pull request #58638 from beauraF/add-pg-error-verbosity-support</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4362885dac36a4aae6921bfeb7fec606cd4f06a3">Merge pull request #58647 from Shopify/actionpack-controller-config-r…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/37a997998c2d235719ab2449c12b309e39451eae">Merge pull request #58653 from Shopify/ec-fire-on-wip</a></li>
+      <li><a href="https://github.com/rails/rails/commit/88f486fc18ef46e4481455cf378355d5630dd16a">Freeze Active Record specific `on` callbacks:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a3f09dc5380dd7623be5bc6b0419517f13f517b2">Merge pull request #58639 from moizafzal936/fix-fetch-multi-local-cac…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3df2cbea2027026a29edb92cbb7e336a63e35444">Merge pull request #58642 from Shopify/ec-ar-config-ractor-safe</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0de1bf6ed327f3ea3e8290cfb25a4c7be026b82f">Freeze Active Record time zone related configuration:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/7d3b098615d01563bdab9909cbc2048ab5012e54">Merge pull request #58627 from Shopify/actionpack-singleton-class-attrs</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a00a6059fef4cfe422ad93963adf3987ae85680e">Make the controller configs shareable in ractorize!</a></li>
+      <li><a href="https://github.com/rails/rails/commit/5e84a55f831cd44f3d64eeeb2f1a059b503ff706">Merge pull request #58643 from Shopify/actionview-asset-tag-helper-se…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/679181480b0197d087c0d6bd421f0f4ac4644372">Merge pull request #58629 from Shopify/actionpack-allow-browser-ractor</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3dfe87b10cba0a40646bdef58c8844e781ec9d09">Store the AssetTagHelper settings in singleton class attributes</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a44c391be06d942e665a477d25c5e344d33f1390">Store MimeNegotiation settings as instance variables</a></li>
+      <li><a href="https://github.com/rails/rails/commit/18e7116be6c5663ca3e5c245e978ccfaf1218c3d">Make the allow_browser callback shareable</a></li>
+      <li><a href="https://github.com/rails/rails/commit/9f244cba7f533482c70bbce9efdad3dadc3eb720">Add PostgreSQL adapter support for configuring error_verbosity</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0f231b0f6e0333f7fb645aca16596b0d35640fd3">Preserve fetch_multi key order when local cache is active</a></li>
       <li><a href="https://github.com/rails/rails/commit/86d9bbff9242ae91bfc8560ec900ef8245e35d44">Merge pull request #58636 from yahonda/remove-leftover-singleton-perf…</a></li>
       <li><a href="https://github.com/rails/rails/commit/0dd408e2d3fd86566b5aa1c325e23cf59eed16fe">Merge pull request #58578 from Shopify/ractorize_model_schema</a></li>
-      <li><a href="https://github.com/rails/rails/commit/50068909d648dc66946208e1c3cc0b3678f81819">Remove leftover perform_query stubs in TrilogyAdapterTest</a></li>
-      <li><a href="https://github.com/rails/rails/commit/4b2de2c402e69db6b61bcf14f092dac58901c485">Isolate tests using on_ractor to avoid Ractor bug</a></li>
-      <li><a href="https://github.com/rails/rails/commit/51a2a815a2663b3a35f6af862b27b1dbd2287528">Ractorize model schema</a></li>
-      <li><a href="https://github.com/rails/rails/commit/4130768a1b0d95da640ac792920e54988cf2d12f">Merge pull request #58622 from ThrwatElmo/thrwat/preloader-nil-key</a></li>
-      <li><a href="https://github.com/rails/rails/commit/20f6c257ce85523f17df2d5af7273f199fba58f1">Merge pull request #58626 from byroot/subscription-filter-alloc-reduce</a></li>
-      <li><a href="https://github.com/rails/rails/commit/aaa56f5d2a1d6ef976e37ddf84690724a71b9ff2">Optimize EventReporter::LogSubscriber#subscription_filter</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ff9890c8445ebba2586f0d06cde66c371fdca90e">Merge pull request #58625 from dpaluy/fix-redundant-through-join</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a378ab6bdd91b9535e896fcbf4408457430dfd30">Merge pull request #58303 from josevalim/jv-require-concurrent</a></li>
-      <li><a href="https://github.com/rails/rails/commit/70691a98ee712984fd900d27e53d02ac97982501">Avoid a redundant join in scoped through associations</a></li>
-    </ul>
-  </li>
-  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
-    <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/request-for-review-pr-57863/91591">Request for review: PR #57863</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/allow-activemodel-attributes-to-be-declared-without-a-writer/91588">Allow ActiveModel::Attributes to be declared without a writer</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/can-ruby-on-rails-be-used-to-build-modern-agriculture-software/91586">Can Ruby on Rails Be Used to Build Modern Agriculture Software?</a></li>
     </ul>
   </li>
   <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
     <ul>
       <li><a href="https://blog.rubygems.org/2026/09/02/4.0.20-released.html">4.0.20 Released</a></li>
-    </ul>
-  </li>
-  <li><a href="https://blog.peterzhu.ca/">Peter Zhu</a>
-    <ul>
-      <li><a href="https://blog.peterzhu.ca/zjit-gc-fastpath/">ZJIT 🤝 GC: Inlining GC Fastpath in ZJIT</a></li>
     </ul>
   </li>
 </ul>
