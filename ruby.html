@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-09-04</h1>
+<h1>Ruby Digest - 2026-09-05</h1>
 <ul>
-  <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
-    <ul>
-      <li><a href="https://rubyweekly.com/issues/815">ZJIT can now inline GC allocations</a></li>
-    </ul>
-  </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/7ba5fa304be84f57d93e93515c507085339b8402">Merge pull request #58673 from Shopify/remove_more_cvars</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4e948b6e00ebd4ebeb1bf0f16313954ee1e8353b">Store the FormTagHelper settings in singleton class attributes</a></li>
+      <li><a href="https://github.com/rails/rails/commit/271b76079d31633f3594dcec0439060c1292fd33">Store ActionView::Base.default_form_builder in a singleton class attr…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/5c36751e52802bb6deebae975ad04ebc49e191f1">Store the FormHelper settings in singleton class attributes</a></li>
+      <li><a href="https://github.com/rails/rails/commit/efb0c7b5973ce68b2730c0c8df44f32700a597b7">Store button_to_generates_button_tag in a singleton class attribute</a></li>
+      <li><a href="https://github.com/rails/rails/commit/5a00423021412ee600df7cc9446e93fe88e98502">Store the ActionDispatch::Http::URL settings in singleton class attri…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/55141ecff313ff62e230b36d42630a1f69020cfe">Store prepend_content_exfiltration_prevention in a singleton class at…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/1ec64ce82451c52d7407fa665ea5f95291430c23">Merge pull request #58640 from Shopify/ec-view-paths-registry</a></li>
+      <li><a href="https://github.com/rails/rails/commit/b426802ac2921533d5af33bcb1061250024f7c66">Allow to access view paths in a Ractor:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4d2135491b1d4d919291fe42999a8a6eb94bff1f">Merge pull request #58659 from Shopify/boot-hooks-capture-free</a></li>
+      <li><a href="https://github.com/rails/rails/commit/18b68d18737f65993f8ca25192d001a98e8beee1">Hoist reflection reads out of association callback procs</a></li>
+      <li><a href="https://github.com/rails/rails/commit/bff2fc464b94bdefe9df97ba86058c98529ff3b2">Make the has_secure_token callback shareable</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ff67bf9f08e189d76e75328ad9b0efd8ea905092">Make the boot reloader and executor hooks capture-free</a></li>
+      <li><a href="https://github.com/rails/rails/commit/827996a43c6a71674678d67978fa499a712b18a9">Fix a Ractor unsafe callback registered at boot time:</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c3df5a6facc4eb445223990d4bf9fd0c6a35eb5f">Merge pull request #58669 from yahonda/fix-layouts-guide-redirect-link</a></li>
+      <li><a href="https://github.com/rails/rails/commit/99cba45325202759f2e4c941f275f8de563931ad">Fix broken link to Redirecting Requests in layouts_and_rendering.md</a></li>
       <li><a href="https://github.com/rails/rails/commit/2dc3c0d3b5dc001cbe1091e8980083a29ad0200b">[RF-DOCS] Rewrite the Layouts and Rendering guide (#57152)</a></li>
       <li><a href="https://github.com/rails/rails/commit/ae44d23b1bbc459558dc624a43294d55569d0d99">Merge pull request #58666 from ilianah/schema-readers-single-table-eq…</a></li>
       <li><a href="https://github.com/rails/rails/commit/24baf7ab874edeae25b147fa25943738c514c0ce">Merge pull request #58628 from rnestler/docs/switch-from-pool-to-max_…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a1cb419e4a9fe412bf9098168d758b2e1457db29">Use equality comparison when fetching information about a single table</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ce87702ae7aed3ee219a3502710cfce1e5a3b7f6">Merge pull request #58623 from carlosdanielpohlod/assert-routing-all-…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/152594147f2dff25093829aebe8aa8eecf7de286">Merge pull request #58656 from Shopify/ec-ad-headers-regression</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1e4c2de2d518c7158ca77e61482b87891008d943">SchemaContext#attributes: remove Ractors.store_if_absent (#58651)</a></li>
-      <li><a href="https://github.com/rails/rails/commit/41712078eb9e44a387e9b31ec4cabc7b90e906ac">Prevent freezing Action Dispatch default headers config itself:</a></li>
-      <li><a href="https://github.com/rails/rails/commit/2164c6c6f7fb91cc1caff5ee4b05931445de42ea">Merge pull request #58635 from lukasedw/pg-enable-trigger-all-ensure</a></li>
-      <li><a href="https://github.com/rails/rails/commit/edf3c4aae712b9fbc927e4e7fa036313908ea897">Re-enable PostgreSQL triggers when `disable_referential_integrity` ra…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ac15cd1cbbfa7556dd5bd3192a615e23e1b85171">Merge pull request #58638 from beauraF/add-pg-error-verbosity-support</a></li>
-    </ul>
-  </li>
-  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
-    <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/shape-up-autonomy-and-personality-in-software-teams/91605">Shape Up, autonomy, and personality in software teams</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/how-do-these-proxy-types-work-exactly/91603">How do these 'proxy' types work exactly?</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/rails-7-2-should-a-short-lived-oauth-access-token-be-stored-in-cookiestore-or-activerecordstore/91602">Rails 7.2: Should a short-lived OAuth access token be stored in CookieStore or ActiveRecordStore?</a></li>
     </ul>
   </li>
 </ul>
