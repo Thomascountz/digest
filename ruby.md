@@ -1,16 +1,13 @@
-# Ruby Digest - 2026-09-23
+# Ruby Digest - 2026-09-24
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
+  - [Merge pull request #58854 from carlosdanielpohlod/strict-locals-ascii…](https://github.com/rails/rails/commit/f3866028dd6a802599a0c8a243b2f7a2cccc0932)
+  - [Fix non-ASCII strict locals defaults in ASCII-only templates](https://github.com/rails/rails/commit/e1bcdfdb887c0eb851b3c89e54c1422d0e08b3f9)
+  - [Merge pull request #58721 from marcoroth/herb-option](https://github.com/rails/rails/commit/9fb66ed2dc239e9f78d51c8e36b43f287f548d52)
   - [Merge pull request #58829 from rails/load-mysql-structure-from-stdin](https://github.com/rails/rails/commit/2cc9c08699bc8062c0851dab772cbea64affabda)
   - [Drop the explicit SET FOREIGN_KEY_CHECKS statements from MySQL `db:sc…](https://github.com/rails/rails/commit/f998cdb432a0b488eb943d602ab1f6e645378ebf)
   - [Use standard input for MySQL `db:schema:load`](https://github.com/rails/rails/commit/3f949e33e8c248ea747e7df8e508056b5a6dbc19)
-  - [Merge pull request #58800 from Edilbek/fix-server-timing-nested-parti…](https://github.com/rails/rails/commit/632e721f52098076213b541b980678f54ace90ad)
-  - [Merge pull request #58852 from 55728/fix-reflection-klass-memoization](https://github.com/rails/rails/commit/484729f64c9dc75117bb835a4a31f5185abf0879)
-  - [Memoize `MacroReflection#klass` for self-referential associations](https://github.com/rails/rails/commit/76b232610dd9d03f0bf0ba69c4ef92a87b7f9f94)
-  - [Merge pull request #58850 from petrenkorf/fix-broadcast-logger-active…](https://github.com/rails/rails/commit/1bbf2b7108f2f91b2bb1a3a6da40806059b2664a)
-  - [Fix NoMethodError when Active Job's logger is a BroadcastLogger](https://github.com/rails/rails/commit/342c57a955c324faad9b0786a5ac79d48b9fc4dd)
 - [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
   - [What is the best way to integrate flight booking APIs into a Rails travel app?](https://discuss.rubyonrails.org/t/what-is-the-best-way-to-integrate-flight-booking-apis-into-a-rails-travel-app/91668)
-  - [How can I add multiple currencies to a travel booking application built with Rails?](https://discuss.rubyonrails.org/t/how-can-i-add-multiple-currencies-to-a-travel-booking-application-built-with-rails/91667)
 - [Ruby News](https://www.ruby-lang.org/en/feeds/news.rss)
   - [Ruby 3.4.11 Released](https://www.ruby-lang.org/en/news/2026/09/23/ruby-3-4-11-released/)
