@@ -1,6 +1,12 @@
-# Ruby Digest - 2026-10-05
+# Ruby Digest - 2026-10-06
 
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
+  - [Merge pull request #58949 from estebansa19/fix-rdoc-markup-reference-…](https://github.com/rails/rails/commit/f75d20b4c37e34131b173bab53527d735309f5b3)
+  - [Merge pull request #58946 from fabbyd/build-insert-values-list-once](https://github.com/rails/rails/commit/d8277d6d8a0275c59c9f399e1dd407d762c2ea71)
+  - [Fix broken RDoc markup reference links in the API guidelines](https://github.com/rails/rails/commit/f2970320f016fd114067ee457512add18f515e24)
+  - [Build the insert values list once for raw on_duplicate upserts on MySQL](https://github.com/rails/rails/commit/fe4c19a0f2b08f8ef0188120dcf5b4502ac83350)
+  - [Merge pull request #58943 from excid3/fix-default-headers-framework-d…](https://github.com/rails/rails/commit/4658033fa3b391ab8a928994e12a30257a0afa22)
+  - [Fix default_headers example in new_framework_defaults_8_2](https://github.com/rails/rails/commit/836bcc059f3e73f9aeba705bfa3600f0f88fa77c)
   - [Merge pull request #58847 from rails/compose-compatibility-table-defi…](https://github.com/rails/rails/commit/f5aba78292f1c101d7e7d0cca52b55edf76856a5)
   - [Compose compatibility TableDefinition modules in Migration::Current](https://github.com/rails/rails/commit/b3d7be0926fc61565088d71132b1e85ad5ca586b)
   - [Merge pull request #58846 from rails/fix-v5-1-change-column-table-nam…](https://github.com/rails/rails/commit/d0081edcc96f6abb12ecba7af6d9347153b2219b)
@@ -15,8 +21,3 @@
   - [Restore 100ms between checkins in test_checkout_fairness](https://github.com/rails/rails/commit/79c16379a32357e2918c8d6c1adb4239047db05b)
   - [Add regression tests for adapter-specific migration compatibility](https://github.com/rails/rails/commit/bec0a2a25d59c8ff95205be5682c3c82bad1ccdf)
   - [Merge pull request #58923 from yahonda/pg-maintenance-database](https://github.com/rails/rails/commit/a19a8ef55ecd8e0848370b6da19bbc971e032274)
-  - [Add maintenance_database option to the PostgreSQL adapter](https://github.com/rails/rails/commit/0b66a5d0024b2cf18da8b9eed10dfabc84a29d30)
-  - [Merge pull request #58934 from dpep/remove-orphaned-legacy-adapter-fi…](https://github.com/rails/rails/commit/90c957482817e20d3f86ebfa4ba9b922d8e7d8f7)
-  - [Remove orphaned legacy adapter test fixtures](https://github.com/rails/rails/commit/fadc0c715597e45b8df768f07a44a7faba3399fb)
-- [Ruby on Rails Discussions - Latest topics](https://discuss.rubyonrails.org/latest)
-  - [Proposal: Action Cable should accept a WebSocket handshake with no Origin header, as Action Controller does](https://discuss.rubyonrails.org/t/proposal-action-cable-should-accept-a-websocket-handshake-with-no-origin-header-as-action-controller-does/91694)
