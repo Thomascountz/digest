@@ -1,10 +1,12 @@
-# Ruby Digest - 2026-10-09
+# Ruby Digest - 2026-10-10
 
-- [Ruby Weekly](https://rubyweekly.com/)
-  - [Making a case for real macros in Ruby](https://rubyweekly.com/issues/820)
+- [Rails at Scale](https://railsatscale.com/)
+  - [ZJIT is now as fast as YJIT](https://railsatscale.com/2026-10-09-zjit-is-now-as-fast-as-yjit/)
 - [This Week in Rails](https://world.hey.com/this.week.in.rails)
   - [Better ACL S3 control and more](https://world.hey.com/this.week.in.rails/better-acl-s3-control-and-more-7610a5e9)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
+  - [Merge pull request #58745 from yaroslav/faster-string-blank](https://github.com/rails/rails/commit/48dc419a790893357ba0c4b49ed6c4d043dbeb9c)
+  - [Speed up String#blank? with a byte loop for ASCII-only strings](https://github.com/rails/rails/commit/7234e94d0b007055126a3fd55115db8e3beb8568)
   - [Merge pull request #59013 from kushagr3/fix_composed_of_range](https://github.com/rails/rails/commit/27ccca4ae367add808b65dc26bf46e4f81f41fe5)
   - [Fix `where` with a `Range` of value objects on a single-mapping `comp…](https://github.com/rails/rails/commit/c889e4fe907909e70d2367829f419ae1872d2bdc)
   - [Merge pull request #59014 from kamipo/worktree-combinable-constraint-…](https://github.com/rails/rails/commit/70dc0d8daef5d2c7835c1ce47e9367334e1fde22)
@@ -23,7 +25,3 @@
   - [Merge pull request #58881 from SulimanAbdulrazzaq/fix/connected-to-st…](https://github.com/rails/rails/commit/cdc0a613b9259903a59e4d326b9bf3c6f6d5abf6)
   - [Merge pull request #59010 from hachi8833/fix_desc_of_default_scope_wh…](https://github.com/rails/rails/commit/951f9a3966915129f86ab191089cc08b56491df3)
   - [Merge pull request #59008 from hachi8833/fix_outdated_ref_for_associa…](https://github.com/rails/rails/commit/1a77256869506ead52450a7808f78371349b1bd3)
-  - [Merge pull request #59005 from hachi8833/fix_inconsistent_enum_queryi…](https://github.com/rails/rails/commit/64452a92645f13bb1b79344466664c5c60f13a2a)
-  - [Merge pull request #59004 from hachi8833/fix_sample_code_for_halting_…](https://github.com/rails/rails/commit/9d5a93a0cc1b7fb85d3588c7ff9f5bdacedfd1b0)
-- [RubyGems Blog](https://blog.rubygems.org/)
-  - [4.1.0.beta2 Released](https://blog.rubygems.org/2026/10/08/4.1.0.beta2-released.html)
