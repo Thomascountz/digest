@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-10-29</h1>
+<h1>Ruby Digest - 2026-10-30</h1>
 <ul>
   <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
     <ul>
@@ -10,38 +10,37 @@
   </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
-      <li><a href="https://github.com/rails/rails/commit/f39c8aad8ba71f92dd018f339fa4d1696ccb0cd8">Merge pull request #59415 from kehra/fix/exists-default-order</a></li>
-      <li><a href="https://github.com/rails/rails/commit/396fe3ab1532696b9fbedf8a12eddf55e76cd61b">Exclude `default_order` when constructing relation for `exists?`</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ad9a17a5e719f0ad328b08192d5eeed81a11f111">Merge pull request #59417 from czj/perf/days-in-month-lazy-year</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ee14e4dcd164ad656d4927624f75d1b597e868d3">Read the current year in Time.days_in_month only for February</a></li>
-      <li><a href="https://github.com/rails/rails/commit/31d9cf24e4566f13ff44549b50882356dba33bbc">Remove Markdown directives in Action Text</a></li>
-      <li><a href="https://github.com/rails/rails/commit/86510a797e31c3ec1e98d9de587bf236ddbe734f">Remove Markdown directives in Action Pack</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a5729329606f01fde4bca7bf6351657c6076396c">Merge pull request #59414 from hachi8833/remove_link_from_engine_guide</a></li>
-      <li><a href="https://github.com/rails/rails/commit/80eeea65252bba51ed3780d88e364f6836e7cf9a">[ci skip] Remove invalid link for ActiveRecord::Railtie</a></li>
-      <li><a href="https://github.com/rails/rails/commit/66bacf674c9f651a88fbda7120ce2796beeaa51a">Merge pull request #59399 from czj/perf/pg-integer-array-coders</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ce948ef38fb4cd2338e5f0fa7106aadcd0636bfc">Decode and encode PostgreSQL integer arrays in C</a></li>
-      <li><a href="https://github.com/rails/rails/commit/9f3262c9f8a5d54120a55b9736671a63348c35c7">Merge pull request #59277 from Shopify/associations-cache-clone</a></li>
-      <li><a href="https://github.com/rails/rails/commit/0ade4c729441d091b9875f433cf1f2c71c90839b">Merge pull request #59406 from czj/perf/url-for-skip-non-dispatchers</a></li>
-      <li><a href="https://github.com/rails/rails/commit/830cb5652e02dec968e8e148f4dfa1475b4345f7">Merge pull request #59407 from Shopify/unroll-form-builder-helper-met…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/680d20dacfa07d8a8b55989974560e3c03b8fa79">Merge pull request #59400 from czj/perf/parameterize-tr-s</a></li>
-      <li><a href="https://github.com/rails/rails/commit/feb8025e773897c146d6bfbb912443b4bf05a157">Merge pull request #59397 from czj/perf/time-zone-parse-local-utc</a></li>
-      <li><a href="https://github.com/rails/rails/commit/10ac5445d43fcd6c4cc46b0dcdc46320ca3d3a90">Merge pull request #59394 from dai199/integration-runner-methods</a></li>
-      <li><a href="https://github.com/rails/rails/commit/eef564b52aaf60917953d36bd79787d78c72cacd">Merge pull request #59403 from byroot/render-in-optimistic</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b6d640bcc062007335d53b05fc4c208061ae2e56">Merge pull request #59402 from czj/perf/time-zone-parse-lazy-now</a></li>
-      <li><a href="https://github.com/rails/rails/commit/11e214870a373c4f1424d0fca47b5e2d428269aa">Optimize `TimeZone#parse` when the string has a full date</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c544b696ee70e67086f28c1f13595bcd2f313f1f">Merge pull request #59393 from Shopify/hm-wvqyrwwpsyxznyrz</a></li>
+      <li><a href="https://github.com/rails/rails/commit/dcb4f3121bba525e3bb64596ef08dd1e32a3a947">Merge pull request #59448 from kamipo/preload-source-type-through-con…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ccb2de9fc5e512b88c5a3c2d5f02364c17110a6e">Fix preloading `source_type` through with conditions on the through t…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/ed45565911a85c12bf0a173bf1580412c2d3fb69">Merge pull request #59447 from czj/perf/render-in-without-template-re…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/86e12cd4dc4a7530319e0721554e79c63e1cbff4">Merge pull request #59446 from kamipo/fix-preload-source-type-with-scope</a></li>
+      <li><a href="https://github.com/rails/rails/commit/bbf19e1bc752394651a73bee7ce06839e06fddf2">Fix preloading `source_type` / `disable_joins` through with conditions</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c134eaf7974be2df4eadd81471ec768a9e465ed0">Merge pull request #59430 from czj/perf/message-verifier-keyed-hmac</a></li>
+      <li><a href="https://github.com/rails/rails/commit/34becfa6ab5b4b6a74fe430a685fe233f9fe487d">Key the MessageVerifier HMAC once and dup it per message</a></li>
+      <li><a href="https://github.com/rails/rails/commit/857ba57071169d04680a9a3825ca8d6f823afa54">Merge pull request #59444 from kamipo/fix-preload-scoped-through-reus…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a407e8c3038b99adbf798e3a1653d5587cf5f18b">Remove Markdown directives in Action View</a></li>
+      <li><a href="https://github.com/rails/rails/commit/19d589eb01f003a1d1b5efeb7d14d343d9612dc5">Render render_in objects without going through TemplateRenderer</a></li>
+      <li><a href="https://github.com/rails/rails/commit/2ab7290a085971f75ce0216ed1109f5551307d9e">Fix preloading scoped `has_many :through` reusing loaded through records</a></li>
+      <li><a href="https://github.com/rails/rails/commit/8cb4f644b76d9e57a31bbd5b229e90819f27ccc4">Merge pull request #59443 from kamipo/fix-preload-source-type-with-lo…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/9ae08c3ee056192d2f77f9f6bdb9ecfa7f17d348">Fix preloading `source_type` through associations with loaded through…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4c4ad5d58785316167be9b24a63f469437a00ddc">Merge pull request #59438 from amatsuda/time-zone-today-utc-fast-path</a></li>
+      <li><a href="https://github.com/rails/rails/commit/bd2f4d1cb95f749a0ca8e48c30dcaca52b77ab41">Skip the period lookup in TimeZone#today for constant-UTC zones</a></li>
+      <li><a href="https://github.com/rails/rails/commit/5b02449b72baa98ead91e2af3990c9ef19f9ce23">Merge pull request #59437 from npezza93/date-speedup</a></li>
+      <li><a href="https://github.com/rails/rails/commit/434f7bae026f4e89f6b3b1f4700395e2ded24b80">Merge pull request #59434 from carlosdanielpohlod/fix-if-unless-optio…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/63ac47e22ed809b623f0eaf4eda839ae43febea7">Merge pull request #59436 from kehra/fix/calculations-default-order</a></li>
+      <li><a href="https://github.com/rails/rails/commit/bf672699d4a935dd47c3e016d34e61a2f0662ad2">Speed up Date.current when Time.zone is set</a></li>
+      <li><a href="https://github.com/rails/rails/commit/d1a7e1a69b8e3b185090be460ffb7375588f51ca">Exclude default_order from aggregate calculations</a></li>
     </ul>
   </li>
   <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
     <ul>
+      <li><a href="https://discuss.rubyonrails.org/t/ghsa-744p-w4gc-m3gh-sql-injection-through-trilogy-escape-with-multibyte-encodings/91797">[GHSA-744p-w4gc-m3gh] SQL injection through `Trilogy#escape` with multibyte encodings</a></li>
       <li><a href="https://discuss.rubyonrails.org/t/optimizer-hints-is-silently-dropped-from-update-all-and-delete-all/91796">Optimizer_hints is silently dropped from update_all and delete_all</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/introducing-fixturekit-fixture-speed-tests-without-giving-up-factorybot/91795">Introducing FixtureKit: fixture-speed tests without giving up FactoryBot</a></li>
     </ul>
   </li>
-  <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
+  <li><a href="https://us11.campaign-archive.com/feed?u=1aa0f43522f6d9ef96d1c5d6f&id=840412962b">Ruby Performance Newsletter Archive Feed</a>
     <ul>
-      <li><a href="https://blog.rubygems.org/2026/10/28/4.1.0.beta3-released.html">4.1.0.beta3 Released</a></li>
-      <li><a href="https://blog.rubygems.org/2026/10/28/ruby-centrals-oss-changelog-october-2026.html">Ruby Central’s OSS Changelog: October 2026</a></li>
+      <li><a href="https://mailchi.mp/db6a1420333c/four-line-fridays-boo-its-a-cve-and-two-ways-ai-failed-me-this-week">Four Line Fridays: BOO! It's a CVE! and two ways AI failed me this week</a></li>
     </ul>
   </li>
 </ul>
