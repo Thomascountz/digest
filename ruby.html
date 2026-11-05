@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-11-04</h1>
+<h1>Ruby Digest - 2026-11-05</h1>
 <ul>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
-      <li><a href="https://github.com/rails/rails/commit/8b06b0eb98315cbbd6d7f526112cd8d909ff787c">Merge pull request #59616 from thomasklemm/thomasklemm/update-timesta…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/6c23cb8f2a34b4cb1e10656b492027a4c008f446">Merge pull request #59615 from thomasklemm/thomasklemm/variant-format…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/aa236fc09b9363fbb96a93f0750e13c60e81c803">Remove Markdown directives in Active Storage</a></li>
-      <li><a href="https://github.com/rails/rails/commit/afa716b1126b62afc0148bcb700cecf5e666c2b3">Remove Markdown directives in Active Job</a></li>
-      <li><a href="https://github.com/rails/rails/commit/8fbab49e4679d4e7a3ef9c0920923d7ee7662e16">Merge pull request #59613 from thomasklemm/thomasklemm/fanout-handle-…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/98f3793369779f3027a08c73615f08f24f4cd931">Merge pull request #59608 from thomasklemm/thomasklemm/prepend-format…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/cef6a51a51ff1833ba6483613c459af4aec7834f">Merge pull request #59612 from kamipo/with-args-in-query-method</a></li>
-      <li><a href="https://github.com/rails/rails/commit/4e76f138b830b23887ba3c45d94406c8e694f0ec">Merge pull request #59607 from thomasklemm/thomasklemm/resolve-attrib…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d2ab41e65af40cb4a1e8417789b76084f92ab7be">Merge pull request #59606 from thomasklemm/thomasklemm/template-handl…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ef0266d0d6af228a3e9fc63b308f4f41fa06d347">Read the update timestamp only when it is written</a></li>
-      <li><a href="https://github.com/rails/rails/commit/fa58e6094ce04dfe740309bc1f7a97501b06a3cd">Read the blob filename's extension once when choosing a variant format</a></li>
-      <li><a href="https://github.com/rails/rails/commit/d6b71f057de157f1e6c16dfd74dc009740b149a5">Build notification handle groups with each instead of Hash#map</a></li>
-      <li><a href="https://github.com/rails/rails/commit/9cf3693a0a987d0a262df8ca7d95880fdc68fb00">Merge pull request #59605 from thomasklemm/thomasklemm/sqlite3-result…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1ca7528bac67c4f39d82ed25fb6ab4fb6ffb85c5">Merge pull request #59603 from thomasklemm/thomasklemm/tag-option-str…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ce95f14b9f66f25d044c35ca28c526bb4ba4a62e">Skip the format union in prepend_formats when the format already leads</a></li>
-      <li><a href="https://github.com/rails/rails/commit/5b24d5490e8e19ff74ef9535d416b9c01dafd67f">Restore three ActionView::Template handler methods</a></li>
-      <li><a href="https://github.com/rails/rails/commit/501bf5cc67675e16304c9f91e74be4d55e9ecb96">Look up the SQLite3 type map once per result</a></li>
-      <li><a href="https://github.com/rails/rails/commit/be7ab87287a4f65946dfa060a47a8b5956bf82d3">Resolve attribute aliases with a fetch default instead of a block</a></li>
-      <li><a href="https://github.com/rails/rails/commit/f02e21ddbb65fed60b829da8fbdfda843d41d303">Check for String tag attribute values first</a></li>
-      <li><a href="https://github.com/rails/rails/commit/873d897d42dc855ce466bf7b4e72602eb8136375">Avoid reprocessing `with` values when merging relations</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3ba9e53d7e7e85a11b3b88ed68b7d9293c0d2169">Speed up pluralize and singularize by testing rules with match?</a></li>
+      <li><a href="https://github.com/rails/rails/commit/bdb3d960121e7eb73a61c04099d1eef3c821e397">Merge pull request #59570 from thomasklemm/thomasklemm/output-buffer-…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/043143393ba1a69f1d0b4a829dfa63b6d422ae76">Escape unsafe OutputBuffer appends without the super dispatch</a></li>
+      <li><a href="https://github.com/rails/rails/commit/13b5592657142495f21013a7cf81057617fdc13c">Merge pull request #59602 from IslamElsayed/herb-syntax-error-templat…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4927ac6e0835437ffc2a4db19cf406b69d373006">Show the template's line for syntax errors compiled through Herb</a></li>
+      <li><a href="https://github.com/rails/rails/commit/51f526319caaa35181c556184bfc9a2600899dbd">Merge pull request #59582 from luke-gruber/skip_ractor_require_in_method</a></li>
+      <li><a href="https://github.com/rails/rails/commit/61f15cb68f9506777adab8dd9276e0544919c656">Merge pull request #59482 from linyiru/exception-wrapper-template-errors</a></li>
+      <li><a href="https://github.com/rails/rails/commit/561abce45f991ad9e32083b31fbcdd20180e8f39">Map template frames in ExceptionWrapper without walking every resolver</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a3c265ea0dbddcd4124bfbd0df278ff2def39e3f">Merge pull request #59641 from rails/fxn/markdown</a></li>
+      <li><a href="https://github.com/rails/rails/commit/376d2d97db6ff0a4499ed4d596eb7f5aab8ba358">Merge pull request #59595 from anthonyfranco/fix-association-reader-w…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f9c94027214d14d9076e6bfed5ba3ac956486cd7">Merge pull request #59640 from thomasklemm/thomasklemm/local-cache-an…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/63802b43695d7609eaa69c9717cf4662683632f8">Remove remaining Markdown directives</a></li>
+      <li><a href="https://github.com/rails/rails/commit/2f4d502119c0d0cf9500a2d49a00eea9c557bacb">Merge pull request #59638 from kehra/fix-includes-merge-order-references</a></li>
+      <li><a href="https://github.com/rails/rails/commit/bd8a6570518312a981960d2ec0aafbcb75bcd74e">Merge pull request #59635 from sampokuokkanen/activejob-rakefile-jrub…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/cb2b09ab6f391210c832e927bdeb35aa14f99e7d">Reference the merged order's tables in includes after merge</a></li>
+      <li><a href="https://github.com/rails/rails/commit/06eae38e6e9987f4379e9aaf3e79e925d9e1cb39">Merge pull request #59634 from thomasklemm/thomasklemm/where-bang-binds</a></li>
+      <li><a href="https://github.com/rails/rails/commit/95235dc69b00b0a6fd770c0a541be69a19f7df8c">Fix FrozenError loading the Active Job Rakefile on JRuby</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c8490688d7ed0cb33417b24a536f555d765223b1">Make `where!` and `having!` wrappers around `_where!` and `_having!`</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3b2702adea5bdd2b537e9fa64267b3db6f13689f">Merge pull request #59584 from thomasklemm/thomasklemm/json-escape-co…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/256dd9ee833b25e1c0566d26259a09702dab818b">Skip the HTML entity gsub! in JSON::Coder output with nothing to escape</a></li>
     </ul>
   </li>
   <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
     <ul>
       <li><a href="https://discuss.rubyonrails.org/t/rails-security-releases-8-0-5-2-and-8-1-4-1/91802">Rails security releases: 8.0.5.2 and 8.1.4.1</a></li>
+    </ul>
+  </li>
+  <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
+    <ul>
+      <li><a href="https://blog.rubygems.org/2026/11/05/4.0.24-released.html">4.0.24 Released</a></li>
     </ul>
   </li>
 </ul>
