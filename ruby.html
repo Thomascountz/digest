@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-11-11</h1>
+<h1>Ruby Digest - 2026-11-12</h1>
 <ul>
+  <li><a href="https://rubyweekly.com/">Ruby Weekly</a>
+    <ul>
+      <li><a href="https://rubyweekly.com/issues/826">What's new in RubyGems and Bundler 4.1</a></li>
+    </ul>
+  </li>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/7b073bcc6ffa72bbdf17eec38a71b046b242ce32">Merge pull request #59679 from Shopify/hm-lvmrqlvtquzptlrm</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c412e077acf39212413d26b28cafe503973434d0">Merge pull request #59767 from kamipo/deprecate-unqualified-unscope-o…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/90def6a8d26e692109b1ca2bb4007c06202f3534">Deprecate `unscope(where: :column)` removing conditions on other tables</a></li>
+      <li><a href="https://github.com/rails/rails/commit/1f32b09101783c398c6276856b7471c14dc66555">Merge pull request #59141 from tenderlove/index-reader</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c48c154e3f5285cb2fe4cf03b2e3a62cfd34ffc8">Merge pull request #59489 from linyiru/freeze-ar-config-on-load</a></li>
       <li><a href="https://github.com/rails/rails/commit/fec707f56360ce14b1a3c24b4be5e8f3bc84e12f">Merge pull request #59739 from ilianah/json-schema-cache-reduce-alloc…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/e091f59a4e91d41d9a63fb1efbbf6345abee39e1">Dedup strings when loading JSON schema cache</a></li>
-      <li><a href="https://github.com/rails/rails/commit/224f5b1563cc9a7da0fe69ff1ce92bb0c1c74a48">Merge pull request #59702 from talaatmagdyx/fix-integer-cast-window-5…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/5c1778dcc47ebcc5e36144fdfe419b86d465f14f">Merge pull request #59727 from salasebas/perf/join-dependency-key-ali…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/0bfb4099655d1a2acbb4e4dc106f6f3725efc95c">Merge pull request #59726 from salasebas/fix/content-type-memo-defaul…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/c3485dce7d7b30641b8232a123c90255b056d13c">Merge pull request #59725 from salasebas/fix/static-precompressed-roo…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/536311c18446d66eaba64bb373403e10bb963888">[RF-DOCS] Add a guide for using hotwire with rails (#58617)</a></li>
-      <li><a href="https://github.com/rails/rails/commit/9ba23362cdddb1af72b9d25bcdb904a1b022cbc4">Merge pull request #58631 from gCoreByte/fix-sign-up-guide-password-r…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a0a06a84d31168b7f1bef7ae977fbcee69078d63">Merge pull request #59729 from kamipo/fix/merge-cte-joins-from-other-…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/03a8e512e247f4f6fc622536dc06ebbd965050d9">Merge pull request #59256 from yahonda/fix-flaky-connection-pool-stat…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/db5fd36f8041b6cfc5c3f3ce2893168078d97dec">Resolve CTE joins merged from a relation of another model</a></li>
-      <li><a href="https://github.com/rails/rails/commit/e1333803b504a19da6e86cfced6293786adad601">Merge pull request #59302 from yahonda/fix-query-cache-across-threads…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b565fe22b2ebb585e748598a4b78569ca93b39e9">Merge pull request #59709 from helmipradita/fix/unscope-table-qualifi…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b2a1d01a4d817500120bf81c74020791e2e8d93b">Fix #48227: Qualify unscope values when merging relations</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a4aa9f06aaf7c0c9ac634ee8e21e888ad665ad3a">Merge pull request #59593 from kehra/fix-preload-through-scope-preload</a></li>
-      <li><a href="https://github.com/rails/rails/commit/68c13fd356085a4f89e6c9d26ea184aeb519f902">Fix preloading through associations with preload in a filtered scope</a></li>
-      <li><a href="https://github.com/rails/rails/commit/ba311afe776492ff920810509c1c103f40c7cd13">Fix QueryCacheTest#test_query_cache_across_threads</a></li>
-      <li><a href="https://github.com/rails/rails/commit/7e843eabdf3d5f47722d9bb726cb7d5884bfbfd2">Compute eager loading primary key aliases once per join node</a></li>
-      <li><a href="https://github.com/rails/rails/commit/b63dddb7e354f2bff58ab89ebeb4451776570395">Serve precompressed-only files at the top of the static root</a></li>
-      <li><a href="https://github.com/rails/rails/commit/e8b5ea7d3649f19c36b296d6eec45184dfdad709">Prime the response Content-Type memo for the default charset</a></li>
+      <li><a href="https://github.com/rails/rails/commit/a522dab756c790cc4a3bbd5665fa6f93c2eb2420">Defer casting user-written attributes of mutable types to first read</a></li>
+      <li><a href="https://github.com/rails/rails/commit/3530b9916baad8a5bf3e048184b3d88c8a64c8c8">update tests</a></li>
+      <li><a href="https://github.com/rails/rails/commit/b33a68e1decdeaf648dae841cf1da6f5becad1ad">Lay out attribute sets of 6.1-marshaled new records before slot reads</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6cba4864a573422e1cb23f026f181781f6abf34a">restore Marshal 6.1 support</a></li>
+      <li><a href="https://github.com/rails/rails/commit/88e144d80b1bb6f6c9c3bd63297c83fb66b433f9">Reintroduce build_from_database with two hashes</a></li>
+      <li><a href="https://github.com/rails/rails/commit/8276bb63aa851afa7eb8bad66369756136b41585">Add types and make callers homogeneous</a></li>
+      <li><a href="https://github.com/rails/rails/commit/99421688be937ad58a9f462ead478ca05ce83955">de-duplicate luts</a></li>
+      <li><a href="https://github.com/rails/rails/commit/19022a4aa47cc8f710a050ef76b80d96558b43fe">Add LazyIndexedAttributeSet#to_hash reading values from the row</a></li>
+      <li><a href="https://github.com/rails/rails/commit/6cd4b72019c51bb8deb0f322bf98cebdc65556d2">Add a CHANGELOG entry for attribute defaults cast at schema load</a></li>
+      <li><a href="https://github.com/rails/rails/commit/0c45b1206e4e0165f03fe55bafb2029b8b39ab33">Use casted_values for fast path</a></li>
+      <li><a href="https://github.com/rails/rails/commit/68e24e3ee7fae5ac78646c3aec369b815c692078">Update activerecord/lib/active_record/associations/preloader/associat…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/62a5e6c6703eb1c4362cd0794af426184585a229">reduce diff, rename attribute reader</a></li>
+      <li><a href="https://github.com/rails/rails/commit/cd84ce43d9452fdb0d405691578d1eb4a122ad9b">Pass an array down to LazyAttributeSet</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4e68df70611fe6fd08f36d4b3d285674354eaf50">Additional types hash isn't necessary anymore</a></li>
     </ul>
   </li>
 </ul>
