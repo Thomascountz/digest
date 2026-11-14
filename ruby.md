@@ -1,10 +1,12 @@
-# Ruby Digest - 2026-11-13
+# Ruby Digest - 2026-11-14
 
-- [Ruby Weekly](https://rubyweekly.com/)
-  - [What's new in RubyGems and Bundler 4.1](https://rubyweekly.com/issues/826)
 - [This Week in Rails](https://world.hey.com/this.week.in.rails)
   - [Hotwire guide and more](https://world.hey.com/this.week.in.rails/hotwire-guide-and-more-e260ab5f)
 - [Recent Commits to rails:main](https://github.com/rails/rails/commits/main)
+  - [Merge pull request #59780 from kehra/fix-unscope-merge-array](https://github.com/rails/rails/commit/50c54eed065b8bfb1b0bbb5fa770c859baa98f9b)
+  - [Merge pull request #59782 from b84330808/fix-join-scope-unused-includ…](https://github.com/rails/rails/commit/01d54cdedf1cb8a60aa90e33ec868d9e2539c66e)
+  - [Don't alias a joined table only because the association scope include…](https://github.com/rails/rails/commit/31de9092c45be621e1cdbd977811c1156d130afe)
+  - [Move the Symbol/String check into `qualify_attribute_with_table_name`](https://github.com/rails/rails/commit/eabb5b9553920d18767126389db6e3aefadc2e23)
   - [Merge pull request #59754 from dennispaagman/encrypted_file_inspect](https://github.com/rails/rails/commit/4b70e836e79fb2a82bcde299a09f1839683e40a3)
   - [Merge pull request #59771 from czj/rank-unranked-through-records-last](https://github.com/rails/rails/commit/ebb46f9ee90023441ee3f81a966d3186c7fdf3ed)
   - [Reproduce the through preload tests through the public API](https://github.com/rails/rails/commit/8a0638881bc198b555377fde64bf352cbcecc892)
@@ -15,9 +17,4 @@
   - [Merge pull request #59642 from thomasklemm/thomasklemm/where-empty-co…](https://github.com/rails/rails/commit/0e655babbc3e06c432f1b247b824f80f61fee992)
   - [Merge pull request #59779 from fuzzyrichie/app-update-detect-kamal](https://github.com/rails/rails/commit/4005a0573d2cf52c89197556d72398883c19e888)
   - [Merge pull request #59759 from fuzzyrichie/fix-active-storage-csrf-guard](https://github.com/rails/rails/commit/a1b982da1cb6f98df1652123735336910ed1dc94)
-  - [Merge pull request #59683 from hasannadeem/message-pack-missing-class…](https://github.com/rails/rails/commit/b3caa7e181d4fe48b0a25705dd424a0d7c5e7105)
-  - [Treat a MessagePack cache entry with a missing class as a cache miss](https://github.com/rails/rails/commit/18d557c51fd6f23fc105c0b477273ce8612ea7cf)
-  - [Merge pull request #59692 from kehra/cursor/fix-increment-bang-stale-…](https://github.com/rails/rails/commit/937ad292170f6df6148fcb1c11ef0f1eaa0d14aa)
-  - [Check for protect_from_forgery in ActiveStorage::BaseController](https://github.com/rails/rails/commit/de28945ce29cfe843b4a5460f9180d2cd4bc46bb)
-  - [Group bound SQL literals in `WhereClause` like other SQL literals](https://github.com/rails/rails/commit/8d6b63b0cdbda54d1f7cc7649c8179c26ee31b99)
-  - [Merge pull request #59679 from Shopify/hm-lvmrqlvtquzptlrm](https://github.com/rails/rails/commit/7b073bcc6ffa72bbdf17eec38a71b046b242ce32)
+  - [Fix merge of unscope values that include a Hash or Arel attribute in …](https://github.com/rails/rails/commit/070e040357f6f2957e15c4ae2303d84a4a140577)
