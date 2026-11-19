@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html><head><meta charset="UTF-8"><title>Ruby Digest</title></head>
 <body>
-<h1>Ruby Digest - 2026-11-18</h1>
+<h1>Ruby Digest - 2026-11-19</h1>
 <ul>
   <li><a href="https://github.com/rails/rails/commits/main">Recent Commits to rails:main</a>
     <ul>
+      <li><a href="https://github.com/rails/rails/commit/9f2a064cd40abdb01eaa2245b50bc6db68a6720d">Merge pull request #59843 from cole-robertson/fix-reap-reset-error</a></li>
+      <li><a href="https://github.com/rails/rails/commit/fb134455f473ecab3880fcc75e875695363b8149">Remove a reaped connection whose reset fails</a></li>
+      <li><a href="https://github.com/rails/rails/commit/e22f32a76030675806fa095f15c3ace4c58c0831">Merge pull request #59844 from cole-robertson/fix-lease-connection-af…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/37fb5d641a5fe9710227fbb6c1a8baedfa221160">Merge pull request #59872 from byroot/rack-default-multipart-parser-e…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/541ec0847c1b0377c9522b8f1329a90ee9533044">Patch Rack::Multipart::Parser to not allow arbitrary encoding</a></li>
+      <li><a href="https://github.com/rails/rails/commit/4992df6324fa49ca21c60815d675088ef4819887">Preserve leases across disconnect during checkout</a></li>
+      <li><a href="https://github.com/rails/rails/commit/c9e828a8c0ba21237ff4b78622eb94bc492e5023">Merge pull request #59863 from ianterrell/ianterrell/fixtures-skip-vi…</a></li>
+      <li><a href="https://github.com/rails/rails/commit/749b72b2ae3252f23f355667ca882a4188b27402">Don't generate fixture values for virtual columns</a></li>
+      <li><a href="https://github.com/rails/rails/commit/f12b61577667833a528a16ce52b73d6e7e2845e9">Merge pull request #59868 from SamSaffron/main</a></li>
+      <li><a href="https://github.com/rails/rails/commit/09a2aa02fa985dcead28a853f93af616c2443018">Skip the SQLString wrapper for unprepared queries</a></li>
       <li><a href="https://github.com/rails/rails/commit/78f4f0df59866e8951646183c1f275e186916ba7">Merge pull request #59861 from hachi8833/restore_reloading_interlock_…</a></li>
       <li><a href="https://github.com/rails/rails/commit/6728f0dcdd88fb1df16139f033f3e066a038ee2c">Merge pull request #59859 from kehra/numericality-reserved-options-fr…</a></li>
       <li><a href="https://github.com/rails/rails/commit/574ab29782ff3130281341f14f864acf462c4d27">[ci skip][docs] Restore Reloading Interlock wording in threading guide</a></li>
@@ -15,22 +25,19 @@
       <li><a href="https://github.com/rails/rails/commit/5a23059869cc5fee04638c20d65861aee7a2e73f">Log source location when scoped order is ignored in batching</a></li>
       <li><a href="https://github.com/rails/rails/commit/a266a4e63558b07b9b46e8a0e472365a03d632fa">Merge pull request #59770 from hasannadeem/fix-pin-connection-lock-race</a></li>
       <li><a href="https://github.com/rails/rails/commit/fcad951e2c1824fc45c103aa464923390a846f3e">Install the pinned connection's lock before pinning it</a></li>
-      <li><a href="https://github.com/rails/rails/commit/a926c9d61fca1ef8e35c98d3170c69a4df846916">Merge pull request #59818 from Alexander-Senko/support-collection-tag…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/9a64d012d22db36a358ccd6aef0cb72167759528">Merge pull request #59833 from bruno-costanzo/attribute-set-keys-cach…</a></li>
-      <li><a href="https://github.com/rails/rails/commit/83e7e4b76fe9ef4054bf52a2855e1c3fedb17629">Merge pull request #59848 from dogweather/fix-truncate-words-regex</a></li>
-      <li><a href="https://github.com/rails/rails/commit/874876e415479e4b1310289add0ce8562e66f117">Merge pull request #59853 from yorzi/fix/numericality-nonfinite-parity</a></li>
-      <li><a href="https://github.com/rails/rails/commit/00fde1f53deb4a01de8568bf953566e5fea53f08">Merge pull request #59855 from czj/token-auth-scheme-regressions</a></li>
-      <li><a href="https://github.com/rails/rails/commit/0352162173f8198af6088087ea8b0d0a85ffc838">Merge pull request #59850 from kamipo/adapter-specific-index-definitions</a></li>
-      <li><a href="https://github.com/rails/rails/commit/1d503fab8682705e2e7626a9fc8627264f62237c">Fix numericality parity checks raising for non-finite values</a></li>
-      <li><a href="https://github.com/rails/rails/commit/023563b8c51f8197c2044a8543863e9645940023">Move MySQL-only index attributes into `MySQL::IndexDefinition`</a></li>
-      <li><a href="https://github.com/rails/rails/commit/350cf02795c538718683e42853c820e6bbdcfeae">Move PostgreSQL-only index attributes into `PostgreSQL::IndexDefinition`</a></li>
-      <li><a href="https://github.com/rails/rails/commit/e30c36266b48016e74422e987dd46e85cacbeea8">Merge pull request #59837 from byroot/drop-6-1-marshal</a></li>
     </ul>
   </li>
-  <li><a href="https://discuss.rubyonrails.org/latest">Ruby on Rails Discussions - Latest topics</a>
+  <li><a href="https://www.ruby-lang.org/en/feeds/news.rss">Ruby News</a>
     <ul>
-      <li><a href="https://discuss.rubyonrails.org/t/cancel-running-query-in-console-on-ctrl-c/91991">Cancel running query in console on ctrl+c</a></li>
-      <li><a href="https://discuss.rubyonrails.org/t/looking-for-a-v0-alternative-for-a-rails-side-project/91990">Looking for a v0 alternative for a Rails side project?</a></li>
+      <li><a href="https://www.ruby-lang.org/en/news/2026/11/18/multiple-vulnerabilities-in-regexp-and-string/">Security advisories: multiple vulnerabilities in Regexp and String case conversion</a></li>
+      <li><a href="https://www.ruby-lang.org/en/news/2026/11/18/ruby-3-3-14-released/">Ruby 3.3.14 Released</a></li>
+      <li><a href="https://www.ruby-lang.org/en/news/2026/11/18/ruby-3-4-13-released/">Ruby 3.4.13 Released</a></li>
+      <li><a href="https://www.ruby-lang.org/en/news/2026/11/18/ruby-4-0-10-released/">Ruby 4.0.10 Released</a></li>
+    </ul>
+  </li>
+  <li><a href="https://blog.rubygems.org/">RubyGems Blog</a>
+    <ul>
+      <li><a href="https://blog.rubygems.org/2026/11/19/gemstash-2.9.0-security-release.html">Gemstash 2.9.0 security release, and the end of Gemstash</a></li>
     </ul>
   </li>
 </ul>
